@@ -1,0 +1,395 @@
+/*项目公共部分 如头部导航和底部导航*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar {
+	height: 84px;
+}
+.navbar .container-fluid {
+	padding: 0;
+	border-bottom: 2px solid #737373;	
+}
+/*导航一条线*/
+.navbar .redBg {
+	position: absolute;	
+	bottom: 0;
+	left: 0;
+	width: 30%;
+	border-bottom: 2px solid #ea3800;
+	z-index: 1;
+}
+
+.navbar-header .navbar-brand {
+	height: 0;
+    padding: 0px 15px;
+	padding-left: 30px;
+	height: 80px;
+}
+.navbar-header .navbar-brand img {
+	vertical-align: auto;
+	height: 90px;
+}
+/*按钮*/
+.ghg-btn-span {
+	display: none;
+}
+.container > .navbar-header, 
+.container-fluid > .navbar-header, 
+.container > .navbar-collapse, 
+.container-fluid > .navbar-collapse {
+	margin: 0;
+	padding: 0;
+}
+.navbar-header-bar button {
+	border: 0;
+}
+.navbar-header-bar button img {
+	width: 80px;
+	height: 80px;
+	
+}
+/*导航的搜索部分*/
+.ghg-search {
+	border-left: 1px solid #5E5E5E;
+}
+.ghg-search-bar li {
+	float: left;	
+}
+.ghg-search-input input{
+	border: 0;
+	outline:none;
+	width: 90px;
+	height: 30px;
+	display: none;
+}
+.ghg-search-bar .ghg-search-body:hover {
+	border: 1px solid #000000;
+}
+.ghg-search-bar .ghg-search-body:hover .ghg-search-input input {
+	display: block;
+}
+.ghg-search-bar .ghg-search-input a,
+.ghg-search-bar .ghg-search-tu a {
+	padding: 10px 0;
+}
+.ghg-search-bar .ghg-search-input a {
+	padding-left: 15px;
+}
+.ghg-search-bar .ghg-search-tu a {
+	padding-right: 15px;
+	cursor: pointer;
+}
+li {
+	list-style: none;
+}
+li > a {
+	color: #737373;
+}
+.nav > li:hover {
+	border-top: 3px solid #eb3a00;	
+}
+.nav > .ghg-search:hover, .ghg-search .nav > li {
+	border-top: 0;
+}
+.nav > li > a {
+	height: 77px;
+	line-height: 60px;
+}
+a:hover {
+	text-decoration: none;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background: transparent;
+}
+/*子类的css*/
+.ghg-navlist {
+	opacity: 0.8;
+	background: #979797;
+	position: fixed;
+	top: 80px;
+	height: 60px;
+	left: 0;
+	width: 100%;
+	border: 1px solid #979797;
+	display: none;
+	padding-left: 20%;
+}
+.ghg-navlist.active1 {
+	padding-left: 27%;
+}
+.ghg-navlist.active2 {
+	padding-left: 33%;
+}
+.ghg-navlist.active3 {
+	padding-left: 40%;
+}
+.ghg-navlist.active4 {
+	padding-left: 47%;
+}
+.ghg-navlist.active5 {
+	padding-left: 53%;
+}
+.ghg-navlist.active6 {
+	padding-left: 59%;
+}
+.ghg-navlist li {
+	line-height: 60px;
+	margin-left: 15px;
+	float: left;
+	margin-top: -3px;
+	border-top: 2px solid #333333;
+}
+.ghg-navlist a {
+	color: #fff;
+	font-size: 12px;
+}
+.nav > li:hover .ghg-navlist  {
+	display: block;
+}
+/*x按钮*/
+.ghg-btn-x {
+	font-size: 60px;
+}
+/*右侧导航*/
+.navbar-header-bar .ghg-modal .modal-dialog{
+	margin: 0;
+	float: right;
+	width: 320px;
+}
+.ghg-modal .modal-dialog .modal-content {
+	border-radius: 0;
+	background: #f9f9f9;
+}
+.modal-content .modal-body {
+	padding: 60px 0 10px 0;
+	
+}
+.ghg-modal .modal-header {
+	border-bottom: 0;
+}
+.ghg-navlists {
+	padding-top: 120px;
+	font-size: 22px;
+	color: #8b8782;
+}
+.modal-body .ghg-navlists ul {
+	margin-bottom: 25px;
+}
+.ghg-navlists li {
+	display: none;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.ghg-navlists a {
+	color: #cac4bd;
+	font-size: 16px;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.ghg-reght {
+	width: 50%;
+	height: 70px;
+	line-height: 68px;
+	font-size: 14px;
+	float: left;
+	border-right: 2px solid #8b8782;
+	border-top: 2px solid #8b8782;
+	text-align: center;
+}
+.ghg-reght.ghg-bottom {
+	border-bottom: 2px solid #8b8782;
+}
+.ghg-reght.on {
+	border-right: 0;
+}
+.modal-body .ghg-log {
+	visibility: hidden;
+	transform: translateY(100px);
+	transition: all 1s;
+	position: absolute;
+	width: 100%;
+}
+.modal-body .ghg-log.active {
+	transform: translateY(0);
+	transition: all 3s;
+	visibility: visible;
+}
+
+/*滑出左边样式*/
+.navbar-collapse-lists {
+	background: #333;
+	position: fixed;
+	left: 50%;
+	right: 0;
+	z-index: 1;
+	display: none;
+	transition: all 3s;
+	overflow-y: scroll;
+}
+.ghg-nav-title {
+	color: #ADADAD;
+	font-size: 20px;
+	height: 75px;
+	line-height: 75px;
+	padding-left: 20px;
+}
+.navbar-collapse-lists.active {
+	display: block;
+}
+.navbar-collapse-lists .ghg-navlists {
+	color: #a0a0a0;
+}
+.navbar-collapse-lists .ghg-navlists.on {
+	background: #444;
+	padding-top: 0;
+}
+.ghg-navlists.on .ghg-ul {
+	padding-bottom: 0;
+}
+.ghg-navlists.on ul li {
+	padding-left: 20px;
+}
+.ghg-navlists.on ul>span {
+	display: inline-block;
+	height: 50px;
+	width: 100%;
+	font-size: 16px;
+	padding-left: 20px;
+	border-top: 1px solid #575757;
+	border-bottom: 1px solid #575757;
+	line-height: 49px;	
+}
+.navbar-collapse-lists .ghg-log {
+	color: #8b8782;
+}
+.ghg-nav-bottom {
+	padding-left: 20px;
+	font-size: 12px;
+	color: #8b8782;
+	border-bottom: 1px solid #575757;
+	line-height: 40px;
+}
+/*下拉框*/
+.ghg-nav-bottom {
+	background: #333;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border: 0;
+	border: none;
+	outline: none;
+}
+ul.ghg-nav-bottom {
+	border-bottom: 1px solid #575757;
+}
+.ghg-nav-bottom {
+	border: none;
+	border-color:  #333;
+}
+.ghg-nav-bottom b {
+	padding-right: 20px;
+	padding-top: 10px;
+}
+.ghg-nav-bottom li {
+	display: none;
+}
+.ghg-nav-bottom {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	outline: none;
+}
+.ghg-navbar-bottom {
+	height: 150px;
+	background: #444;
+	padding-top: 15px 0 20px 20px;
+}
+.ghg-navbar-bottom img {
+	width: 40px;
+}
+
+/*屏幕小于1280时*/
+@media only screen and (max-width: 1280px) {
+	.nav .ghg-search {
+		display: none;
+	}
+	.ghg-navlist {
+		padding-left: 40%;
+	}
+	
+	.ghg-navlist.active1 {
+		padding-left: 51%;
+	}
+	.ghg-navlist.active2 {
+		padding-left: 58%;
+	}
+	.ghg-navlist.active3 {
+		padding-left: 65%;
+	}
+	.ghg-navlist.active4 {
+		padding-left: 68%;
+	}
+	.ghg-navlist.active5 {
+		padding-left: 70%;
+	}
+	.ghg-navlist.active6 {
+		padding-left: 78%;
+	}
+}
+
+@media only screen and (max-width:999px ) {
+	.container-fluid .collapse {
+		visibility: hidden;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	/*导航一条线*/
+	.navbar .redBg {
+		width: 100%;
+	}
+}
+@media only screen and (max-width:768px ) {
+	.ghg-modal-btn img {
+		display: none;
+	}
+	.navbar .redBg {
+		border-bottom: 2px solid #8b8782;
+	}
+	.navbar-toggle .ghg-butn {
+		position: absolute;
+		top: -9px;
+		right: -20px;
+		width: 80px;
+		height: 80px;
+		background: #eb3c00;
+	}
+	.navbar-toggle .glyphicon-remove {
+		font-size: 40px;
+		margin: 20px;
+		color: #fff;
+		
+	}
+	.navbar .container-fluid {
+		border: 0;
+	}
+	.ghg-modal-btn {
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.ghg-btn-span{
+		display: block;
+	}
+	.navbar-toggle .icon-bar {
+		font-size: 30px;
+		background: #555555;
+		width: 35px;
+		height: 5px;
+	}
+}
