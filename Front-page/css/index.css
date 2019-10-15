@@ -419,6 +419,8 @@ ul.ghg-nav-bottom li {
 	margin-top: -150px;
 	padding: 10px;
 	display: none;
+	border: 1px solid #999;
+	box-shadow: 10px 10px 5px #888888;
 }
 .ghg-WeChat-alert img{
 	width: 200px;
