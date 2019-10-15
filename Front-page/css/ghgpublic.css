@@ -11,6 +11,15 @@ input:focus{
 	outline: none;
 	
 }
+
+/*清除浮动  伪元素不占位 */
+.ghg-clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
 /*去除a标签的文字样式*/
 a{
 	background: none;
@@ -87,6 +96,15 @@ a:hover{
 	display: block;
 }
 
+/*字体居中*/
+.ghg-text-center{
+	text-align: center;
+}
+
+/*字体加粗*/
+.ghg-text-bolder{
+	font-weight: bolder;
+}
 
 /*字体大小*/
 /* 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40*/
@@ -386,60 +404,4 @@ a:hover{
 }
 .ghg-padding-40-bottom{
 	padding-bottom: 40px;
-}
-/*常用颜色*/
-/*字体颜色*/
-
-.ghg-text-grey {
-	color: #737373;
-}
-.ghg-text-ligrey {
-	color: rgba(137, 137, 137, 0.78);
-}
-.ghg-text-nineone {
-	color: #919191;
-}
-.ghg-text-bc {
-	color: #bc8f4b;
-}
-.ghg-text-thin {
-	color: rgba(137, 137, 137, 0.78);
-}
-.ghg-text-ash {
-	color: #74726d;
-}
-.ghg-text-orange {
-	color: #eb3c00;
-}
-.ghg-text-black {
-	color: #000;
-}
-.ghg-text-grey01 {
-	color: #3b3c40;
-}
-.ghg-text-8d {
-	color: #8d8d8d;
-}
-.ghg-text-ee {
-	color: #eeeeef;
-}
-.ghg-text-89 {
-	color: #898989;
-}
-.ghg-text-danor {
-	color: #f09888;
-}
-
-/*背景色 f1f1f1 f2f2f2 f7f7f7*/
-.ghg-bg-main{
-	background: #EB3C00;
-}
-.ghg-bg-grak{
-	background: #f2f2f2;
-}
-.ghg-bg-graks{
-	background: #F7F7F7;
-}
-.ghg-bg-black{
-	background: #535353;
 }
