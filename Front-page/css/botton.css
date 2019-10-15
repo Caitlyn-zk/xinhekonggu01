@@ -1,0 +1,130 @@
+/*
+ * 底部的公共样式
+ */
+.ghg-foot{
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	padding-top: 20px;
+	border-top: 2px solid #dbb88e;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.6);
+}
+.ghg-foot a{
+	color: rgba(0, 0, 0, 0.6);
+}
+/* 弹框 */
+.ghg-foot .ghg-foot-alert{
+	width: 1200px;
+	background: #fff;
+    position: fixed;
+    top: 50%;
+     left: 50%;
+    margin-top: -180px;
+    margin-left: -600px;
+    padding: 25px 40px;
+    display: none;
+}
+
+/*弹框里面的内容 */
+.ghg-foot-alert .ghg-foot-heder{
+	font-size: 18px;
+	height: 59px;
+	border-bottom: 2px solid #fdf8ec;
+}
+.ghg-foot-alert .foot-alert-content p{
+	color: #757575;
+    font-size: 13px;
+    line-height: 24px;
+}
+.ghg-down{
+	width: 80px;
+	height: 80px;
+	background: gold;
+	position: absolute;
+	right: -25px;
+	top: -25px;
+	background: url(../img/close.jpg) center no-repeat;
+}
+.ghg-foot-cross{
+	width: 14px;
+	height: 14px;
+	border-left: 4px solid #f8e2b3;
+}
+.ghg-foot-list {
+	width: 160px;
+}
+.ghg-list-title{
+	color: #757575;
+}
+.ghg-list-contet a{
+	color: #919191;
+}
+.ghg-myModel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(9, 9, 9, 0.63);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/*微信 */
+.ghg-WeChat-left{
+	margin-top: -10px;
+	margin-left: 15px;
+}
+
+/* 微信的弹框 */
+.ghg-WeChat-alert{
+	width: 300px;
+	height: 300px;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	padding: 10px;
+	display: none;
+}
+.ghg-WeChat-alert img{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 10px 40px;
+}
+.ghg-WeChat-alert span{
+	line-height: 17px;
+}
+/*645显示内容*/
+.ghg-button-content{
+	display: none;
+	text-align: center;
+	margin-top: 30px;
+}
+/*测试div 可以删除 */
+.adiv{
+	width: 100%;
+	height: 500px;
+	background: #F1F1F1;
+}
+
+/*响应式*/
+@media only screen and (max-width: 1039px) {
+	.content{
+		width: 100% !important;
+		padding-left: 20px;
+	}
+	
+}
+
+@media only screen and (max-width: 645px) {
+	.ghg-content-down{
+		display: none;
+	}
+	.ghg-button-content{
+		display: block;
+	}
+}

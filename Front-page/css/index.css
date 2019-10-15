@@ -6,15 +6,17 @@
 }
 .navbar {
 	height: 84px;
+	position: relative;
 }
 .navbar .container-fluid {
 	padding: 0;
+	height: 82px;
 	border-bottom: 2px solid #737373;	
 }
 /*导航一条线*/
 .navbar .redBg {
 	position: absolute;	
-	bottom: 0;
+	top: 80px;
 	left: 0;
 	width: 30%;
 	border-bottom: 2px solid #ea3800;
@@ -115,6 +117,7 @@ a:hover {
 	border: 1px solid #979797;
 	display: none;
 	padding-left: 20%;
+	z-index: 1;
 }
 .ghg-navlist.active1 {
 	padding-left: 27%;
@@ -138,8 +141,8 @@ a:hover {
 	line-height: 60px;
 	margin-left: 15px;
 	float: left;
-	margin-top: -3px;
-	border-top: 2px solid #333333;
+	margin-top: -2px;
+	border-top: 2px solid #555;
 }
 .ghg-navlist a {
 	color: #fff;
@@ -207,6 +210,12 @@ a:hover {
 .ghg-reght.on {
 	border-right: 0;
 }
+.ghg-bottom img {
+	padding-top: 25px;
+}
+.ghg-bottom span {
+	vertical-align: 5px;
+}
 .modal-body .ghg-log {
 	visibility: hidden;
 	transform: translateY(100px);
@@ -224,12 +233,12 @@ a:hover {
 .navbar-collapse-lists {
 	background: #333;
 	position: fixed;
-	left: 50%;
+	left: 100%;
 	right: 0;
 	z-index: 1;
-	display: none;
-	transition: all 3s;
 	overflow-y: scroll;
+	height: 100%;
+	
 }
 .ghg-nav-title {
 	color: #ADADAD;
@@ -291,16 +300,20 @@ ul.ghg-nav-bottom {
 	border: none;
 	border-color:  #333;
 }
+ul.ghg-nav-bottom span {
+	display: inline-block;
+	width: 100%;
+}
 .ghg-nav-bottom b {
 	padding-right: 20px;
 	padding-top: 10px;
 }
-.ghg-nav-bottom li {
+ul.ghg-nav-bottom li {
 	display: none;
+	cursor: pointer;
 }
 .ghg-nav-bottom {
 	display: inline-block;
-	height: 40px;
 	line-height: 40px;
 	border: none;
 	outline: none;
@@ -314,8 +327,122 @@ ul.ghg-nav-bottom {
 	width: 40px;
 }
 
+/*底部css*/
+/*
+ * 底部的公共样式
+ */
+.ghg-foot{
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	padding-top: 20px;
+	border-top: 2px solid #dbb88e;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.6);
+	position: relative;
+}
+.ghg-foot a{
+	color: rgba(0, 0, 0, 0.6);
+}
+/* 弹框 */
+.ghg-foot .ghg-foot-alert{
+	width: 1200px;
+	background: #fff;
+    position: fixed;
+    top: 50%;
+     left: 50%;
+    margin-top: -180px;
+    margin-left: -600px;
+    padding: 25px 40px;
+    display: none;
+}
+
+/*弹框里面的内容 */
+.ghg-foot-alert .ghg-foot-heder{
+	font-size: 18px;
+	height: 59px;
+	border-bottom: 2px solid #fdf8ec;
+}
+.ghg-foot-alert .foot-alert-content p{
+	color: #757575;
+    font-size: 13px;
+    line-height: 24px;
+}
+.ghg-down{
+	width: 80px;
+	height: 80px;
+	background: gold;
+	position: absolute;
+	right: -25px;
+	top: -25px;
+	background: url(../img/close.jpg) center no-repeat;
+}
+.ghg-foot-cross{
+	width: 14px;
+	height: 14px;
+	border-left: 4px solid #f8e2b3;
+}
+.ghg-foot-list {
+	width: 160px;
+}
+.ghg-list-title{
+	color: #757575;
+}
+.ghg-list-contet a{
+	color: #919191;
+}
+.ghg-myModel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(9, 9, 9, 0.63);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/*微信 */
+.ghg-WeChat-left{
+	margin-top: -10px;
+	margin-left: 15px;
+}
+
+/* 微信的弹框 */
+.ghg-WeChat-alert{
+	width: 300px;
+	height: 300px;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	padding: 10px;
+	display: none;
+}
+.ghg-WeChat-alert img{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 10px 40px;
+}
+.ghg-WeChat-alert span{
+	line-height: 17px;
+}
+/*645显示内容*/
+.ghg-button-content{
+	display: none;
+	text-align: center;
+	margin-top: 30px;
+}
+
 /*屏幕小于1280时*/
 @media only screen and (max-width: 1280px) {
+	.content{
+		width: 100% !important;
+		padding-left: 20px;
+	}
+	
 	.nav .ghg-search {
 		display: none;
 	}
@@ -343,6 +470,7 @@ ul.ghg-nav-bottom {
 	}
 }
 
+
 @media only screen and (max-width:999px ) {
 	.container-fluid .collapse {
 		visibility: hidden;
@@ -362,6 +490,9 @@ ul.ghg-nav-bottom {
 	.navbar .redBg {
 		border-bottom: 2px solid #8b8782;
 	}
+	.navbar .navbar-toggle {
+		padding: 20px 10px;
+	}
 	.navbar-toggle .ghg-butn {
 		position: absolute;
 		top: -9px;
@@ -374,10 +505,10 @@ ul.ghg-nav-bottom {
 		font-size: 40px;
 		margin: 20px;
 		color: #fff;
-		
 	}
 	.navbar .container-fluid {
 		border: 0;
+		height: 82px;
 	}
 	.ghg-modal-btn {
 		margin-right: 20px;
@@ -388,8 +519,15 @@ ul.ghg-nav-bottom {
 	}
 	.navbar-toggle .icon-bar {
 		font-size: 30px;
-		background: #555555;
+		background: #999;
 		width: 35px;
 		height: 5px;
+	}
+	/*底部*/
+	.ghg-content-down{
+		display: none;
+	}
+	.ghg-button-content{
+		display: block;
 	}
 }

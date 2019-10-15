@@ -1,0 +1,23 @@
+{
+  "id": "1392209",
+  "name": "actiu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1517637",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "2718752",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    }
+  ]
+}
