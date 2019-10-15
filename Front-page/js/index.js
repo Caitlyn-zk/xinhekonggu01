@@ -10,6 +10,9 @@
 				$(".ghg-contents").animate({
 					"marginRight": 0
 				},150)
+				$(".ghg-contents .ghg-navbar").animate({
+					'left': "0%"
+				},10)
 			})
 			
 		var html = `<span class="icon-bar"></span>
@@ -27,6 +30,10 @@
 				$(".navbar-collapse-lists").css({
 					"left": "50%"
 				})
+				$(".ghg-contents .ghg-navbar").animate({
+					'left': "-50%"
+				},10)
+				
 			})
 			
 			var html = `<a type="button" class="ghg-butn">
