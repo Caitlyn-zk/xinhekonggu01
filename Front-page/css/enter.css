@@ -1,0 +1,373 @@
+.bannerBox{
+	margin-top:107px;
+	
+	}
+.bannerBox .imgBox{
+	background: url(../img/top.png) center center no-repeat;
+	height: 169px;
+}
+
+
+
+.ghg-commonWrap{
+	background: #fff;
+}
+.ghg-containerBox{
+	display: none;
+}
+.ghg-containerBox.on{
+	display: block;
+}
+.ghg-commonWrap .ghg-container{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.ghg-commonWrap .ghg-container .ghg-subNav{
+	overflow: hidden;
+	line-height: 65px;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox{
+	float: left;
+	
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul{
+	overflow: hidden;
+	margin-bottom: 0;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a{
+	color: black;
+	
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a:hover{
+	text-decoration: none;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li {
+	float: left;
+	padding-right:35px;
+	color: #3b3a40;
+	font-size: 14px;
+
+	
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb{
+    font-size: 13px;
+    color: #5b5b5b;
+	float: right; 
+	line-height: 65px;
+	padding: 0;
+	margin: 0;
+	
+	
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb a{
+		display: inline-block;
+	    padding-left: 14px;
+	    padding-right: 8px;
+	    background: url(../img/littleRight.png) left center no-repeat;
+	    text-decoration: none;
+	    color: black;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current{
+	color: #ea3800;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a{          
+          position: relative;
+          text-decoration: none;
+           color: #000;   
+           padding: 23px 0;  
+  }
+        /*伪元素是两个冒号*/      
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a::after{          
+ 			content: '';
+            width: 100%;
+            height: 4px;
+/*设置伪元素的高度，这里是下划线的粗细*/           
+			position: absolute;           
+			top: 100%;          
+			left: 0;           
+			background-color: #FF2D52;
+/*当前标签继承的文字颜色，这里让伪元素的背景色与父元素的文字颜色相同*/
+            transform: scale(0);
+            transition:all .35s;
+        }
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:hover::after{          
+			transform: scale(1);      
+}     
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a::after{  
+			transform-origin: left;
+        }
+        
+.ghg-contentBox{
+	padding-top:70px;
+	background: #F7F7F7 url(../img/speechBg.jpg) center top no-repeat;;
+}
+.ghg-contentBox .ghg-container{
+	padding: 0;
+}
+.ghg-contentBox .ghg-container .ghg-enTitle{
+	font-size: 30px;
+    color: #eb3c00;
+    font-family: Montserrat-Regular;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.ghg-contentBox .ghg-container .ghg-title{
+	font-size: 20px;
+    color: #bc8f4b;
+    padding-bottom: 75px;
+    margin-bottom: 0;
+}
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox{
+	    float: left;
+	    width: 560px;
+	    padding-bottom: 145px
+}
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h1{
+	font-size: 32px;
+    color: #eb3a00;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h2{
+	color: #b9b9b9;
+    font-size: 26px;
+    padding-bottom: 25px;
+    font-family: Montserrat-Regular;
+    /*转换文本格式这个为全部转换为大写*/
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 26px;
+    margin: 0;
+    
+}
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h3{
+	    padding-top: 20px;
+	    font-size: 24px;
+	    color: #898989;
+}
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h4{
+	    font-size: 16px;
+   		color: #898989;
+}
+.ghg-contentBox .ghg-container .ghg-content p{
+	    font-size: 14px;
+	    color: #898989;
+	    padding-bottom: 15px;
+	    line-height: 24px;
+	    text-align: justify;
+	    margin: 0;
+    /*两端对齐效果*/
+}
+.ghg-contentBox .ghg-container .ghg-content .ghg-Imgright{
+	position: absolute;
+	right: -50px;
+	max-width: 100%;
+	bottom: 0;
+}
+.ghg-bottomBOX{
+	padding-top: 50px;
+	background: #fff;
+}
+.ghg-bottomBOX .ghg-container .ghg-leftImg{
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+	left: -244px;
+}
+.ghg-bottomBOX .ghg-container .ghg-rightBox{
+	    float: right;
+	    width: 656px;
+	    padding-bottom: 75px;
+}
+
+.ghg-bottomBOX .ghg-container .ghg-rightBox h1{
+	font-size: 32px;
+    color: #eb3a00;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.ghg-bottomBOX .ghg-container .ghg-rightBox h2{
+	color: #b9b9b9;
+    font-size: 26px;
+    padding-bottom: 25px;
+    font-family: Montserrat-Regular;
+    /*转换文本格式这个为全部转换为大写*/
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    line-height: 26px;
+    margin: 0;
+    
+}
+.ghg-bottomBOX .ghg-container .ghg-rightBox h3{
+	    padding-top: 20px;
+	    font-size: 24px;
+	    color: #898989;
+}
+.ghg-bottomBOX .ghg-container .ghg-rightBox h4{
+	    font-size: 16px;
+   		color: #898989;
+}
+.ghg-bottomBOX .ghg-container .ghg-rightBox p{
+	    font-size: 14px;
+	    color: #898989;
+	    padding-bottom: 15px;
+	    line-height: 24px;
+	    text-align: justify;
+	    margin: 0;
+    /*两端对齐效果*/
+}
+
+.ghg-containerBox{
+	   background: #f7f7f7 url(../img/zhiBg.jpg) center 10px no-repeat
+}
+
+.ghg-containerBox .ghg-topBox .ghg-enTitle{
+	    font-size: 30px;
+    color: #eb3c00;
+    font-family: Montserrat-Regular;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+	
+}
+.ghg-containerBox .ghg-topBox{
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.ghg-title{
+	font-size: 20px;
+    color: #bc8f4b;
+}
+.ghg-enTitle{
+	    font-size: 30px;
+	    color: #eb3c00;
+	    font-family: Montserrat-Regular;
+	    letter-spacing: -3px;
+	    text-transform: uppercase;
+}
+.ghg-containerBox .ghg-cook{
+	    padding-top: 65px;
+    padding-bottom: 140px;
+    
+    position: relative;
+}
+.ghg-containerBox .ghg-titleBox{
+	position: absolute;
+    right: 0;
+    top: 105px;
+    text-align: right;
+}
+
+.ghg-containerBox .organ{
+	  	padding-top: 50px;
+  		background: url(../img/organBg1.jpg) center bottom no-repeat;
+}
+.ghg-containerBox .organ .container img{
+	width: 100%;
+}
+.ghg-containerBox .ghg-titleBox h1{
+	font-size: 29px;
+    color: #f09888;
+}
+.ghg-containerBox .ghg-titleBox h2{
+	font-size: 90px;
+    color: #d8d8da;
+    line-height: 78px;
+    font-family: CALIBRI;
+    letter-spacing: -5px;
+}
+.ghg-containerBox .ghg-loading{
+	padding-top:50px;
+	background: url(../img/bg1.png) center 147px #f7f7f7 no-repeat;
+	}
+.ghg-containerBox .ghg-loading .container p{
+	margin: 0;
+}
+.ghg-containerBox  .ghg-loading .content{
+	padding-top: 65px;
+    padding-bottom: 70px;
+}
+.ghg-containerBox  .ghg-loading .content h1{
+	font-size: 32px;
+    color: #eb3a00;
+    margin: 0;
+    
+}
+.ghg-containerBox  .ghg-loading .content h2{
+	font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+.baseBox .yearBox .year{
+	    font-size: 30px;
+	    color: #72717a;
+	    font-family: Montserrat-Regular;
+       margin: 0;
+}
+.baseBox .yearBox .text{
+	font-size: 20px;
+    color: #d2ba9b;
+    margin: 0;
+}
+
+
+@media only screen and (max-width:1200px ) {
+	
+	.ghg-commonWrap{
+		padding: 0 20px;
+		
+	}
+	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li{
+		padding-right:10px;
+	}
+	.ghg-contentBox{
+	padding-left: 20px;
+	padding-right: 20px;	
+    } 
+    .ghg-bottomBOX{
+	padding-left: 20px;
+	padding-right: 20px;	
+    }
+    .ghg-contentBox .ghg-container .ghg-content .ghg-leftBox{
+    	 width: 100%;
+    	 
+    }
+    .ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h2{
+    	padding-left:20px ;
+    	padding-right: 20px;
+
+    }
+      .ghg-contentBox .ghg-container .ghg-content .ghg-Imgright{
+      	right: 0;
+      	position: relative;
+      	
+      }
+      .ghg-bottomBOX .ghg-container .ghg-rightBox{
+      	width: 100%;
+      	padding: 10px 20px;
+      }
+      .ghg-bottomBOX .ghg-container .ghg-leftImg{
+      	position: relative;
+      	left: 0;
+      }
+      .ghg-foot{
+      	display: none;
+      }
+      .foot{
+      	display: block;
+      	height: 120px;
+	    border-top:2px solid #DBB88E ;
+	    text-align: center;
+	    padding-top: 40px;
+      }
+      .foot p{
+      	padding-bottom: 10px;
+      	color: #a5a5a5;
+      	margin: 0;
+      }
+      .foot p>a{
+      	color: #a5a5a5;
+      }
+  }
