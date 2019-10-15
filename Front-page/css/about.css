@@ -1,0 +1,169 @@
+/*关于星河的css样式*/
+
+/*标题*/
+.ghg-abtout-title{
+	width: 100%;
+	height: 82px;
+	background: #fff;
+	padding-left: 150px;
+}
+.ghg-abtout-title .ghg-abtout-nav{
+	margin-left: 300px;
+}
+.ghg-abtout-title .ghg-abtout-nav li{
+	width: 134px;
+	height: 82px;
+	font-size: 24px;
+	line-height: 80px;
+	text-align: center;
+	float: left;
+}
+.ghg-abtout-title .ghg-abtout-nav li .ghg-abtout-click.on{
+	width: 134px;
+	height: 82px;
+	background: #ee8d02;
+	color: #FFFFFF;
+	display: inline-block;
+}
+/* 下拉菜单 */
+.ghg-abtout-show{
+	position: relative;
+}
+.ghg-abtout-select{
+	width: 110px;
+	height: 106px;
+	background: #fff;
+	position: absolute;
+	left: 795px;
+	top: 83px;
+	padding: 10px 0;
+	display: none;
+}
+.ghg-abtout-select p{
+	font-size: 16px;
+	color: #3c3c3c;
+	line-height: 40px;
+}
+.ghg-abtout-select p:hover{
+	background: #f1f1f1;
+}
+
+/*banner */
+.ghg-abtout-banner img{
+	width: 100%;
+	height: 390px;
+}
+/* 内容 */
+.ghg-abtout-content{
+	width: 100%;
+	padding-left: 70px;
+	position: absolute;
+	top: 450px;
+}
+.ghg-abtout-content .ghg-abtout-list{
+	width: 100%;
+	background: url(../img/building.png) no-repeat;
+	background-size: 100% 558px;
+}
+.ghg-abtout-list-content{
+	padding:50px 0; 
+}
+.ghg-abtout-list-title{
+	text-align: center;
+	font-size: 42px;
+	color: #eb3c00;
+	font-weight: bolder;
+	position: relative;
+}
+/* 线条 */
+.ghg-abtout-boder{
+	margin-top: 20px;
+	width: 280px;
+	height: 2px;
+	background: #eb3c00;
+	margin-left: 110px;
+	position: absolute;
+}
+
+.ghg-tow-boder{
+	margin-left: 65%;
+    margin-top: -23px;
+}
+/*内容 */
+.ghg-abtout-cont{
+	padding:  25px 110px;
+	color: #403d3d;
+	text-indent: 36px
+}
+.ghg-abtout-cont .ghg-abtout-color{
+	color:  #eb3c00;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*星河地产集团*/
+.ghg-abtout-estate{
+	width: 100%;
+	background: #FFFFFF;
+	height: 100%;
+	margin-top: 520px;
+}
+.ghg-abtout-estate-title{
+	padding: 60px 0;
+	width: 257px;
+	height: 140px;
+	margin: 0 auto;
+}
+.ghg-abtout-estate-text{
+	margin: 0 auto;
+	margin-top: 120px;
+	width: 1000px;
+	text-indent: 36px;
+}
+.ghg-abtout-estate-text .ghg-abtout-color{
+	color:  #2b5ca9;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*星河金融集团*/
+.ghg-abtout-financial img{
+	margin-top: 20px;
+	width: 100%;
+	height: 442px;
+}
+/*星河置业集团*/
+.ghg-abtout-Real{
+	background: url(../img/index-pic-5.png) no-repeat;
+	background-size: 100% 556px;
+}
+.ghg-abtout-Real .ghg-abtout-estate-text{
+	margin-top: 10px;
+	padding-top: 400px;
+	padding-bottom: 50px;
+}
+.ghg-abtout-Real .ghg-abtout-color{
+	color:  #eb3c00;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*banner2*/
+.ghg-abtout-img {
+	width: 100%;
+	height: 290px;
+	overflow: hidden;
+}
+.ghg-abtout-img img{
+	width: 100%;
+	margin-top: -190px;
+}
+/* 底部 */
+.ghg-abtout-botton{
+	width: 100%;
+	height: 52px;
+	background: #ee8d02;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height: 52px;
+}
