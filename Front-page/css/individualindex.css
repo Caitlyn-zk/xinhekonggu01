@@ -1,0 +1,14 @@
+/*首页样式*/
+
+/*轮播图*/
+.ghg-collapse {
+	position: relative;
+	top: 84px;
+	left: 0;
+}
+/* 向下的箭头*/
+.ghg-arrows {
+	position: absolute;
+	left: 49%;
+	top: 60%;
+}
