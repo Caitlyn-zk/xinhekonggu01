@@ -2,37 +2,6 @@
 // 后台公共封装
 
 module.exports = {
-    // 登录的数据验证是否存在
-    /**
-     * 
-     * @param {String} username  用户名
-     * @param {String} password  密码
-     * @param {String} verify    验证码
-     */
-    loginData:function(username,password,verify){
-        if(!username){
-            res.json({
-                status:501,
-                message:'请输入用户名'
-            })
-            return false;
-        }
-        if(!password){
-            res.json({
-                status:502,
-                message:'请输入密码'
-            })
-            return false;
-        }
-        if(!verify){
-            res.json({
-                status:503,
-                message:'请输入验证码'
-            })
-            return false;
-        }
-    },
-
 
     // 新闻的数据验证
     /**
@@ -42,7 +11,11 @@ module.exports = {
      * @param {String} title 新闻表题
      * @param {String} text 新闻详情
      */
-    newsData:function(img,time,title,text){
+    Data:function(req,res){
+        let img = req.body.img
+        let time = req.body.time
+        let title = req.body.title
+        let text = req.body.text
         if(!img){
             res.json({
                 status:507,
@@ -53,7 +26,7 @@ module.exports = {
         if(!time){
             res.json({
                 status:508,
-                message:'请输入新闻时间'
+                message:'请输入时间'
             })
             return false;
         }
@@ -61,7 +34,7 @@ module.exports = {
         if(!title){
             res.json({
                 status:509,
-                message:'请输入新闻标题'
+                message:'请输入标题'
             })
             return false;
         }
@@ -69,9 +42,11 @@ module.exports = {
         if(!text){
             res.json({
                 status:510,
-                message:'请输入新闻详情'
+                message:'请输入详情'
             })
         }
+        let arr = [img,time,title,text]
+        return arr;
     }
 
     

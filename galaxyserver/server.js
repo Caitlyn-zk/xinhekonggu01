@@ -30,8 +30,7 @@ app.use(express.static(__dirname+ '/static'))
 // ueditor  配置文件的静态服务器地址
 app.use(express.static(__dirname+ '/nodejs'))
 app.use(express.static(__dirname+'/ueditor'))
-
-console.log(__dirname+ '/static')
+app.use(express.static(__dirname+'/ued'))
 
 // 跨域
 app.all('*',function(req,res,next){
@@ -83,9 +82,18 @@ app.use("/ueditor/ue", ueditor(path.join(__dirname, 'static'), function (req, re
 
 app.post("/login",urlencoded,router.login)
 app.post("/verifylogin",urlencoded,router.verifylogin)
-app.get("/newsClassify",router.newsClassify)
-// app.post("/addnews",urlencoded,router.addnews)
-
+app.post("/addnews",urlencoded,router.addnews)
+app.post("/getnews",router.getnews)
+app.post("/updatenews",urlencoded,router.updateNews)
+app.post("/deletenews",urlencoded,router.deletNews)
+app.post("/dynamicClassify",router.dynamicClassify)
+app.post("/adddynamic",urlencoded,router.adddynamic)
+app.post("/getdynamic",urlencoded,router.getdynamic)
+app.post("/updatedynamic",urlencoded,router.updatedynamic)
+app.post("/deletedynamic",urlencoded,router.deletedynamic)
+app.post("/addalliance",urlencoded,router.addalliance)
+app.post("/updatealliance",urlencoded,router.updatealliance)
+app.post("/deletealliance",urlencoded,router.deletealliance)
 app.listen(3000,function(){
     console.log('app port: 3000')
 })
