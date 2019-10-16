@@ -13,6 +13,11 @@
 	background: #fff;
 	z-index: 9;
 }
+/*.ghg-contents {
+	position: fixed;
+	overflow-y: scroll;
+	height: 100%;
+}*/
 .ghg-kongge {
 	height: 84px;
 }
@@ -160,6 +165,13 @@ a:hover {
 	float: left;
 	margin-top: -2px;
 	border-top: 2px solid #555;
+}
+.ghg-navlist li:hover {
+	border-top: 2px solid #EB3C00;
+	
+}
+.ghg-navlist a:hover {
+	color: #EB3C00;
 }
 .ghg-navlist a {
 	color: #fff;
@@ -361,6 +373,7 @@ ul.ghg-nav-bottom li {
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.6);
 	position: relative;
+	z-index: 5;
 }
 .ghg-foot a{
 	color: rgba(0, 0, 0, 0.6);
