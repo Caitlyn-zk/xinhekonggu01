@@ -1,0 +1,66 @@
+/*.首页业务动态按钮*/
+.home-page-btn{
+	background: #ea3800;
+	color: #fffff;
+	border-color: transparent;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0 12px;
+	margin: 0 12px;
+	cursor: pointer;
+}
+/*.走进星河和新闻中心人力资源导航按钮有下滑线的那个导航 下划线未做*/
+.xh-nev-btn{
+	font-size: 14px;
+	color: #3b3a40;
+	font-weight: normal;
+	text-align: center;
+	line-height: 65px;
+	padding-right: 35px;
+	cursor: pointer;
+	
+}
+/*.集团业务导航按钮有下滑线的那个导航*/
+.jtyw-nev-btn{
+	padding-right: 35px;
+    color: #3b3a40;
+    font-size: 14px;
+    font-weight: normal;
+    box-sizing: border-box;
+    line-height: 65px;
+    cursor: pointer;
+}
+/*集团业务项目分布按钮封装*/
+.project-distribution-btn{
+	margin-right: 3px;
+	border: 2px solid #dfdfdf;
+	width: 135px;
+    font-size: 16px;
+    color: #848484;
+    text-align: center;
+    cursor: pointer;
+    line-height: 44px;
+}
+/*点击变色后  权重不够加类名*/
+.project-distribution-btn.active{
+	background: #eb3c00;
+    color: #fff;
+    border-color: #eb3c00;
+}
+/*联络星河按钮*/
+.LXH-btn{
+	line-height: 98px;
+    background: #ebeae8;
+    color: #9e9d9c;
+    font-size: 15px;
+    text-align: center;
+}
+.LXH-btn.active{
+	background:#eb3c00;
+	color: #FFFFFF;
+    line-height: 98px;
+}
+
+
+

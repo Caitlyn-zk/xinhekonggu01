@@ -1,0 +1,214 @@
+
+.banner-box-img{
+	background: url(../img/ghgImg.jpg) center center no-repeat;
+	height: 169px;
+}
+.tabBox li{
+	float: left;	
+}
+.tabBox li a{
+	color: #3b3a40;
+}
+.tabBox li a:hover{
+	text-decoration: none;
+}
+.tabBox{
+	/*width: 406px;*/
+	height: 65px;
+}
+.commonWrap{
+	height: 65px;
+}
+.commonWrap .container{
+	height: 65px;
+}
+.commonWrap .container .subNav .breadcrumb a{
+	display:inline-block;
+	padding-left: 14px;
+	padding-right: 8px;
+	background: url(../img/littleRight.png) left center no-repeat;
+	color: #3b3a40;
+	/*display: inline-block;*/
+}
+.commonWrap .container .subNav .breadcrumb a:hover{
+	text-decoration: none;
+}
+.commonWrap .container .subNav .breadcrumb{
+	background: #FFFFFF;
+	line-height: 65px;
+	height: 65px;
+	padding: 0 0 ;
+	margin-bottom: 0;
+}
+.commonWrap .container .subNav .breadcrumb .current{
+	color: #ea3800;
+	padding-right: 0;
+}
+.xh-nev-btn a span{
+	width: 0;
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	background: #f63b2e;
+	border-radius: 4px;
+	cursor: pointer;
+	display:block;
+}
+.xh-nev-btn{
+	position: relative;
+	margin-right: 35px;
+	padding-right: 0;
+	
+}
+/*.xh-nev-btn a span.active{
+	width: 100%;
+	transition: width 300ms;
+}*/
+
+.xh-nev-btn::before{
+	/*要加的内容*/
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid #f63b2e;
+	transition: 0.2s all linear;
+}
+/*鼠标移入之后要做的在前面插入的东西*/
+.xh-nev-btn:hover::before{
+	width: 100%;
+	top: 0;
+	right: 0;
+	/*等待切换效果*/
+	transition-delay:0.1s ;
+}
+.xh-nev-btn.on::before{
+	/*要加的内容*/
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid #f63b2e;
+	transition: 0.2s all linear;
+}
+.xh-nev-btn.on::before{
+	width: 100%;
+	top: 0;
+	right: 100%;
+	right: 0;
+	/*等待切换效果*/
+	transition-delay:0.1s ;
+}
+.introduceBox{
+	padding-top:70px;
+	background:#f7f7f7  url(../img/humanRe1.jpg) center 75px no-repeat;
+}
+.alliance{
+	font-size: 30px;
+	color:#eb3c00 ;
+	font-family: Montserrat-Regular;
+	letter-spacing: -2px;
+	margin-bottom: 0;
+}
+.partner{
+	font-size: 20px;
+	color: #bc8f4b;
+	margin-bottom: 0;
+}
+.introduceBox .container h1{
+	font-size: 18px;
+	color: #888888;
+	/*padding-bottom: 15px;*/
+	margin: 0 0 0 0;
+}
+.introduceBox .container h2{
+	color: #98989a;
+	font-size: 13px;
+    line-height: 24px
+}
+.introduceBox .container h2 p{
+	margin-bottom: 0;
+}
+.textRight-box{
+	padding-right: 137px;
+}
+.small-textRight-box p{
+	color:#f09888;
+	margin: 0 0 0;
+	font-size: 30px;
+	font-family: "Microsoft YaHei", "微软雅黑", arial, "宋体";
+}
+.small-textRight-box span{
+	color: #d8d8da;
+	font-size: 94px;
+	padding-bottom: 60px;
+	display: inline-block;
+	line-height: 80px;
+	font-family: CALIBRI;
+}
+.tempWrap .ghg-banner-box{
+	text-align: center;
+	
+}
+.brandBox{
+	display: inline-block;
+	width: 16.6%;
+	padding: 10px;
+	overflow: hidden;
+	
+}
+.brandBox div{
+	line-height: 51px;
+	padding: 10px 9px;
+	border: 2px solid #ebebeb;
+}
+.brandBox div img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.sliderWrap .container{
+	/*padding-bottom: 60px;*/
+	padding: 0 0 60px ;
+}
+.tempWrap ul li{
+	float: left;
+	width: 1220px;
+	text-align: center;
+}
+.tempWrap ul{
+	width:3660px;
+	overflow: hidden;
+	position: relative;
+	left: -1220px;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+.tempWrap{
+	width: 1220px;
+	overflow: hidden;
+	/*position: absolute;*/
+}
+.slideBox{
+	width: 1220px;
+	position: relative;
+}
+.tempWrap ul li a{
+	text-decoration: none;
+}
+ .sliderWrap .container{
+	margin: 0 35px 0 20px;
+}
+/*.tab-li{
+	display: block;
+}
+.tab-li.on{
+	display: none;
+}*/
+
