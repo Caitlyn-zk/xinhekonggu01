@@ -11,8 +11,13 @@
 	height: 84px;
 	width: 100%;
 	background: #fff;
-	z-index: 10;
+	z-index: 9;
 }
+/*.ghg-contents {
+	position: fixed;
+	overflow-y: scroll;
+	height: 100%;
+}*/
 .ghg-kongge {
 	height: 84px;
 }
@@ -39,7 +44,7 @@
 }
 .navbar-header .navbar-brand img {
 	vertical-align: auto;
-	height: 90px;
+	height: 82px;
 }
 /*按钮*/
 .ghg-btn-span {
@@ -62,34 +67,40 @@
 }
 /*导航的搜索部分*/
 .ghg-search {
-	border-left: 1px solid #5E5E5E;
+	border-left:2px solid #999;
 }
 .ghg-search-bar li {
-	float: left;	
+	height: 81px;
+	float: left;
+	padding-top: 2px;	
+}
+.ghg-search-bar .ghg-search-input {
+	border-bottom: 1px solid #000000;
 }
 .ghg-search-input input{
 	border: 0;
+	padding-left: 15px;
 	outline:none;
-	width: 90px;
+	width: 100px;
 	height: 30px;
+	margin-top: 10px;
 	display: none;
 }
-.ghg-search-bar .ghg-search-body:hover {
-	border: 1px solid #000000;
-}
-.ghg-search-bar .ghg-search-body:hover .ghg-search-input input {
-	display: block;
-}
-.ghg-search-bar .ghg-search-input a,
-.ghg-search-bar .ghg-search-tu a {
-	padding: 10px 0;
-}
 .ghg-search-bar .ghg-search-input a {
-	padding-left: 15px;
+	padding-left: 0px;
+	padding-right: 0;
+}
+.ghg-search-bar .ghg-search-tu {
+	display: inline-block;
+	line-height: 70px;
 }
 .ghg-search-bar .ghg-search-tu a {
-	padding-right: 15px;
+	padding: 15px 15px;
+	padding-top: 15px;
 	cursor: pointer;
+}
+.ghg-search-body:hover .ghg-search-input input {
+	display: block;
 }
 li {
 	list-style: none;
@@ -100,12 +111,15 @@ li > a {
 .nav > li:hover {
 	border-top: 3px solid #eb3a00;	
 }
+.nav > li.active{
+	border-top: 3px solid #eb3a00;	
+}
 .nav > .ghg-search:hover, .ghg-search .nav > li {
 	border-top: 0;
 }
 .nav > li > a {
-	height: 77px;
-	line-height: 60px;
+	height: 80px;
+	line-height: 50px;
 }
 a:hover {
 	text-decoration: none;
@@ -152,6 +166,13 @@ a:hover {
 	margin-top: -2px;
 	border-top: 2px solid #555;
 }
+.ghg-navlist li:hover {
+	border-top: 2px solid #EB3C00;
+	
+}
+.ghg-navlist a:hover {
+	color: #EB3C00;
+}
 .ghg-navlist a {
 	color: #fff;
 	font-size: 12px;
@@ -164,10 +185,14 @@ a:hover {
 	font-size: 60px;
 }
 /*右侧导航*/
-.navbar-header-bar .ghg-modal .modal-dialog{
+ .ghg-modal .modal-dialog{
 	margin: 0;
-	float: right;
+	right:0;
 	width: 320px;
+	position: fixed;
+	z-index: 1050;
+	overflow-y: scroll;
+	height: 100%;
 }
 .ghg-modal .modal-dialog .modal-content {
 	border-radius: 0;
@@ -348,6 +373,7 @@ ul.ghg-nav-bottom li {
 	font-size: 13px;
 	color: rgba(0, 0, 0, 0.6);
 	position: relative;
+	z-index: 5;
 }
 .ghg-foot a{
 	color: rgba(0, 0, 0, 0.6);

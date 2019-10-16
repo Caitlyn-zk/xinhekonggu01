@@ -1,6 +1,4 @@
-.main-cooperrative{
-	margin-top: 107px;
-}
+
 .banner-box-img{
 	background: url(../img/ghgImg.jpg) center center no-repeat;
 	height: 169px;
@@ -123,13 +121,13 @@
 	color: #bc8f4b;
 	margin-bottom: 0;
 }
-.introduceBox .container h1{
+.textChange h1{
 	font-size: 18px;
 	color: #888888;
 	/*padding-bottom: 15px;*/
 	margin: 0 0 0 0;
 }
-.introduceBox .container h2{
+.textChange h2{
 	color: #98989a;
 	font-size: 13px;
     line-height: 24px
@@ -173,6 +171,7 @@
 .brandBox div img{
 	max-height: 100%;
 	max-width: 100%;
+	vertical-align: middle;
 }
 .sliderWrap .container{
 	/*padding-bottom: 60px;*/
@@ -187,18 +186,18 @@
 	width:3660px;
 	overflow: hidden;
 	position: relative;
-	left: -1220px;
+	left: -1230px;
 	padding: 0;
 	margin: 0;
 	font-size: 0;
 }
 .tempWrap{
-	width: 1220px;
+	/*width: 1220px;*/
 	overflow: hidden;
 	/*position: absolute;*/
 }
 .slideBox{
-	width: 1220px;
+	/*width: 1220px;*/
 	position: relative;
 }
 .tempWrap ul li a{
@@ -213,4 +212,207 @@
 .tab-li.on{
 	display: none;
 }*/
+
+/*响应式页面*/
+@media only screen and (max-width:801px) {
+	.xh-nev-btn{
+		margin-right: 10px;
+	}
+	.container .subNav .breadcrumb{
+		display: none;
+	}
+}
+@media only screen and (max-width:481px ) {
+	.textRight-box{
+		display: none;
+	}
+	.container .subNav .breadcrumb{
+		display: none;
+	}
+}
+@media only screen and (max-width:1201px ) {
+	.main-cooperrative .sliderWrap{
+		padding: 30px 20px;
+	}
+	.tempWrap .tab-ul .tab-li{
+		width: 1163px;
+		/*position: absolute;*/
+		/*left: -1163px;*/
+	}
+	.tempWrap .tab-ul{
+		width: 3489px;
+		left: -1163px;
+	}
+	.container .slideBox{
+		width: 1163px;
+	}
+	.sliderWrap .container{
+		/*margin: 0 0 0 0;*/
+	}
+	
+	
+}
+@media only screen and (max-width:1032px ) {
+	.bd .tempWrap .tab-ul{
+		width: 3036px;
+		left: -1012px;
+	}
+	.bd .tempWrap .tab-ul .tab-li{
+		width: 1012px;
+	}
+	.sliderWrap .container{
+		margin: 0 0 0 0;
+	}
+}
+@media only screen and (max-width: 601px) {
+	.bd .tempWrap .tab-ul{
+		width: 1740px;
+		left: -581px;
+	}
+	.bd .tempWrap .tab-ul .tab-li{
+		width: 580px;
+	}
+	.tab-abtn{
+		display: inline-block;
+	}
+	.tab-abtn .brandBox{
+		width: 33%;
+	}
+	
+}
+.banner-box-img-lsat{
+	background: url(../imgs/bannerLast-lyk.png) center center no-repeat;
+	height: 169px;
+}
+.commonWrap.contact{
+	background: #f4f4f4;
+}
+.container .subNav .breadcrumb.contact{
+	background:#f4f4f4 ;
+}
+.container{
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	/*padding-left:20px ;*/
+	padding: 0;
+}
+.introduceBox.contact{
+	background: #FFFFFF;
+}
+.textRight-box .servece-number{
+	font-size: 30px;
+	color: #eb3c00;
+	font-family:"Montserrat-Regular";
+	line-height: 39px;
+	padding-left: 50px;
+	background: url(../imgs/ghg-lyk-icon_phone.png) no-repeat left center;
+}
+.textRight-box .servece{
+	color: #8d8d8d;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.box-one{
+	width: 470px;
+	padding-right: 10px;
+	margin-right: 80px;
+	border-right: 1px solid #e5e5e5;
+}
+.box-two{
+	width: 355px;
+	height: 140px;
+	padding-right: 10px;
+	border-right: 1px solid #e5e5e5
+}
+.box-three{
+	padding-bottom: 60px;
+	padding-right: 10px;
+}
+.box-three h1{
+	color: #8d8d8d;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.textBox h1{
+	font-size:24px;
+	color:#8d8d8d;
+	padding-bottom: 15px;
+}
+.textBox ul{
+	color: #8d8d8d;
+	font-size: 13px;
+}
+.info-li{
+	min-height: 72px;
+}
+.info-li p{
+	line-height: 22px;
+}
+.servece-phone{
+	color: #eb3c00;
+	font-size: 20px;
+}
+.detail{
+	padding-top: 200px;
+	padding-bottom: 140px;
+	padding-left: 18px;
+	width: 514px;
+}
+.textBox{
+	display: none;
+}
+.textBox.active{
+	display: block;
+}
+.companyBox .container{
+	background: url(../imgs/ghg-lyk-contact2.png) right 183px no-repeat;
+}
+.bottomBox{
+	background: url(../imgs/ghg-lyk-contact3.jpg)center center no-repeat;
+}
+.servece-tiltle-leftBox{
+	width: 50%;
+	padding-top: 30px;
+}
+.servece-tiltle{
+	font-size: 36px;
+	color: #bc8f4b;
+	padding-bottom: 5px;
+}
+.servece-email{
+	font-size: 18px;
+	color: #878786;
+	padding-bottom: 15px;
+}
+.cityList{
+	padding-bottom: 20px;
+}
+.cityList a{
+	font-size: 16px;
+	cursor: pointer;
+	padding-right: 15px;
+	color:#878786;
+}
+.cityList a.active{
+	color: #eb3c00;
+}
+.addbox h1{
+	font-size: 16px;
+	padding-bottom: 5px;
+	color:#878786 ;
+}
+.addbox p{
+	font-size: 13px;
+	color:#878786;
+	padding-bottom: 15px;
+}
+.tel{
+	padding-right: 20px;
+}
+.addbox{
+	border-bottom: 1px dashed #ddd;
+	width: 410px;
+	margin-bottom:15px ;
+}
 
