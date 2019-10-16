@@ -1,5 +1,8 @@
-
-.bannerBox .imgBox{
+.ghg-bannerBox{
+	margin-top:107px;
+	
+	}
+.ghg-bannerBox .ghg-imgBox{
 	background: url(../img/top.png) center center no-repeat;
 	height: 169px;
 }
@@ -13,6 +16,13 @@
 	display: none;
 }
 .ghg-containerBox.on{
+	display: block;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current{
+	color: #ea3800;
+	display: none;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current.on{
 	display: block;
 }
 .ghg-commonWrap .ghg-container{
@@ -66,9 +76,7 @@
 	    text-decoration: none;
 	    color: black;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current{
-	color: #ea3800;
-}
+
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a{          
           position: relative;
           text-decoration: none;
@@ -282,33 +290,206 @@
 .ghg-containerBox .ghg-loading .container p{
 	margin: 0;
 }
-.ghg-containerBox  .ghg-loading .content{
+.ghg-containerBox .ghg-loading .container{
+	padding: 0;
+}
+.ghg-containerBox  .ghg-loading .ghg-content{
 	padding-top: 65px;
     padding-bottom: 70px;
 }
-.ghg-containerBox  .ghg-loading .content h1{
+.ghg-containerBox  .ghg-loading .ghg-content h1{
 	font-size: 32px;
     color: #eb3a00;
     margin: 0;
     
 }
-.ghg-containerBox  .ghg-loading .content h2{
+.ghg-containerBox  .ghg-loading .ghg-content h2{
 	font-size: 14px;
     color: #666666;
     margin: 0;
 }
-.baseBox .yearBox .year{
+.ghg-baseBox .ghg-yearBox .ghg-year{
 	    font-size: 30px;
 	    color: #72717a;
 	    font-family: Montserrat-Regular;
        margin: 0;
 }
-.baseBox .yearBox .text{
+.ghg-baseBox .ghg-yearBox .ghg-text{
 	font-size: 20px;
     color: #d2ba9b;
     margin: 0;
 }
+.ghg-imgBoxMedia img{
+      	display: none;
+      }
+.ghg-contentWrap{
+	float: right;
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    padding-top:0 ;
+}
+.ghg-baseBox .ghg-contentWrap .ghg-borderBg{
+	    position: absolute;
+	    top: 0;
+	    left: 8px;
+	    border-left: 1px solid #dfdfdf;
+	    height: 100%;
+}
+.ghg-baseBoxWrap .ghg-contentWrap .ghg-borderBg{
+	 	position: absolute;
+	    top: 0;
+	    left: 8px;
+	    border-left: 1px solid #dfdfdf;
+	    height: 100%;
+}
+.ghg-baseBoxWrap .ghg-yearBox .ghg-year{
+	    font-size: 30px;
+	    color: #72717a;
+	    font-family: Montserrat-Regular;
+}
+.ghg-baseBoxWrap .ghg-yearBox .ghg-text{
+	font-size: 20px;
+    color: #d2ba9b;
+}
 
+.ghg-baseBox .ghg-contentWrap .ghg-textBox p{
+	    font-size: 14px;
+	    color: #898989;
+	    line-height: 24px;
+	    padding-left: 65px;
+}
+.ghg-baseBoxWrap .ghg-contentWrap .ghg-textBox p{
+	    font-size: 14px;
+	    color: #898989;
+	    line-height: 24px;
+	    padding-left: 65px;
+}
+.ghg-baseBoxWrap .ghg-contentWrap .ghg-textBox h1{
+	    background: url(../img/greyC.png) 0 0 no-repeat;
+	    font-size: 20px;
+	    color: #72717a;	
+	    padding-left: 65px;
+	    padding-bottom: 15px;
+	    z-index: 2;
+	    position: relative;
+	    line-height: 17px;
+	    margin: 0;
+}
+.ghg-baseBox .ghg-contentWrap .ghg-textBox h1{
+	    background: url(../img/greyC.png) 0 0 no-repeat;
+	    font-size: 20px;
+	    color: #72717a;	
+	    padding-left: 65px;
+	    padding-bottom: 15px;
+	    z-index: 2;
+	    position: relative;
+	    line-height: 17px;
+	    margin: 0;
+}
+.ghg-yearBox{
+	padding-bottom:20px ;
+}
+/*品牌理念*/
+.ghg-BrandBox{
+	background: url(../img/mindbg1.jpg) center center no-repeat;
+}
+.ghg-BrandBox .container{
+	position: relative;
+}
+.ghg-BrandBox .container h3{
+	    padding-top: 70px;
+	    font-size: 30px;
+	    color: #eb3c00;
+	    font-family: Montserrat-Regular;
+	    letter-spacing: -3px;
+	    text-transform: uppercase;
+	    margin: 0;
+}
+.ghg-BrandBox .container h2{
+	font-size: 20px;
+    color: #bc8f4b;
+    margin: 0;
+    padding-bottom: 192px;
+}
+.ghg-BrandBox .container .ghg-titleBox{
+	position: absolute;
+    right: 270px;
+    top: 146px;
+    text-align: right;
+}
+.ghg-BrandBox .container .ghg-titleBox h1{
+	font-size: 29px;
+    color: #f09888;
+}
+.ghg-BrandBox .container .ghg-titleBox h2{
+	    font-size: 90px;
+	    color: #d8d8da;
+	    line-height: 78px;
+	    font-family: CALIBRI;
+	    letter-spacing: -5px;
+}
+.ghg-sideitBox{
+	padding-bottom: 80px;
+}
+.ghg-sideitBox .ghg-hd{
+	position: relative;
+}
+.ghg-sideitBox .ghg-hd .container{
+	position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+.ghg-sideitBox .ghg-hd ul{
+	    font-size: 0;
+	    
+	    line-height: 64px;
+	    padding-top: 16px;
+	    letter-spacing: -4px;
+	    text-align: center;
+	     white-space: nowrap;
+}
+.ghg-sideitBox .ghg-hd ul li{
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 66px;
+    border-bottom: 2px solid transparent;
+    padding: 0 24px;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: normal;
+    cursor: pointer;
+}
+.ghg-sideitBox .ghg-hd ul li.on{
+	    border-color: #eb3c00;
+}
+.ghg-sideitBox .ghg-bd .ghg-list .ghg-textBox h1{
+	font-size: 24px;
+    color: #eb3c00;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.ghg-sideitBox .ghg-bd .ghg-textBox p{
+	    font-size: 14px;
+	    line-height: 24px;
+	    color: #666;
+}
+.ghg-bd .ghg-list{
+	display: none;
+}
+.ghg-bd .ghg-list.on{
+	display: block;animation: anim 5s;
+	
+}
+@keyframes anim{
+      0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.ghg-sideitBox .ghg-list .ghg-bomBox .container img{
+	width: 100%;
+}
 
 @media only screen and (max-width:1200px ) {
 	
@@ -349,22 +530,35 @@
       	position: relative;
       	left: 0;
       }
-      .ghg-foot{
+      .ghg-containerBox .ghg-titleBox{
       	display: none;
+      	
       }
-      .foot{
-      	display: block;
-      	height: 120px;
-	    border-top:2px solid #DBB88E ;
-	    text-align: center;
-	    padding-top: 40px;
-      }
-      .foot p{
-      	padding-bottom: 10px;
-      	color: #a5a5a5;
-      	margin: 0;
-      }
-      .foot p>a{
-      	color: #a5a5a5;
-      }
-  }
+      .ghg-containerBox .ghg-loading{
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	.ghg-containerBox .ghg-loading .container .ghg-baseBox{
+		width: 100%;
+	}
+	.ghg-containerBox .ghg-loading .ghg-content h1{
+		font-size: 21px;
+	}
+}
+      
+  /*小屏幕
+ @media only screen and (max-width:480px ) {
+ 	.ghg-bannerBox .ghg-imgBox{
+ 		display: none;
+ 	}
+ 	.ghg-imgBoxMedia img{
+ 		display: block;
+ 	}
+ }
+ @media only screen and (min-width:900px ) {
+ 	.ghg-containerBox .ghg-cook{
+ 		    background: #f7f7f7;
+    		padding-bottom: 50px;
+ 	}
+ 	
+ }
