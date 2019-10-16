@@ -1,5 +1,4 @@
 /*关于星河的css样式*/
-
 /*标题*/
 .ghg-abtout-title{
 	width: 100%;
@@ -62,7 +61,7 @@
 }
 .ghg-abtout-content .ghg-abtout-list{
 	width: 100%;
-	background: url(../img/building.png) no-repeat;
+	background: url(../img/xc-bg.png) no-repeat;
 	background-size: 100% 558px;
 }
 .ghg-abtout-list-content{
@@ -71,16 +70,16 @@
 .ghg-abtout-list-title{
 	text-align: center;
 	font-size: 42px;
-	color: #eb3c00;
+	color: #ee8d02;
 	font-weight: bolder;
 	position: relative;
 }
 /* 线条 */
 .ghg-abtout-boder{
 	margin-top: 20px;
-	width: 280px;
+	width: 25%;
 	height: 2px;
-	background: #eb3c00;
+	background: #ee8d02;
 	margin-left: 110px;
 	position: absolute;
 }
@@ -96,7 +95,7 @@
 	text-indent: 36px
 }
 .ghg-abtout-cont .ghg-abtout-color{
-	color:  #eb3c00;
+	color:  #ee8d02;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -132,9 +131,10 @@
 	height: 442px;
 }
 /*星河置业集团*/
-.ghg-abtout-Real{
-	background: url(../img/index-pic-5.png) no-repeat;
-	background-size: 100% 556px;
+.ghg-abtout-Real img{
+	/*background: url(../img/index-pic-5.png) no-repeat;
+	background-size: 100% 556px;*/
+	width: 100%;
 }
 .ghg-abtout-Real .ghg-abtout-estate-text{
 	margin-top: 10px;
@@ -150,7 +150,6 @@
 /*banner2*/
 .ghg-abtout-img {
 	width: 100%;
-	height: 290px;
 	overflow: hidden;
 }
 .ghg-abtout-img img{
@@ -166,4 +165,467 @@
 	text-align: center;
 	font-size: 14px;
 	line-height: 52px;
+}
+/*招聘岗位*/
+.ghg-station-img{
+	margin-left: 58px;
+	margin-top: -30px;
+}
+.ghg-station-img img{
+	width: 100%;
+}
+.ghg-station-job{
+	width: 100%;
+}
+/*按钮*/
+.ghg-station-btn{
+	display: inline-block;
+	padding: 2px 19px;
+	color: #fff;
+	background: #f7aa34;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.ghg-station-box ul{
+	/*width: 696px;*/
+	margin-top: 10px;
+	margin-left: 145px;
+}
+.ghg-station-box ul li{
+	float: left;
+	color: #626262;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+.ghg-station-box ul li a.on{
+	border-bottom: 1px solid #f7aa34;
+}
+.ghg-station-box ul li a:hover{
+	border-bottom: 1px solid #f7aa34;
+}
+/*搜索*/
+.ghg-station-search{
+	width: 100%;
+	height: 50px;
+	background: #f7aa34;
+	padding: 10px;
+	margin-top: 15px;
+}
+/*下拉菜单*/
+.ghg-station-search .select{
+	width: 185px; 
+	height: 30px; 
+	background: #FFFFFF; 
+	position: relative;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.ghg-station-search .select::after{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid #D0D0D0;
+	border-bottom: 1px solid #D0D0D0;
+	top: 8px;
+	right: 12px;
+	position: absolute;
+	transform: rotate(-46deg);
+	transition: all .3s ease-in;
+}
+.ghg-station-search .select p{
+	width: 185px;
+	line-height: 30px; 
+	font-size: 16px;
+	color: #666666;
+	padding: 0px 15px;
+}
+.ghg-station-search .select ul{
+	border-radius: 5px;
+	width: 185px;
+	display: block;
+	font-size: 16px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height .3s ease-in;
+}
+.ghg-station-search .select ul li{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 15px;
+	list-style: none;
+	color: #666666;
+}
+.ghg-station-search .select ul li.Selected{
+	background: yellowgreen;
+	color: #FFFFFF;
+}
+.ghg-station-search .select ul li:hover{
+	background: #D0D0D0;
+}
+.ghg-station-search .select.open ul{
+	max-height: 250px;
+	transform-origin: 50% 0;
+	-webkit-animation: slide-down .5s ease-in;
+	transition: max-height .2s ease-in;
+}
+.ghg-station-search .select.open::after{
+	transform: rotate(134deg);
+	transition: all .3s ease-in;
+	top: 18px;
+	
+}
+/*搜索*/
+.ghg-station-input{
+	/*margin-left: 300px;*/
+	position: relative;
+}
+.ghg-station-input input{
+	width: 185px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	padding-left: 10px;
+}
+.ghg-station-input img{
+	max-width: 21px;
+	max-height: 21px;
+	position: absolute;
+	left: 158px;
+    top: 5px;
+}
+/*tab表格*/
+.ghg-station-tab{
+	margin-top: 20px;
+	width: 100%;
+}
+.ghg-station-tab table{
+	margin: 0 auto;
+	text-align: center;
+}
+.ghg-station-tab th{
+	width: 5%;
+	font-size: 16px;
+	padding: 10px 0;
+	border-bottom: 2px solid #f7aa34;
+}
+.ghg-station-tab td{
+	width: 5%;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.ghg-station-tab .ghg-width-10{
+	width: 10%;
+}
+.ghg-station-paging{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 16px;
+}
+.ghg-station-paging input{
+	width: 40px;
+	text-align: center;
+}
+.ghg-station-process{
+	background: url(../img/xc-bg.png) no-repeat bottom;
+	padding-bottom: 150px;
+}
+.ghg-station-process img{
+	margin-top: 15px;
+	width: 100%;
+}
+@media only screen and (max-width: 1039px) {
+	/* 招聘岗位 */
+	.ghg-station-job .content{
+		margin: 0;
+		width: 100%;
+	}
+	.ghg-abtout-boder{
+		display: none;
+	}
+	.ghg-abtout-content{
+		top: 428px;
+		padding-left: 23px;
+	} 
+	.ghg-abtout-title{
+		height: 62px;
+		padding-left: 60px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li{
+		height: 62px;
+		line-height: 62px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li .ghg-abtout-click.on{
+		height: 62px;
+	}
+	.ghg-float-left img{
+		width: 140px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav{
+		margin-left: 150px;
+	}
+	.ghg-abtout-boder{
+		margin-left: 0;
+	}
+	.ghg-tow-boder{
+		margin-left: 65%;
+	}
+	.ghg-abtout-cont{
+		padding: 0px 10px;
+	}
+	.ghg-abtout-cont p{
+		font-size: 16px;
+	}
+	.ghg-abtout-estate-text{
+		margin: 0 0;
+		padding: 0 20px;
+		width: 100%;
+	    margin-top: 120px;
+	    text-indent: 36px;
+	    background-color: white;
+	}
+	.ghg-abtout-img img{
+		margin-top: -100px;
+	}
+	.ghg-abtout-estate-title img{
+		width: 258px;
+	}
+	/* 弹 */
+	.ghg-abtout-select{
+		width: 136px;
+    	left: 482px;
+   		top: 63px;
+	}
+	.ghg-abtout-select p{
+		font-size: 15px;
+	}
+	.ghg-station-title{
+		margin-left: 20px;
+	}
+	.ghg-station-box ul{
+		margin-left: 120px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.ghg-abtout-title .ghg-abtout-nav{
+		margin-left: 45px;
+	}
+	.ghg-abtout-banner img{
+		height: 325px;
+	}
+	.ghg-abtout-list-content{
+		padding: 40px;
+	}
+	.ghg-abtout-content{
+		top: 372px;
+	}
+	.ghg-abtout-hide:first-child{
+		display: none;
+	}
+	/* 弹 */
+	.ghg-abtout-select{
+    	left: 379px;
+	}
+}
+@media only screen and (max-width: 667px) {
+	.ghg-abtout-cont p{
+		font-size: 14px;
+	}
+	.ghg-abtout-cont .ghg-abtout-color{
+		font-size: 16px;
+	}
+	.ghg-abtout-financial img{
+		height: 275px;
+	}
+	.ghg-abtout-title{
+		padding-left: 20px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li{
+		width: 80px;
+		font-size: 14px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li .ghg-abtout-click.on{
+		width: 80px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav{
+		margin-left: 30px;
+	}
+	.ghg-abtout-banner img{
+		height: 300px;
+	}
+	.ghg-abtout-content{
+		top: 344px;
+	}
+	/* 弹 */
+	.ghg-abtout-select{
+    	left: 267px;
+   		width: 82px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.ghg-abtout-title{
+		height: 52px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li{
+		width: 62px;
+		height: 52px;
+		line-height: 50px;
+		font-size: 12px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li .ghg-abtout-click.on{
+		height: 52px;
+		width: 62px;
+	}
+	.ghg-float-left img{
+		width: 75px;
+	}
+	.ghg-abtout-banner img{
+		height: 135px;
+	}
+	.ghg-abtout-content{
+		top: 175px;
+	}
+	.ghg-abtout-list-title{
+		font-size: 22px;
+	}
+	.ghg-abtout-boder{
+		display: none;
+	}
+	.ghg-abtout-cont p{
+		font-size: 12px;
+	}
+	.ghg-abtout-list-content{
+		padding: 10px;
+	}
+	.ghg-abtout-cont .ghg-abtout-color{
+		font-size: 14px;
+	}
+	.ghg-abtout-cont .ghg-abtout-hide{
+		display: none;
+	}
+	.ghg-abtout-estate{
+		margin-top: 220px;
+	}
+	.ghg-abtout-estate-title{
+	    padding: 50px 0;
+		width: 126px;
+	}
+	.ghg-abtout-estate-title img{
+		width: 126px;
+	}
+	.ghg-abtout-estate-text{
+		margin-top: 0;
+		padding: 0px 10px;
+		font-size: 12px;
+	}
+	.ghg-abtout-estate-text .ghg-abtout-color{
+		font-size: 14px;
+	}
+	.ghg-abtout-financial img{
+		height: 170px;
+	}
+	.ghg-abtout-Milky{
+		margin-top: -50px;
+	}
+	.ghg-abtout-img img{
+		margin-top: -37px;
+	}
+	.ghg-abtout-supreme{
+		margin-top: -30px;
+	}
+}
+@media only screen and (max-width: 625px) {
+	.ghg-abtout-hide{
+		display: none;
+	}
+	.ghg-abtout-estate{
+		margin-top: 235px;
+	}
+	.ghg-station-box ul{
+		margin-left: 100px;
+	}
+}
+@media only screen and (max-width: 447px) {
+	.ghg-abtout-title img{
+		width: 85px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li{
+		width: 62px;
+		height: 62px;
+		line-height: 50px;
+		font-size: 12px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav li .ghg-abtout-click.on{
+		height: 62px;
+		width: 62px;
+	}
+	.ghg-abtout-title .ghg-abtout-nav {
+	    margin-left: 10px;
+	}
+	/* 弹 */
+	.ghg-abtout-select{
+		width: 65px;
+		left: 174px;
+   		top: 63px;
+	}
+	.ghg-abtout-select p{
+		font-size: 14px;
+	}
+	.ghg-station-search .select{
+		width: 120px;
+	}
+	.ghg-station-search .select p{
+		font-size: 12px;
+		padding: 0px 5px;
+		width: 120px;
+	}
+	.ghg-station-input input{
+		width: 140px;
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 348px) {
+	.ghg-station-box ul{
+		margin-left: 55px;
+	}
+	.ghg-station-search .select{
+		width: 120px;
+	}
+	.ghg-station-search .select p{
+		font-size: 12px;
+		padding: 0px 5px;
+		width: 120px;
+	}
+	.ghg-station-input input{
+		width: 140px;
+		font-size: 12px;
+	}
+	.ghg-station-input img{
+		left: 115px;
+	}
+	.ghg-station-tab th{
+		font-size: 12px;
+	}
+	.ghg-station-tab td{
+		font-size: 12px;
+	}
+	.ghg-station-tab .ghg-station-btn{
+		font-size: 12px;
+	}
+	.ghg-station-paging{
+		font-size: 12px;
+	}
+	
+	.ghg-station-box ul li a{
+		color: #848484;
+		font-size: 14px;
+	}
 }

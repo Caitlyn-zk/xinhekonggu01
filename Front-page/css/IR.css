@@ -1,0 +1,94 @@
+/*IR部分:表示投资者关系*/
+*{
+	list-style-type: none;
+}
+.ghg-con-1200{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.ghg-banner .ghg-bannerS{
+	max-height: 169px;
+	overflow: hidden;
+}
+.ghg-banner .ghg-bannerS img{
+	width: 100%;
+}
+.ghg-tagsA{
+	background: #F7F7F7;
+}
+.ghg-tag .ghg-tagS ul{
+	display: flex;
+	justify-content: space-between;
+	height: 66px;
+	line-height: 66px;
+	padding: 0 5px;
+	margin: 0;
+}
+.ghg-tag>.ghg-tagS>ul>li>a{
+	text-decoration: none;
+	color: #757575;
+}
+.ghg-mainSB{
+	background: url(../img/zhiBg.jpg) center;
+	background-size: 100% 100%;
+}
+.ghg-mainS-one{
+	margin:75px 5px 25px 5px;
+}
+.ghg-mainS-two,.ghg-mainS-three{
+	margin: 5px 5px 25px 5px;	
+}
+.ghg-mainS-four{
+	margin: 10px 5px 40px 5px;
+}
+.ghg-mainS-two,.ghg-mainS-three{
+	border-bottom:2px solid #E8E8E8 ;
+}
+.ghg-summary{
+	padding: 55px 20px 40px;
+}
+.ghg-summary h1{
+	font-size: 29px;
+	color: #EB3C00;
+	margin: 0;
+	font-weight: bold;
+}
+.ghg-summary h2{
+	font-size: 20px;
+	color: #bc8f4b;
+	margin: 0;
+}
+.ghg-summary h3{
+	font-size: 15px;
+	color: #676671;
+	padding: 35px 0 30px;
+	margin: 0;
+}
+.ghg-summary p{
+	font-size: 14px;
+	color: #898989;
+	margin: 0;
+}
+
+.ghg-listSB{
+	padding: 50px 20px 80px;
+	background: #F9F6F1;
+}
+.ghg-listS h1{
+	font-size: 29px;
+	color: #EB3C00;
+	margin: 0;
+	font-weight: bold;
+}
+.ghg-listS h2{
+	font-size: 20px;
+	color: #bc8f4b;
+	margin: 0;
+}
+.ghg-inputBox{
+	display: flex;
+	justify-content: flex-end;
+}
+.ghg-searchBox{
+	border: 1px solid salmon;
+}

@@ -1,0 +1,68 @@
+/*HR部分:人力资源*/
+*{
+	list-style-type: none;
+}
+.ghg-con-1200{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.ghg-banner .ghg-bannerS{
+	max-height: 169px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ghg-banner .ghg-bannerS img{
+	margin: 0 auto;
+	height: 100%;
+}
+.ghg-tagS{
+	display: flex;
+	justify-content: space-between;
+}
+.ghg-tagSB ul,.ghg-tagSB-list ul{
+	display: flex;
+	justify-content: space-between;
+}
+.ghg-tagSB ul li{
+	height: 66px;
+	line-height: 66px;
+	padding-right: 35px;
+	cursor: pointer;
+}
+.ghg-tagSB ul li a{
+	color: #3B3A40;
+}
+.ghg-tagSB ul li a:hover{
+	text-decoration: none;
+	color: #3B3A40;
+}
+.ghg-tagSB-list ul li{
+	height: 66px;
+	line-height: 66px;
+	padding-right: 8px;
+	cursor: pointer;
+}
+.ghg-tagSB-list ul li a{
+	color: #3B3A40;
+}
+.ghg-tagSB-list ul li a:hover{
+	text-decoration: none;
+	color: #3B3A40;
+}
+.ghg-tagSB-list:nth-child(2) ul li a,.ghg-tagSB-list:nth-child(4) ul li a{
+	font-size: 6px;
+}
+.ghg-tagSB-list:nth-child(5) ul li a{
+	color: #ea3800;
+}
+.ghg-main{
+	height: 353px;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.ghg-mainS img{
+	height: 353px;
+	width: 100%;
+	
+}
