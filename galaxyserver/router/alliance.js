@@ -9,7 +9,7 @@ let Storage = multer.diskStorage({
     }
 
 })
-let upload = multer({storage:Storage}).array('imgUploader')
+let upload = multer({storage:Storage}).array('allianceUploader')
 module.exports = {
     // 添加合作伙伴
     addalliance:async function(req,res){

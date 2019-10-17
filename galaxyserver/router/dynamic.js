@@ -1,5 +1,6 @@
 let data = require("../controlor/data")
 let common = require("../common")
+let multer = require('multer')
 let Storage = multer.diskStorage({
     destination:function(req,file,callback){
         callback(null,'./ued/news');
@@ -9,7 +10,7 @@ let Storage = multer.diskStorage({
     }
 
 })
-let upload = multer({storage:Storage}).array('imgUploader')
+let upload = multer({storage:Storage}).array('dynaimicUploader')
 module.exports = {
 // 获取动态分类
     dynamicClassify:async function(req,res){
@@ -29,8 +30,8 @@ module.exports = {
     },  
     
     // 添加动态
-    adddynamic:async function(req,res){
-        upload(req,res,function(err){
+    adddynamic:function(req,res){
+        upload(req,res,async function(err){
             if(err){
                 return res.json({
                     status:531,
@@ -92,8 +93,8 @@ module.exports = {
     },
 
     // 修改动态
-    updatedynamic:async function(req,res){
-        upload(req,res,function(err){
+    updatedynamic:function(req,res){
+        upload(req,res,async function(err){
             if(err){
                 return res.json({
                     status:531,

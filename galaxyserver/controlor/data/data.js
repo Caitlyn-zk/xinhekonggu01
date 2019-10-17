@@ -48,7 +48,7 @@ module.exports = {
     },
     // 获取新闻
     getNews:async function(){
-        let sql = 'select * from news'
+        let sql = 'SELECT * FROM news  ORDER BY TIME desc'
         let result = await query(sql,'')
         return result;
     },
@@ -120,6 +120,7 @@ module.exports = {
         return result;
     },
 
+    // 判断合作伙伴是否存在
     queryalliance:async function(data){
         let sql = 'select * from alliance where id = ?'
         let result = await query(sql,data)
@@ -150,7 +151,85 @@ module.exports = {
         let sql = 'delete from alliance where id = ?'
         let result = await query(sql,data)
         return result;
+    },
+
+    // 添加视频
+    addvideo:async function(data){
+        let sql = 'insert into vedio(title,video) values(?)'
+        let result = await query(sql,[data])
+        return result;
+    },
+
+    // 获取视频
+    getvideo:async function(){
+        let sql = 'select * from vedio'
+        let result = await query(sql,'')
+        return result;
+    },
+
+    // 查询视频是否存在
+    queryvideo: async function(data){
+        let sql = 'select * from vedio where id = ?'
+        let result = await query(sql,data)
+        if(result.length>0){
+            return false;/*这个ID存在*/
+        }else{
+            return true;/*这个ID不存在*/
+        }
+    },
+
+    // 更改视频
+    updatevideo:async function(data){
+        let sql = 'update vedio set title = ? ,video = ? where id = ?'
+        let result = await query(sql,data)
+        return result;
+    },
+
+    //删除视频
+    deletevideo:async function(data){
+        let sql = 'delete from vedio where id = ?'
+        let result = await query(sql,data)
+        return result;
+    },
+
+    // 获取招聘信息
+    getadvertise:async function(){
+        let sql = 'select * from job'
+        let result  = await query(sql,'')
+        return  result;
+    },
+
+    // 添加招聘信息
+    addadvertise:async function(data){
+        let sql = 'insert intoinsert into job(section,name,place) values(?)'
+        let result = await query(sql,data)
+    },
+
+    // 查询是否存在该招聘信息
+    queryadvertise:async function(data){
+        let sql = 'select * from job where id = ?'
+        let result = await query(sql,data)
+        if(result>0){
+            return false;/*该招聘信息存在*/
+        }else{
+            return true;/*该招聘信息不存在*/ 
+        }
+    },
+
+    // 修改招聘信息
+    updateadvertise:async function(data){
+        let sql = 'update job set section = ?,name = ?,place = ? where id = ?'
+        let result = await query(sql,data)
+        return result;
+    },
+
+    // 删除招聘信息
+    deleteadvertise:async function(data){
+        let sql = 'delete from job where id = ?'
+        let result = await query(sql,data)
+        return result;
     }
+
 
 
 

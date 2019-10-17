@@ -1,5 +1,6 @@
 let data = require("../controlor/data/data")
 let common = require("../common")
+let multer = require('multer')
 let Storage = multer.diskStorage({
     destination:function(req,file,callback){
         callback(null,'./ued/news');
@@ -9,11 +10,11 @@ let Storage = multer.diskStorage({
     }
 
 })
-let upload = multer({storage:Storage}).array('imgUploader')
+let upload = multer({storage:Storage}).array('newsUploader')
 module.exports = {
     // 添加新闻
-    addnews:async function(req,res){
-        upload(req,res,function(err){
+    addnews:function(req,res){
+        upload(req,res,async function(err){
             if(err){
                 return res.json({
                     status:531,
@@ -64,8 +65,8 @@ module.exports = {
     }, 
 
     // 更改新闻
-    updateNews:async function(req,res){
-        upload(req,res,function(err){
+    updateNews:function(req,res){
+        upload(req,res,async function(err){
             if(err){
                 return res.json({
                     status:531,
