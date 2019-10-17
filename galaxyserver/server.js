@@ -82,18 +82,33 @@ app.use("/ueditor/ue", ueditor(path.join(__dirname, 'static'), function (req, re
 
 app.post("/login",urlencoded,router.login)
 app.post("/verifylogin",urlencoded,router.verifylogin)
+
 app.post("/addnews",urlencoded,router.addnews)
 app.post("/getnews",router.getnews)
 app.post("/updatenews",urlencoded,router.updateNews)
 app.post("/deletenews",urlencoded,router.deletNews)
+
 app.post("/dynamicClassify",router.dynamicClassify)
 app.post("/adddynamic",urlencoded,router.adddynamic)
 app.post("/getdynamic",urlencoded,router.getdynamic)
 app.post("/updatedynamic",urlencoded,router.updatedynamic)
 app.post("/deletedynamic",urlencoded,router.deletedynamic)
+app.post("/getdynamicByClass",urlencoded,router.getdynamicByClass)
+
 app.post("/addalliance",urlencoded,router.addalliance)
+app.post('/getalliance',urlencoded,router.getalliance)
 app.post("/updatealliance",urlencoded,router.updatealliance)
 app.post("/deletealliance",urlencoded,router.deletealliance)
+
+app.post("/addvideo",urlencoded,router.addvideo)
+app.post("/getvideo",urlencoded,router.getvideo)
+app.post("/updatevideo",urlencoded,router.updatevideo)
+app.post("/deletevideo",urlencoded,router.deletevideo)
+
+app.post("/getadvertise",urlencoded,router.getadvertise)
+app.post("/addadvertise",urlencoded,router.addadvertise)
+app.post("/updateadvertise",urlencoded,router.updateadvertise)
+app.post("/deleteadvertise",urlencoded,router.deleteadvertise)
 app.listen(3000,function(){
     console.log('app port: 3000')
 })
