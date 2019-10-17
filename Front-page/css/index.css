@@ -120,6 +120,7 @@ li > a {
 .nav > li > a {
 	height: 80px;
 	line-height: 50px;
+	font-size: 14px;
 }
 a:hover {
 	text-decoration: none;
