@@ -1,5 +1,15 @@
 let data = require("../controlor/data")
 let common = require("../common")
+let Storage = multer.diskStorage({
+    destination:function(req,file,callback){
+        callback(null,'./ued/news');
+    },
+    filename:function(req,file,callback){
+        callback(null,file.fieldname+'_'+Date.now()+'_'+file.originalname)
+    }
+
+})
+let upload = multer({storage:Storage}).array('imgUploader')
 module.exports = {
 // 获取动态分类
     dynamicClassify:async function(req,res){
@@ -20,21 +30,31 @@ module.exports = {
     
     // 添加动态
     adddynamic:async function(req,res){
-        let arr = common.Data(req,res)
-        let classify = req.body.classify
-        arr.push(classify)
-        let result = await data.adddynamic(arr)
-        if(result){
-            res.json({
-                status:200,
-                message:'添加动态成功'
-            })
-        }else{
-            res.json({
-                status:518,
-                message:'添加动态失败'
-            })
-        }
+        upload(req,res,function(err){
+            if(err){
+                return res.json({
+                    status:531,
+                    message:'文件上传失败'
+                })
+            }else{
+                let arr = common.Data(req,res)
+                let classify = req.body.classify
+                arr.push(classify)
+                let result = await data.adddynamic(arr)
+                if(result){
+                    res.json({
+                        status:200,
+                        message:'添加动态成功'
+                    })
+                }else{
+                    res.json({
+                        status:518,
+                        message:'添加动态失败'
+                    })
+                }
+            }
+        })
+        
     },
 
     // 获取动态
@@ -73,21 +93,31 @@ module.exports = {
 
     // 修改动态
     updatedynamic:async function(req,res){
-        let arr = common.Data(req,res)
-        let id = req.body.id
-        arr.push(id)
-        let result =await data.updatedynamic(arr)
-        if(result){
-            res.json({
-                status:200,
-                message:'动态修改成功'
-            })
-        }else{
-            res.json({
-                status:521,
-                message:'动态修改失败'
-            })
-        }
+        upload(req,res,function(err){
+            if(err){
+                return res.json({
+                    status:531,
+                    message:'文件上传失败'
+                })
+            }else{
+                let arr = common.Data(req,res)
+                let id = req.body.id
+                arr.push(id)
+                let result =await data.updatedynamic(arr)
+                if(result){
+                    res.json({
+                        status:200,
+                        message:'动态修改成功'
+                    })
+                }else{
+                    res.json({
+                        status:521,
+                        message:'动态修改失败'
+                    })
+                }                
+            }
+        })
+        
     },
 
     // 删除动态
