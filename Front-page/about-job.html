@@ -17,15 +17,15 @@
 			<!-- 导航 -->
 			<ul class="ghg-abtout-nav ghg-float-left ghg-clearfix">
 				<!-- href="about.html"-->
-				<li><a class="ghg-abtout-click ghg-switch on" href="about.html">关于星河</a></li>
+				<li><a class="ghg-abtout-click ghg-switch " href="about.html">关于星河</a></li>
 				<li><a class="ghg-abtout-click ghg-abtout-show">未来星项目</a>
 					<!-- 导航显示内容 下拉菜单 -->
-					<div class="ghg-abtout-select">
+					<div class="ghg-abtout-select ">
 						<p>项目介绍</p>
 						<p>人才培养</p>
 					</div>
 				</li>
-				<li><a class="ghg-abtout-click ghg-switch">招聘岗位</a></li>
+				<li><a class="ghg-abtout-click ghg-switch on">招聘岗位</a></li>
 			</ul>
 		</div>
 		<!-- banner -->
@@ -60,8 +60,8 @@
 						<div class="select ghg-float-left">
 							<p data-value="所以选项">请选择工作岗位</p>
 							<ul>
-								<li data-value="全国">全国</li>
-								<li data-value="天津">天津</li>
+								<li data-value="全国" class="">全国</li>
+								<li data-value="深圳">深圳</li>
 								<li data-value="南京">南京</li>
 								<li data-value="上海">上海</li>
 								<li data-value="重庆">重庆</li>
@@ -77,34 +77,29 @@
 					
 				</div>
 				<!-- tab表格 -->
-				<div class="ghg-station-tab">
-					<table border="" cellspacing="" cellpadding="">
-						<tr>
-							<th>所属部门</th>
-							<th class="ghg-width-10">职位名称</th>
-							<th>工作地点</th>
-							<th>申请部门</th>
-						</tr>
-						<tr>
-							<td>产业集团</td>
-							<td>产品助理岗</td>
-							<td>深圳</td>
-							<td><a class="ghg-station-btn">申请岗位</a></td>
-						</tr>
-						<tr>
-							<td>产业集团</td>
-							<td>产品助理岗</td>
-							<td>深圳</td>
-							<td><a class="ghg-station-btn">申请岗位</a></td>
-						</tr>
-						<tr>
-							<td>产业集团</td>
-							<td>产品助理岗</td>
-							<td>深圳</td>
-							<td><a class="ghg-station-btn">申请岗位</a></td>
-						</tr>
-					</table>
+				<div class="ghg-about-tabmain">
+					
+					<!--<div class="ghg-station-tab">
+						<table border="" cellspacing="" cellpadding="">
+							<tr>
+								<th>所属部门</th>
+								<th class="ghg-width-10">职位名称</th>
+								<th>工作地点</th>
+								<th>申请部门</th>
+							</tr>
+							<tr>
+								<td>产业集团</td>
+								<td>产品助理岗</td>
+								<td>深圳</td>
+								<td><a class="ghg-station-btn">申请岗位</a></td>
+							</tr>
+						</table>
+					</div>
+					-->
+					<div class="ghg-table-main"></div>
 				</div>
+				
+					
 				<!-- 上下页按钮 -->
 				<div class="ghg-station-paging">
 					<span>共有60个符合条件的职位首页</span>
@@ -129,8 +124,30 @@
 			未经zhaopin.com同意，不得转载本网站之所有招聘信息及作品。智联校园招聘版权所有©
 		</div>
 	</body>
+	<script type="text/html" id="ghg-about-tablist">
+		<div class="ghg-station-tab">
+			<table border="" cellspacing="" cellpadding="">
+				<tr>
+					<th>所属部门</th>
+					<th class="ghg-width-10">职位名称</th>
+					<th>工作地点</th>
+					<th>申请部门</th>
+				</tr>
+				{{each data as item i}}
+					<tr>
+						<td>{{item.section}}</td>
+						<td>{{item.name}}</td>
+						<td>{{item.place}}</td>
+						<td><a class="ghg-station-btn">申请岗位</a></td>
+					</tr>
+				{{/each}}
+			</table>
+		</div>
+	</script>
 </html>
 <script src="js/jquery-2.1.0.js"></script>
+<script src="js/template.js"></script>
+<script src="js/about-job.js"></script>
 <script>
 	//导航栏的点击事件
 	$('.ghg-abtout-nav li').click(function(){

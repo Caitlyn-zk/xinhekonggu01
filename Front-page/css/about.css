@@ -491,7 +491,10 @@
 		height: 135px;
 	}
 	.ghg-abtout-content{
-		top: 175px;
+		top: 200px;
+	}
+	.ghg-abtout-content .ghg-abtout-list{
+		background-size: 100% 268px;
 	}
 	.ghg-abtout-list-title{
 		font-size: 22px;
