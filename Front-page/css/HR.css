@@ -55,14 +55,106 @@
 .ghg-tagSB-list:nth-child(5) ul li a{
 	color: #ea3800;
 }
-.ghg-main{
+.ghg-mainS{
+	padding: 70px 30px 0;
 	height: 353px;
 	width: 100%;
-	margin: 0 auto;
+	background: url(../img/zhiBg.jpg) center center no-repeat;
+	background-size:100% 353px;	
+	box-sizing: border-box;
+}
+.ghg-mainS-one ul{
+	margin: 0;
+}
+.ghg-mainS-one ul:nth-child(1) li{
+	color: #EB3C00;
+	font-size: 30px;
+	font-weight: bold;
+}
+.ghg-mainS-one ul:nth-child(2) li{
+	color: #BC8F4B;
+	font-size: 20px;
+	font-weight: bold;
+}
+.ghg-mainS-one ul:nth-child(3) li{
+	color: #F09888;
+	font-size: 30px;
+	font-weight: bold;
+	float: right;
+	padding: 40px 137px 0 0;
+}
+.ghg-mainS-one ul:nth-child(4) li{
+	color: #D8D8DA;
+	font-size: 94px;
+	float: right;
+	padding: 0 137px 0 0;
+	margin-top: -5px;
+}
+
+
+
+
+
+
+.ghg-mainB{
+	background: url(../img/humanRe6.jpg);
+}
+
+
+
+
+
+@media only screen and (min-width:663px ) {
+		.ghg-mainS-one ul:nth-child(3) li{
+		color: #F09888;
+		font-size: 20px;
+		font-weight: bold;
+		float: left;
+		padding: 40px 0 0 0;
+	}
 	
 }
-.ghg-mainS img{
-	height: 353px;
-	width: 100%;
-	
+@media only screen and (max-width:663px ) {
+	.ghg-tagSB ul li{
+		height: 66px;
+		line-height: 66px;
+		padding-right: 10px;
+	}
+	.ghg-tagSB-list{
+		display: none;
+	}
+	.ghg-mainS{
+		padding: 70px 10px 0;
+	}
+	.ghg-mainS-one ul:nth-child(1) li{
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.ghg-mainS-one ul:nth-child(2) li{
+		color: #BC8F4B;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.ghg-mainS-one ul:nth-child(3) li{
+		color: #F09888;
+		font-size: 16px;
+		font-weight: bold;
+		float: left;
+		padding: 40px 0 0 0;
+	}
+	.ghg-mainS-one ul:nth-child(4) li{
+		color: #D8D8DA;
+		font-size: 70px;
+		float: left;
+		padding: 0 0 40px 0;
+		
+	}	
 }
+
+
+
+
+
+
+
+
