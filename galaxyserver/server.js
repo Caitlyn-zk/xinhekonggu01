@@ -105,7 +105,7 @@ app.post("/getvideo",urlencoded,router.getvideo)
 app.post("/updatevideo",urlencoded,router.updatevideo)
 app.post("/deletevideo",urlencoded,router.deletevideo)
 
-app.post("/getadvertise",urlencoded,router.getadvertise)
+app.get("/getadvertise",urlencoded,router.getadvertise)
 app.post("/addadvertise",urlencoded,router.addadvertise)
 app.post("/updateadvertise",urlencoded,router.updateadvertise)
 app.post("/deleteadvertise",urlencoded,router.deleteadvertise)

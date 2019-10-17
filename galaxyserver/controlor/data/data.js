@@ -86,7 +86,7 @@ module.exports = {
 
     // 获取动态
     getdynamic:async function(){
-        let sql = 'select * from dynamic'
+        let sql = 'select * from dynamic ORDER BY TIME desc'
         let result = await query(sql,'')
         return result;
     },
