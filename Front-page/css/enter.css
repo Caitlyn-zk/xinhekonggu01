@@ -1,7 +1,3 @@
-.ghg-bannerBox{
-	margin-top:107px;
-	
-	}
 .ghg-bannerBox .ghg-imgBox{
 	background: url(../img/top.png) center center no-repeat;
 	height: 169px;
@@ -683,19 +679,21 @@
 .ghg-selBox .ghg-dropdown-menu li{
 	text-align: center;
 }
-.ghg-selBox .ghg-navbar{
+.ghg-selBox .ghg-navbars{
 	margin: 0;
 	border-radius:0;
 }
-.ghg-selBox .ghg-navbar .ghg-container-fluid{
+.ghg-selBox .ghg-navbars .ghg-container-fluids{
 	padding-left: 50px;
+	height: 46px;
+	border: 0;
 }
-.ghg-selBox .ghg-navbar .ghg-container-fluid a{
+.ghg-selBox .ghg-navbarss .ghg-container-fluids a{
 	font-size: 14px;
     opacity: .8;
     color: #3f3e55;
 }
-.ghg-selBox .ghg-navbar .ghg-container-fluid a:hover{
+.ghg-selBox .ghg-navbars .ghg-container-fluids a:hover{
 	text-decoration: none;
 }
 .ghg-substance .ghg-imgList .ghg-newBox .ghg-imageBox{
