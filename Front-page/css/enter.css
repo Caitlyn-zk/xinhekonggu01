@@ -17,6 +17,7 @@
 }
 .ghg-containerBox.on{
 	display: block;
+	
 }
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current{
 	color: #ea3800;
@@ -24,12 +25,24 @@
 }
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current.on{
 	display: block;
+	color: #eb3c00;
 }
 .ghg-commonWrap .ghg-container{
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 	
+}
+.ghg-sideitBox .ghg-hd ul li:after{
+	    position: absolute;
+	    left: -1px;
+	    top: 50%;
+	    margin-top: -7px;
+	    content: " ";
+	    display: block;
+	    width: 1px;
+	    height: 14px;
+	    background: #666666;
 }
 .ghg-commonWrap .ghg-container .ghg-subNav{
 	overflow: hidden;
@@ -49,6 +62,9 @@
 }
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a:hover{
 	text-decoration: none;
+}
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:active{
+	background: #CCCCCC;
 }
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li {
 	float: left;
@@ -319,6 +335,13 @@
     color: #d2ba9b;
     margin: 0;
 }
+.ghg-list .ghg-create h1{
+	    font-size: 24px;
+	    color: #eb3c00;
+	    line-height: 24px;
+	    font-weight: bold;
+	    margin-bottom: 10px;
+}
 .ghg-imgBoxMedia img{
       	display: none;
       }
@@ -432,8 +455,20 @@
 .ghg-sideitBox{
 	padding-bottom: 80px;
 }
+.ghg-sideitBox .ghg-hd:after{
+	    content: " ";
+	    display: block;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 2px;
+	    background: #ccc;
+}
 .ghg-sideitBox .ghg-hd{
 	position: relative;
+	background: white;
+	
 }
 .ghg-sideitBox .ghg-hd .container{
 	position: relative;
@@ -442,12 +477,15 @@
 }
 .ghg-sideitBox .ghg-hd ul{
 	    font-size: 0;
-	    
+	    margin: 0;
 	    line-height: 64px;
 	    padding-top: 16px;
 	    letter-spacing: -4px;
 	    text-align: center;
 	     white-space: nowrap;
+}
+.ghg-sideitBox .ghg-hd ul li:active{
+	background: #CCCCCC;
 }
 .ghg-sideitBox .ghg-hd ul li{
 	position: relative;
@@ -463,6 +501,7 @@
 }
 .ghg-sideitBox .ghg-hd ul li.on{
 	    border-color: #eb3c00;
+	    color: #eb3c00;
 }
 .ghg-sideitBox .ghg-bd .ghg-list .ghg-textBox h1{
 	font-size: 24px;
@@ -471,7 +510,7 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
-.ghg-sideitBox .ghg-bd .ghg-textBox p{
+.ghg-sideitBox .ghg-bd .ghg-textBox .ghg-titletwo{
 	    font-size: 14px;
 	    line-height: 24px;
 	    color: #666;
@@ -480,8 +519,14 @@
 	display: none;
 }
 .ghg-bd .ghg-list.on{
-	display: block;animation: anim 5s;
+	display: block;animation: anim 3s;
 	
+}
+.ghg-txtBox .container h1{
+			font-size: 24px;
+		    color: #eb3c00;
+		    line-height: 24px;
+		    font-weight: bold;
 }
 @keyframes anim{
       0% {opacity: 0;}
@@ -490,12 +535,204 @@
 .ghg-sideitBox .ghg-list .ghg-bomBox .container img{
 	width: 100%;
 }
+.ghg-textBoxone .container{
+	overflow: hidden;
+	 background: url(../img/about4_l5_bg.png) no-repeat bottom left;;
+}
+.ghg-textBox .ghg-titleText{
+	    float: left;
+	    width: 50%;
+	    padding-top: 29px;
+}
+.ghg-textBox .ghg-titleText .ghg-titleone{
+	font-size: 24px;
+	color: #eb3c00;
+	font-weight: bold;
+}
+.ghg-textBoxone .ghg-titleText .ghg-titlethree{
+	    font-size: 24px;
+	    color: #eb3c00;
+	    line-height: 36px;
+	    font-weight: bold;
+}
 
+.ghg-textBoxone .ghg-imgText{
+	float: right;
+    max-width: 50%;
+}
+.ghg-textBox .ghg-imgText img{
+	float: none;
+	display: block;
+	max-width: 100%;
+	border: none;
+}
+.ghg-textBoxone .ghg-imgText img{
+	float: none;
+	display: block;
+	max-width: 100%;
+	border: none;
+}
+.ghg-txtBox .ghg-ulTxt{
+	width: 1220px;
+	overflow: hidden;
+}
+.ghg-txtBox .ghg-ulTxt .ghg-Item{
+	    float: left;
+	    margin: 0 20px 20px 0;
+	    width: 590px;
+	    height: 188px;
+	    padding: 27px 28px 0;
+	    border: 2px solid #dfdfdf;
+}
+.ghg-txtBox .ghg-ulTxt .ghg-Item p{
+     margin: 0;
+}
+.ghg-list .ghg-bomBox{
+	background: url(../img/about4_l6_bg.jpg) no-repeat center;
+}
+.ghg-list .ghg-bomBox img{
+	float: none;
+	display: block;
+	max-width: 100%;
+	border: none;
+}
+.ghg-list .ghg-boomBox{
+	overflow: hidden;
+	background: url(../img/about4_l7_bg.jpg) no-repeat center;
+}
+.ghg-list .ghg-boomBox .ghg-version{
+	float: left;
+    width: 50%;
+    padding-top: 29px;
+}
+.ghg-list .ghg-boomBox .ghg-picture{
+	float: right;
+    max-width: 50%;
+    width: auto;
+}
+.ghg-list .ghg-boomBox .ghg-picture img{
+	float: none;
+	display: block;
+	max-width: 100%;
+	border: none;
+}
+/*文化生活*/
+.ghg-substance{
+	background: #F7F7F7;
+	padding-bottom: 38px;
+}
+.ghg-substance .ghg-topContent{
+	padding: 70px 11px 0;
+	padding-bottom: 38px;
+}
+.ghg-substance .ghg-topContent .ghg-subImg{
+	padding-bottom: 38px;
+}
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-selBox{
+	position: relative;
+    float: left;
+    margin-right: 5px;
+    line-height: 46px;
+    width: 188px;
+    cursor: pointer;
+}
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox{
+	float: left;
+    border: 2px solid #ebebee;
+    line-height: 46px;
+    position: relative;
+    width: 188px;
+    background: #fff;
+}
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox input{
+	width: 148px;
+    text-indent: 18px;
+    padding-left: 18px;
+    border: none;
+    line-height: 46px;
+    height: 46px;
+    display: block;
+    background: transparent;
+    padding-right: 25px;
+    font-size: 14px;
+    opacity: .8;
+    color: #3f3e55;
+    box-sizing: border-box;
+    outline: 0;
+}
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox .ghg-search{
+	    position: absolute;
+	    top: 13px;
+	    right: 12px;
+	    cursor: pointer;
+}
+.ghg-selBox .ghg-dropdown-menu  > li{
+	height: 25%
+}
+.ghg-selBox .ghg-dropdown-menu  > li > a{
+	font-size: 14px;
+    opacity: .8;
+    color: #3f3e55;
+}
+.ghg-selBox .ghg-dropdown-menu {
+	left: -50px;
+	border: 1px solid #E7E7E7;
+	min-width: 188px;
+	height: 188px
+}
+.ghg-selBox .ghg-dropdown-menu li{
+	text-align: center;
+}
+.ghg-selBox .ghg-navbar{
+	margin: 0;
+	border-radius:0;
+}
+.ghg-selBox .ghg-navbar .ghg-container-fluid{
+	padding-left: 50px;
+}
+.ghg-selBox .ghg-navbar .ghg-container-fluid a{
+	font-size: 14px;
+    opacity: .8;
+    color: #3f3e55;
+}
+.ghg-selBox .ghg-navbar .ghg-container-fluid a:hover{
+	text-decoration: none;
+}
+.ghg-substance .ghg-imgList .ghg-newBox .ghg-imageBox{
+	    text-decoration: none;
+	    color: inherit;
+	    display: block;
+}
+.ghg-substance .ghg-imgList .ghg-newBox .ghg-textBox{
+	    border: 2px solid #ebebee;
+	    border-top: none;
+	    padding: 30px 20px;
+	    min-height: 120px;
+	    background: #ffffff;
+}
+.ghg-substance .ghg-imgList .ghg-newBox .ghg-textBox h1{
+	font-size: 30px;
+    color: #3f3e55;
+    font-family: Montserrat-Regular;
+}
+.ghg-substance .ghg-imgList .ghg-newBox .ghg-textBox h2{
+	    font-size: 18px;
+	    color: #3f3e55;
+	    opacity: .9;
+	    line-height: 24px;
+	    padding-bottom: 25px;
+}
+.ghg-substance .ghg-imgList .ghg-newBox .ghg-imageBox .ghg-image{
+	
+	border: none;
+}
 @media only screen and (max-width:1200px ) {
 	
 	.ghg-commonWrap{
-		padding: 0 20px;
-		
+		padding: 0 20px;	
+	}
+	.ghg-commonWrap .ghg-container{
+		width: 100% !important;
 	}
 	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li{
 		padding-right:10px;
@@ -544,9 +781,34 @@
 	.ghg-containerBox .ghg-loading .ghg-content h1{
 		font-size: 21px;
 	}
+	.ghg-sideitBox .ghg-hd ul{
+		width: 100%;
+		padding: 16px 10px 0;
+	}
+	
+	.ghg-sideitBox .ghg-hd .container{
+ 		width: 100%;
+ 		padding: 0 10px;
+ 	}
+ 		.ghg-sideitBox .ghg-hd ul{
+ 		white-space: nowrap;
+ 		overflow: hidden;
+ 		overflow-x:auto ;
+ 	}
+ 	.ghg-BrandBox{
+ 		padding: 0 20px;
+ 		
+ 	}
+ 	.ghg-txtBox .ghg-ulTxt{
+ 		width: 103%;
+ 	}
+ 	.ghg-txtBox .ghg-ulTxt .ghg-Item{
+ 		    width: 47.5%;
+    		margin-right: 2%;
+ 	}
 }
       
-  /*小屏幕
+ /*小屏幕*/
  @media only screen and (max-width:480px ) {
  	.ghg-bannerBox .ghg-imgBox{
  		display: none;
@@ -554,11 +816,93 @@
  	.ghg-imgBoxMedia img{
  		display: block;
  	}
+ 	.ghg-commonWrap .ghg-container .ghg-subNav{
+ 		overflow-x:auto;
+ 	}
+ 	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul{
+ 		white-space: nowrap;
+ 		overflow: hidden;
+ 		list-style: none;
+ 	}
+   .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul .ghg-tablelist{
+		
+		display: inline-block;
+        float: initial;
+	}
+ 	
+ 	
+ }
+ @media only screen and (max-width:860px ) {
+ 	.ghg-textBoxone .ghg-titleText{
+ 		float: none;
+ 		width: 100%;
+ 		text-align: center;
+ 	}
+ 	.ghg-textBoxone .ghg-imgText{
+ 		    float: none;
+   			max-width: none;
+ 	}
+ 	.ghg-textBox .ghg-titleText{
+ 			float: none;
+	 		width: 100%;
+	 		text-align: center;
+ 	}
+ 	.ghg-textBox .ghg-imgText{
+ 		 	float: none;
+   			max-width: none;
+ 	}
+ 	.ghg-textBox .ghg-imgText img{
+ 		margin: 0 auto;
+ 		
+ 	}
+ 
+ 	
+ 	.ghg-textBoxone .ghg-imgText img{
+ 		margin: 0 auto;
+ 		
+ 	}
+ 	.ghg-BrandBox{
+ 		background: #F7F7F7;
+ 	}
+ 	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb{
+ 		display: none;
+ 	}
+ 	.ghg-list .ghg-boomBox .ghg-version{
+ 		float: none;
+    	width: 100%;
+    	text-align: center;
+ 	}
+ 	.ghg-list .ghg-boomBox{
+ 		background: cover;
+ 	}
+ 	.ghg-list .ghg-boomBox .ghg-picture{
+ 		    float: none;
+    		max-width: none;
+ 	}
+ 	.ghg-list .ghg-boomBox .ghg-picture img{
+ 		margin: 0 auto;
+ 	}
  }
  @media only screen and (min-width:900px ) {
  	.ghg-containerBox .ghg-cook{
  		    background: #f7f7f7;
     		padding-bottom: 50px;
+ 	}
+ 	
+ }
+ @media only screen and (max-width:760px ) {
+ 	.ghg-txtBox .ghg-ulTxt .ghg-Item{
+ 		height: 230px;
+ 	}
+ 	.ghg-BrandBox .container h2{
+ 		padding-bottom: 40px;
+ 	}
+ }
+ @media only screen and (max-width:600px ){
+ 	.ghg-txtBox .ghg-ulTxt .ghg-Item{
+ 		height: auto;
+	    padding: 15px;
+	    width: 100%;
  	}
  	
  }

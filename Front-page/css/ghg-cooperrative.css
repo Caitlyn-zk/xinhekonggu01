@@ -1,4 +1,4 @@
-
+﻿
 .banner-box-img{
 	background: url(../img/ghgImg.jpg) center center no-repeat;
 	height: 169px;
@@ -415,4 +415,156 @@
 	width: 410px;
 	margin-bottom:15px ;
 }
+.email-rightBox{
+	padding: 95px 0 75px 40px;
+	width: 50%;
+}
+.email-rightBox h1{
+	font-size: 36px;
+	color: #bc8f4b;
+	padding-bottom: 5px;
+}
+.email-rightBox h2{
+	font-size: 13px;
+	color: #898989;
+	padding-bottom: 15px;
+}
+.inputBox{
+	width: 49%;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.input-box.people{
+	background-color: #fff;
+	background:url(../imgs/ghg-lyk-contactHead.png) 20px center no-repeat;	
+}
+.input-box.home{
+	background-color:#fff;
+	background:url(../imgs/ghg-lyk-contactHome.png) 20px center no-repeat ;
+}
+.input-box.email{
+	background-color:#fff;
+	background: url(../imgs/ghg-lyk-contactMail.png) 20px center no-repeat;
+}
+.input-box.pho{
+	background-color:#fff ;
+	background: url(../imgs/ghg-lyk-contactPhone.png) 20px center no-repeat;
+}
+.input-box{
+	width: 100%;
+	outline: none;
+	border: 1px solid #dddacd;
+	line-height: 50px;
+	height: 50px;
+	padding-left:55px;
+	padding-right: 15px;
+	background-color: #fff;
+	/*background-position: 20px center;
+	background-repeat: no-repeat;*/
+	font-size: 13px;
+	color: #898989;
+}
+.input-box:focus{
+	outline: 1px solid #eb3c00;
+}
+.textarea{
+	width: 100%;
+	height: 100px;
+	padding: 15px 20px;
+	font-size: 13px;
+	color: #898989;
+	line-height: 24px;
+	/*去除文本域右下角的斜线*/
+	resize: none;
+	outline: none;
+	border: 1px solid #dddacd;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+.textarea:focus{
+	outline: 1px solid #eb3c00;
+}
+.form-submit{
+	width: 100%;
+	background: #ea3800;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	line-height: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.mapBox{
+	position: relative;
+}
+.mapBox .container{
+	position: absolute;
+	top: 700px;
+	left: 25px;
+	z-index: 2;
+}
+.allMap{
+	width: 100%;
+	height: 800px;
+	display: none;
+}
+.allMap.active{
+	display: block;
+}
+.tablelist-map-btn{
+	width: 100%;
+	
+}
+.map-btn.active{
+	background: #eb3c00;
+	color: #fff;
+}
+.map-btn{
+	float: left;
+	margin: 0 0.5%;
+	width: 19%;
+	line-height: 98px;
+	background: #ebeae8;
+	color: #9e9d9c;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+}
+.map-btn .map-a{
+	color: #9e9d9c;
+}
+.map-btn .map-a.active{
+	color: #fff;
+}
+.addressBox{
+	display: none;
+}
+.addressBox.active{
+	display: block;
+}
+.xh-nev-btn.contact-btn.on::before{
+	/*要加的内容*/
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 0;
+	height: 100%;
+	border-bottom: 2px solid #f63b2e;
+	transition: 0.2s all linear;
+}
+.xh-nev-btn.contact-btn.on::before{
+	width: 100%;
+	top: 0;
+	right: 100%;
+	right: 0;
+	/*等待切换效果*/
+	transition-delay:0.1s ;
+}
+.
+
+
 

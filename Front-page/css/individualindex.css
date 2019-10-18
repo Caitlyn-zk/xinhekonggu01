@@ -1,11 +1,6 @@
 /*首页样式*/
 
-/*轮播图*/
-.ghg-collapse {
-	position: ;
-	top: 0;
-	left: 0;
-}
+
 /* 向下的箭头*/
 .ghg-arrows {
 	width:100px;
@@ -24,12 +19,17 @@
 }
 
 /*轮播图按钮背景色重置*/
+/*轮播图*/
 .ghg-collapse {
+	position: ;
+	top: 0;
+	left: 0;
 	position: fixed;
 	top: 80px;
 	left: 0;
 	z-index: 1;
 }
+
 .carousel-control.left,
 .carousel-control.right {
 	background: transparent;
@@ -121,12 +121,11 @@
 /*文本table表*/
 .ghg-index-content {
 	background: #f4f4f4;
-	padding-top: 810px;
+	padding-top: 600px;
 }
 .ghg-index-content .container {
 	background: #f4f4f4;
 	width: 100%;
-	height: 300px;/*测试*/
 	position: relative;
 	z-index: 5;
 	padding-top: 44px;
@@ -140,7 +139,7 @@
 .ghg-index-content .ghg-news {
 	width: 100%;
 	background: #fff;
-	padding: 0 36px 20px;
+	padding: 0 36px 25px;
 }
 .ghg-news b {
 	color: #848484;
@@ -153,6 +152,7 @@
 .ghg-contet-list {
 	height: 60px;
 	padding-bottom: 25px;
+	
 }
 .ghg-contet-list span {
 	display: inline-block;
@@ -160,25 +160,295 @@
 	height: 45px;
 	padding-top: 20px;
 	font-size: 14px;
+	color: rgba(94, 91, 94, 0.56);
 	margin-right: 20px;
+	cursor: pointer;
 }
 .ghg-contet-list span.active {
 	border-top: 3px solid #EB3C00;
 }
-.ghg-news-list {
+.ghg-tab-list {
+	display: none;
+}
+.ghg-tab-list.active {
+	display: block;
+}
+.ghg-business {
+	height: 250px;
+	margin-left: 10px;
+}
+.ghg-business-tab {
+	background: #fff;
+	width: 19.5%;
+	height: 100%;
+	margin-right: 4px;
+	position: relative;
+}
+.ghg-business-tab a.ghg-tabl1 {
+	background: #ea4b3d;
+}
+.ghg-business-tab a.ghg-tabl2 {
+	background: #eeb742;
+}
+.ghg-business-tab a.ghg-tabl3 {
+	background: #0656a2;
+}
+.ghg-business-tab a.ghg-tabl4 {
+	background: #4bb033;
+}
+.ghg-business-tab a.ghg-tabl5 {
+	background: #baa289;
+}
+.ghg-business-tab:last-child {
+	margin-right: 0;
+}
+.ghg-business-tab a {
+	display: inline-block;
+	height: 5px;
+	width: 100%;
+	transition:height 0.5s;
+	-moz-transition:height 0.5s; /* Firefox 4 */
+	-webkit-transition:height 0.5s; /* Safari and Chrome */
+	-o-transition:height 0.5s; /* Opera */
 	
 }
-
-
-/*变化第一屏*/
-@media only screen and (max-width:1280px ) {
-	.ghg-collapse .item > img {
-		width: 1280px;
-	}
+.ghg-business-tab a:hover {
+	height: 100%;
+}
+.ghg-business-tab a:hover p,
+.ghg-business-tab a:hover h1 {
+	color: #fff;
+	
+}
+.ghg-business-tab p {
+	color: rgba(121, 104, 121, 0.15);
+	padding: 0 0 82px 16px;
+}
+.ghg-business-tab h1 {
+	padding: 85px 0 37px 16px;
 }
 
+.ghg-index-content .ghg-small-collapse {
+	background: #f4f4f4;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	height: 212px;
+}
+
+.ghg-small-collapse .col-md-5,
+.ghg-small-collapse .col-md-7 {
+	height: 212px;
+	padding: 0;
+}
+.ghg-small-collapse .col-md-7 {
+	padding-left: 15px;
+}
+.ghg-small-collapse .col-md-7 .ghg-battle {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: url(../img/indexBottomRight.jpg) no-repeat;
+}
+.ghg-strategy {
+	position: absolute;
+	bottom: 35px;
+	left: 25px;
+	font-family: haettenschweiler;
+}
+.ghg-describe {
+	width: 280px;
+	position: absolute;
+	right: 8%;
+	bottom: 20px;
+}
+.ghg-small-collapse .col-md-5 .ghg-small-bar,
+.ghg-small-bar .carousel-inner,
+.ghg-small-bar .carousel-inner .item{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.ghg-small-bar .carousel-inner .item.ghg-carousel-img2 {
+	background: url(../img/indexBottomLeft1.jpg) right center no-repeat;
+	position: relative;
+	width: 581px;
+}
+.ghg-small-bar .carousel-inner .item.ghg-carousel-img1 {
+	background: url(../img/indexBottomLeft2.jpg) right center no-repeat;
+	position: relative;
+	width: 581px;
+}
+.ghg-small-bar .carousel-indicators  {
+	position: absolute;
+    top: 20px;
+    left: 108%;
+    z-index: 15;
+    width: 16%;
+    height: 10%;
+}
+.ghg-small-bar .carousel-indicators li{
+    width: 25%;
+    height: 20%;
+    background: #fff;
+}
+.ghg-small-bar .carousel-indicators li.active {
+	background: #EB3C00;
+	background-color:  #EB3C00;
+    border: 1px solid  #EB3C00;
+}
+.ghg-small-bar .carousel-caption {
+   	bottom: 83px;
+    left: 20%;
+}
+/*超小屏*/
+.ghg-small-title {
+	display: none;
+}
+.ghg-small-title p {
+	color: #dad9da;
+}
+.ghg-mediaNews {
+	background: #fff;
+	height: 520px;
+	width: 100%;
+	padding: 20px;
+	display: none;
+}
+.ghg-newsImg {
+	padding-top: 30px;
+	border-top: 2px solid #5E5E5E;
+}
+.ghg-newsImg img {
+	width: 40%;
+	margin-top: 2%;
+}
+.ghg-newsLists {
+	width: 52%;
+	margin-left: 20px;
+	padding-bottom: 20px;
+}
+.ghg-newsLists .ghg-news-title {
+	color: #e62129;
+}
+.ghg-news-listbar li {
+	line-height: 50px;
+	border-top: 1px solid #d8d8d8;
+}
+.ghg-news-listbar li p {
+	width: 70%;
+}
+.ghg-news-more a {
+	display: inline-block;
+	width: 100%;
+	line-height: 52px;
+	text-align: center;
+	color: #E62129;
+	font-size: 14px;
+	border: 1px solid #E62129;
+}
+.ghg-sx-sliderBox1 {
+	display: none;
+	height: 100%;
+	padding: 40px 20px 20px;
+}
+.ghg-sx-sliderBox1 .ghg-otherLink {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.ghg-sx-sliderBox1 .ghg-otherLink a {
+	position: relative;
+	display: inline-block;
+	width: 49.5%;
+	margin-right: -4px;
+}
+.ghg-otherLink img {
+	width: 100%;
+}
+.ghg-sx-sliderBox1 .ghg-otherLink span {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+.ghg-sx-sliderBox1 .ghg-small-bar .carousel-caption {
+	background: #080808;
+	height: 100%;
+	width: 50%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 10;
+    padding: 60px 0 0 48px;
+    opacity: 0.5;
+    color: #fff;
+    text-align:left;
+}
+.ghg-sx-sliderBox1 .carousel-caption p {
+	color: #fff;
+	padding-bottom: 5px;
+}
+.ghg-sx-sliderBox1 .carousel-caption span {
+	color: #ea4b3d;
+	vertical-align: 5px;
+}
+.ghg-sx-sliderBox1 .carousel-caption img {
+	width: 17px;
+}
+
+/*变化第一屏*/
+@media only screen and (max-width:1200px ) {
+	.ghg-collapse .item > img {
+		width: 100%;
+	}
+	.ghg-index-content .container .col-md-7,
+	.ghg-index-content .container .col-md-5 {
+		background: transparent;
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.ghg-index-content .container .col-md-7 {
+		padding: 0 25px;
+	}
+	.ghg-index-content .container {
+		background: #f4f4f4;
+		width: 100%;
+		position: relative;
+		z-index: 5;
+		padding-top: 44px;
+		padding-bottom: 28px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.ghg-small-collapse .col-md-5,
+	.ghg-small-collapse .col-md-7 {
+		float: none;
+		width: 100%;
+	}
+	.ghg-small-collapse .col-md-7 {
+		padding-left: 0;
+		margin-top: 30px;
+	}
+	.ghg-small-bar .carousel-inner .item.ghg-carousel-img2 {
+		width: 100%;
+	}
+	.ghg-small-bar .carousel-inner .item.ghg-carousel-img1 {
+		width: 100%;
+	}
+	.ghg-describe {
+		right: 25%;
+	}
+	.ghg-index-content .ghg-small-collapse {
+		height: 454px;
+		padding: 0 36px;
+	}
+	.ghg-small-bar .carousel-caption {
+	   	width: 40%;
+	    left: 50%;
+	}
+}
 /*第二屏*/
-@media only screen and (max-width:768px ) {
+@media only screen and (max-width:767px ) {
 	.ghg-arrows {
 		display: none;
 	}
@@ -191,11 +461,70 @@
 	.ghg-collapse .item > img.ghg-item-big {
 		display: none;
 	}
+	.ghg-business {
+		margin-left: 0;
+	}
+	.ghg-business-tab {
+		background: #fff;
+		width: 47%;
+		height: 100%;
+		margin: 0 1.4% 20px;
+	}
 	
 }
-@media only screen and (max-width:420px ) {
+
+
+@media only screen and (max-width:640px ) {
+	.ghg-index-content {
+		background: #f4f4f4;
+		padding-top: 300px;
+	}
+	/*新闻*/
+	.ghg-small-title {
+		display: block;
+	}
+	.ghg-index-content .container .col-md-5,
+	.ghg-small-collapse .col-md-7,
+	.ghg-small-collapse .col-md-5 {
+		display: none;
+	}
+	
+	.ghg-index-content .container {
+		padding-top: 30px;
+	}
+	.ghg-index-content .ghg-small-collapse {
+		padding: 0;
+		height: 100%;
+	}
+	.ghg-mediaNews {
+		display: block;
+	}
+	.ghg-sx-sliderBox1 {
+		display: block;
+	}
+}
+@media only screen and (max-width:479px ) {
 	.ghg-collapse .item > img {
 		height: 301px;
 	}
+	.ghg-business {
+		height: 130px;
+	}
+	.ghg-business-tab {
+		background: #fff;
+		width: 19%;
+		height: 100%;
+		margin: 0 0.5% 20px;
+	}
+	.ghg-business-tab p {
+		color: rgba(121, 104, 121, 0.15);
+		padding: 0 0 40px 5px;
+		font-size: 12px;
+	}
+	.ghg-business-tab h1 {
+		padding: 40px 0 20px 16px;
+		font-size: 14px;
+	}
+	
 }
 

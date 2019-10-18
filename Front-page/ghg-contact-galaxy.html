@@ -490,25 +490,23 @@
 							<!--tab切换-->
 							<div class="tabBox clearfix pull-left">
 								<ul class="clearfix">
-									<li class="xh-nev-btn">
+									<li class="xh-nev-btn contact-btn">
 										<a class="" href="">
 											联系方式
 											<span class="nav-span"></span>
 										</a>
 									</li>
-									<li class="xh-nev-btn">
+									<li class="xh-nev-btn contact-btn">
 										<a class="" href="">
 											下属公司
 											<span class="nav-span"></span>
 										</a>
-
 									</li>
-									<li class="xh-nev-btn">
+									<li class="xh-nev-btn contact-btn">
 										<a class="" href="">
 											客服服务
 											<span class="nav-span"></span>
 										</a>
-
 									</li>
 								</ul>
 							</div>
@@ -554,6 +552,48 @@
 				</div>
 				<!--介绍栏结束-->
 				<!--百度地图栏-->
+				<div class="mapBox">
+					<!--百度地图按钮-->
+					<div class="container">
+						<ul class="clearfix tablelist-map-btn">
+							<li class="map-btn active">
+								<a class="map-a active" >星河地产集团</a>
+							</li>
+							<li class="map-btn">
+								<a class="map-a" >星河金融控股集团</a>
+							</li>
+							<li class="map-btn">
+								<a class="map-a" >星河产业集团</a>
+							</li>
+							<li class="map-btn">
+								<a class="map-a" >星河商置集团</a>
+							</li>
+							<li class="map-btn">
+								<a class="map-a" >星河物业集团</a>
+							</li>
+							
+						</ul>
+					</div>
+					<!--地图匡-->
+					<div class="allMap active" id="allMap">
+						
+					</div>
+					<div class="allMap " id="allMap-two">
+						
+					</div>
+					<div class="allMap " id="allMap-three">
+						
+					</div>
+					<div class="allMap " id="allMap-four">
+						
+					</div>
+					<div class="allMap " id="allMap-five">
+						
+					</div>
+					
+					
+					
+				</div>
 				<div class="companyBox">
 					<div class="container">
 						<img src="imgs/ghg-lyk-contactMap.jpg" class="pull-left baidu-img ghg-padding-40-top"/>
@@ -608,7 +648,6 @@
 										<p>地址：深圳市福田区星河物业大厦A座39楼</p>
 										<p>电话：0755-82561500</p>
 										<p>传真：0755-82561500</p>
-										
 									</li>
 								</ul>
 							</div>
@@ -624,14 +663,14 @@
 							<h1 class="servece-tiltle">客服服务</h1>
 							<h2 class="servece-email">客公司客户服务电话及客户服务邮箱</h2>
 							<div class="cityList">
-								<a class="active">深圳</a>
-								<a class="">广州</a>
-								<a class="">惠州</a>
-								<a class="">常州</a>
-								<a class="">天津</a>
+								<a class="active address-name">深圳</a>
+								<a class="address-name">广州</a>
+								<a class="address-name">惠州</a>
+								<a class="address-name">常州</a>
+								<a class="address-name">天津</a>
 							</div>
 							<ul class="addList">
-								<li class="">
+								<li class="addressBox active">
 									<div class="addbox">
 										<h1>星河地产深圳公司</h1>
 										<p>
@@ -667,31 +706,75 @@
 											<span class="">Email:SZJDKF@chngalaxy.com</span>
 										</p>
 									</div>
-									
 								</li>
+								<li class="addressBox">
+									<div class="addbox">
+										<h1>星河广州产地公司</h1>
+										<p>
+											<span class="tel">TEL:020-39393893</span>
+											<span class="">Email:GZDCKF@chngalaxy.com</span>
+										</p>
+									</div>
+								</li>
+								<li class="addressBox">
+									<div class="addbox">
+										<h1>星河地产惠州公司</h1>
+										<p>
+											<span class="tel">TEL:0752-5760654</span>
+											<span class="">Email:HZDCKF@chngalaxy.com</span>
+										</p>
+									</div>
+								</li>
+								<li class="addressBox">
+									<div class="addbox">
+										<h1>星河国际客服</h1>
+										<p>
+											<span class="tel">TEL:0519-83606999</span>
+											
+										</p>
+									</div>
+									<div class="addbox">
+										<h1>星河丹堤、澜月湾客服</h1>
+										<p>
+											<span class="tel">TEL:0519-83606999</span>
+											
+										</p>
+									</div>
+								</li>
+								<li class="addressBox">
+									<div class="addbox">
+										<h1>星河地产天津公司</h1>
+										<p>
+											<span class="tel">TEL:022-2370325</span>
+											<span class="">Email:TJDCKF@chngalaxy.com</span>
+										</p>
+									</div>
+								</li>
+								
+								
 							</ul>
 						</div>
-						<!--右边盒子-->
-						<div class="rightBox pull-left">
+						<!--右边邮箱盒子-->
+						<div class="email-rightBox pull-left">
 							<h1>在线留言反馈</h1>
 							<h2>请在此留下你的联系方式，我们期待与您取得联系，您的私人信息将受到严格保密。</h2>
 							<form method="post">
 								<div class="inputBox pull-left">
-									<input class="" name="name" placeholder="姓名"/>
+									<input class="input-box people" name="name" placeholder="姓名"/>
+								</div>
+								<div class="inputBox pull-right">
+									<input class="input-box home" name="homeName" placeholder="楼盘及房间号"></input>
 								</div>
 								<div class="inputBox pull-left">
-									<input class="" name="homeName" placeholder="楼盘及房间号"></input>
+									<input class="input-box email" name="email" placeholder="邮箱"></input>
 								</div>
-								<div class="inputBox pull-left">
-									<input class="" name="email" placeholder="邮箱"></input>
-								</div>
-								<div class="inputBox pull-left">
-									<input class="" name="email" placeholder="联系方式"></input>
+								<div class="inputBox pull-right">
+									<input class="input-box pho" name="pho" placeholder="联系方式"></input>
 								</div>
 								<div class="textareaBox">
-									<textarea name="" placeholder="请留言区.."></textarea>
+									<textarea class="textarea" name="" placeholder="请留言区.."></textarea>
 								</div>
-								<input type="submit" value="提交"/>
+								<input type="submit" value="提交" class="form-submit"/>
 							</form>
 						</div>
 					</div>
@@ -920,3 +1003,13 @@
 		</div>	
 	</body>
 </html>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+<script src="js/map.js"></script>
+<script src="js/ghgContactG.js"></script>
+<script src="js/mapTwo.js"></script>
+<script src="js/mapThree.js"></script>
+<script src="js/mapFour.js"></script>
+<script src="js/mapFive.js"></script>
