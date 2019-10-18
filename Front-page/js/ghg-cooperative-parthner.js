@@ -34,11 +34,23 @@
 //})
 
 //tab 切换 
+let tabLi =document.querySelectorAll('.tab-li')
+let tabBtn =document.querySelectorAll('.xh-nev-btn')
+for(let i=0; i<tabBtn.length;i++){
+	tabBtn[i].onclick =function(){
+		for(var j=0;j<tabLi.length;j++){
+			tabLi[j].classList.remove('on')
+//			console.log(tabBtn[i])
+		}
+		tabLi[i].classList.add('on')
+	}
+}
+
 //文字切换
 $('.xh-nev-btn').click(function(){
 	let parentEle=$(this).parents('.main-cooperrative')
 	let index =$(this).index()
-	console.log(index)
+//	console.log(index)
 //	$(function(){
 //	$(this).addClass('on').siblings().removeClass('on')
 //	})
@@ -86,33 +98,92 @@ $('.xh-nev-btn').click(function(){
 	}
 })
 //tab 表格切换
-//获取按钮
-let btnList = document.querySelectorAll('.xh-nev-btn')
-console.log(btnList)
-//获取滑动盒子
-let slidebox= $('.slideBox')
-//获取每个图片的宽度
-let liWid= slidebox.find('.tab-li').eq(0).width()
-//获取滑动盒子
-let tabList = document.querySelectorAll('.tab-li')
-console.log(tabList)
-let ulEle= slidebox.find('ul')
+////获取按钮
+//let btnList = document.querySelectorAll('.xh-nev-btn')
+//console.log(btnList)
+////获取滑动盒子
+//let slidebox= $('.slideBox')
+////获取每个图片的宽度
+//let liWid= slidebox.find('.tab-li').eq(0).width()
+////获取滑动盒子
+//let tabList = document.querySelectorAll('.tab-li')
+//console.log(tabList)
+//let ulEle= slidebox.find('ul')
 //为每个按钮点击事件
-for(let i=0;i<btnList.length;i++){
-	btnList[i].onclick= function(){
-		//获取被点击按钮的下标
-	let index= $(this).index()
-	console.log(index)
-	//ul向左移动一个li的宽度
-	ulEle.animate({
-		left:-liWid*index
-	})
-	}
-}
+//for(let i=0;i<btnList.length;i++){
+//	btnList[i].onclick= function(){
+//		//获取被点击按钮的下标
+//	let index= $(this).index()
+//	console.log(index)
+//	//ul向左移动一个li的宽度
+//	ulEle.animate({
+//		left:-liWid*index
+//	})
+//	}
+//}
+//邮箱input点击变色
+//$('.input-box').click(function(){
+//	$('.input-box').toggle()
+//})
+
+let api = 'http://192.168.97.251:3000/'
+	let allianceImgURL = 'http://192.168.97.251:3000/alliance/'
+	$.ajax({
+		type:"post",
+		url:api + 'getalliance',
+		async:true,
+		data:'dasd',
+		datatype:'json',
+		success:function(res){
+		let html =''
+			for (let item of res.data) {	
+				html+=`<div class="brandBox">
+							<div class="">
+							<img src="<img src='${allianceImgURL+item.img}'/>" />
+							</div>
+						</div>`
+			}
+			//往li添加内容 
+			$('.tab-li').eq(0).html(html)
+			
+		}
+	});
+
+$('.xh-nev-btn').click(function(){
+	let id =$(this).index()
+	
+	let api = 'http://192.168.97.251:3000/'
+	let allianceImgURL = 'http://192.168.97.251:3000/alliance/'
+	console.log(id)
+	
+	$.ajax({
+		type:"post",
+		url:api + 'getallianceByClass',
+		data:{id},
+		async:true,
+		datatype:'json',
+		success:function(res){
+			console.log(res)
+		let html =''
+			for (let item of res.data) {	
+				html+=`<div class="brandBox">
+							<div class="">
+							<img src="<img src='${allianceImgURL+item.img}'/>" />
+							</div>
+						</div>`
+			}
+			//往li添加内容 
+			$('.tab-li').eq(id).html(html)
+		}
+	});
+})
+
+	
+	
 
 
 
-
+  
 
 
 
