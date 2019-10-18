@@ -1,11 +1,6 @@
 /*首页样式*/
 
-/*轮播图*/
-.ghg-collapse {
-	position: ;
-	top: 0;
-	left: 0;
-}
+
 /* 向下的箭头*/
 .ghg-arrows {
 	width:100px;
@@ -24,12 +19,17 @@
 }
 
 /*轮播图按钮背景色重置*/
+/*轮播图*/
 .ghg-collapse {
+	position: ;
+	top: 0;
+	left: 0;
 	position: fixed;
 	top: 80px;
 	left: 0;
 	z-index: 1;
 }
+
 .carousel-control.left,
 .carousel-control.right {
 	background: transparent;
@@ -121,7 +121,7 @@
 /*文本table表*/
 .ghg-index-content {
 	background: #f4f4f4;
-	padding-top: 810px;
+	padding-top: 600px;
 }
 .ghg-index-content .container {
 	background: #f4f4f4;
@@ -282,14 +282,14 @@
 .ghg-small-bar .carousel-indicators  {
 	position: absolute;
     top: 20px;
-    left: 88%;
+    left: 108%;
     z-index: 15;
-    width: 50%;
+    width: 16%;
     height: 10%;
 }
 .ghg-small-bar .carousel-indicators li{
-    width: 26px;
-    height: 4px;
+    width: 25%;
+    height: 20%;
     background: #fff;
 }
 .ghg-small-bar .carousel-indicators li.active {
@@ -470,6 +470,7 @@
 		height: 100%;
 		margin: 0 1.4% 20px;
 	}
+	
 }
 
 
