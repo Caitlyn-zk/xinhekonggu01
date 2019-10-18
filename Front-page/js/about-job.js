@@ -4,11 +4,8 @@ $.ajax({
 	type: 'get',
 	dataType: 'json',
 	success: function(res){
-//		console.log(res)
-		//模板引擎封装方法
 		var html = template('ghg-about-tablist',res)
 		$('.ghg-table-main').html(html)
-//		console.log(html)
 	}
 	
 })
