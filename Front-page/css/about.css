@@ -560,6 +560,9 @@
 	.ghg-abtout-title img{
 		width: 85px;
 	}
+	.ghg-abtout-estate{
+		margin-top: 320px;
+	}
 	.ghg-abtout-title .ghg-abtout-nav li{
 		width: 62px;
 		height: 62px;
@@ -593,6 +596,12 @@
 	.ghg-station-input input{
 		width: 140px;
 		font-size: 12px;
+	}
+	.ghg-abtout-banner img{
+		height: 213px;
+	}
+	.ghg-abtout-content{
+		top: 275px;
 	}
 }
 @media only screen and (max-width: 348px) {

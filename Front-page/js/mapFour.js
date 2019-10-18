@@ -1,16 +1,17 @@
 
     //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
+    function initMap(options){
+        createMap(options);//创建地图
         setMapEvent();//设置地图事件
         addMapControl();//向地图添加控件
+        Marke(options)
         addMarker();//向地图中添加marker
     }
     
     //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("allMap-four");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(108.836464,18.734262);//定义一个中心点坐标
+    function createMap(options){
+        var map = new BMap.Map("allMap");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(options.x,options.y);//定义一个中心点坐标
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
@@ -37,17 +38,17 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"星河大厦",content:"我的备注",point:"114.067521|22.607821",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 ,{title:"星河大厦",content:"我的备注",point:"113.836469|22.734187",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 ,{title:"我的标记",content:"我的备注",point:"114.068779|22.608056",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 ,{title:"我的标记",content:"我的备注",point:"113.836464|22.734262",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 ,{title:"星河中心大厦",content:"我的备注",point:"114.068028|22.539458",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = []
 		 
-		 ,{title:"我的星河大厦A座",content:"我的备注",point:"114.066273|22.61145",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+	function Marke(options) {
+		markerArr = [{title:"我的大厦",content:"",point:options.x + '|' +options.y,isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 
 		 ];
+	}
     //创建marker
     function addMarker(){
         for(var i=0;i<markerArr.length;i++){
+        	console.log(markerArr)
             var json = markerArr[i];
             var p0 = json.point.split("|")[0];
             var p1 = json.point.split("|")[1];
@@ -93,10 +94,19 @@
         var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
         return iw;
     }
+   
     //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+    function createIcon(json,options){
+        var icon = new BMap.Icon("http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
-    
-    initMap();//创建和初始化地图
+    initMap({
+    	x:'114.066331',
+		y:'22.608738'
+		
+    });//创建和初始化地图
+    function address(options){
+    	initMap(options)
+//  	createMap(options)
+    	
+    }
