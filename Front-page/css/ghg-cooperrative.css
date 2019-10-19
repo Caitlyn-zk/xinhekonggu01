@@ -178,18 +178,25 @@
 	padding: 0 0 60px ;
 }
 .tempWrap ul li{
-	float: left;
-	width: 1220px;
+	/*float: left;
+	width: 1220px;*/
 	text-align: center;
+	width: 100%;
+}
+.tab-li.on{
+	display: block;
+}
+.tab-li{
+	display: none;
 }
 .tempWrap ul{
-	width:3660px;
+	/*width:3660px;
 	overflow: hidden;
 	position: relative;
-	left: -1230px;
+	left: -1220px;
 	padding: 0;
 	margin: 0;
-	font-size: 0;
+	font-size: 0;*/
 }
 .tempWrap{
 	/*width: 1220px;*/
@@ -198,13 +205,15 @@
 }
 .slideBox{
 	/*width: 1220px;*/
+	width: 100%;
 	position: relative;
 }
 .tempWrap ul li a{
 	text-decoration: none;
 }
  .sliderWrap .container{
-	margin: 0 35px 0 20px;
+	margin: 0 35px 0 10px;
+	width: 100%;
 }
 /*.tab-li{
 	display: block;
@@ -212,7 +221,36 @@
 .tab-li.on{
 	display: none;
 }*/
+/*邮箱验证添加的样式*/
+.ghg-error {
+	position: absolute;
+	bottom: 0;
+	border: 1px solid red;
+}
 
+/* 弹框 */
+.ghg-inputBox-frame{
+	width: 176px;
+	height: 15px;
+	background: #fff;
+	position: absolute;
+	font-size: 12px;
+	text-align: center;
+	display: none;
+}
+.error {
+	width: 176px;
+	height: 15px;
+	font-size: 12px;
+	/*text-align: center;*/
+	padding-left: 15px;
+	color: #eb3c00;
+}
+.ghg-inputBox-frame.error{
+	color: red;
+	display: block;
+}
+/* ---------------------------------*/
 /*响应式页面*/
 @media only screen and (max-width:801px) {
 	.xh-nev-btn{
@@ -235,30 +273,28 @@
 		padding: 30px 20px;
 	}
 	.tempWrap .tab-ul .tab-li{
-		width: 1163px;
+		
 		/*position: absolute;*/
 		/*left: -1163px;*/
 	}
 	.tempWrap .tab-ul{
-		width: 3489px;
-		left: -1163px;
+		
 	}
 	.container .slideBox{
-		width: 1163px;
+		
 	}
 	.sliderWrap .container{
-		/*margin: 0 0 0 0;*/
+		width: 100%;
 	}
 	
 	
 }
 @media only screen and (max-width:1032px ) {
 	.bd .tempWrap .tab-ul{
-		width: 3036px;
-		left: -1012px;
+		
 	}
 	.bd .tempWrap .tab-ul .tab-li{
-		width: 1012px;
+		
 	}
 	.sliderWrap .container{
 		margin: 0 0 0 0;
@@ -266,16 +302,15 @@
 }
 @media only screen and (max-width: 601px) {
 	.bd .tempWrap .tab-ul{
-		width: 1740px;
-		left: -581px;
+		
 	}
 	.bd .tempWrap .tab-ul .tab-li{
-		width: 580px;
+		
 	}
 	.tab-abtn{
 		display: inline-block;
 	}
-	.tab-abtn .brandBox{
+	.tab-li .brandBox{
 		width: 33%;
 	}
 	
@@ -430,9 +465,12 @@
 	padding-bottom: 15px;
 }
 .inputBox{
+	height: 50px;
+	margin-top: 5px;
 	width: 49%;
 	margin-bottom: 10px;
 	background: #fff;
+	position: relative;
 }
 .input-box.people{
 	background-color: #fff;
@@ -480,6 +518,7 @@
 	border: 1px solid #dddacd;
 	box-sizing: border-box;
 	margin-bottom: 10px;
+	margin-top: 5px;
 }
 .textarea:focus{
 	outline: 1px solid #eb3c00;
@@ -564,7 +603,85 @@
 	/*等待切换效果*/
 	transition-delay:0.1s ;
 }
-.
-
+.container.contact{
+	width: 100%;
+}
+@media only screen and (max-width:1201px ) {
+	.textChange{
+		width: 100%;
+		padding-bottom: 20px;		
+	}
+	.bottomBox .container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	.companyBox .container{
+		width: 100%;
+		background: #fff;
+	}
+	.baidu-img{
+		width: 38%;
+	}
+	.detail{
+		width: 100%;
+		padding: 100px 0 20px 18px;
+	}
+	.textRight-box{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.textRight {
+		width: 100%;
+	}
+	.introduceBox.contact{
+		padding: 70px 20px 0;
+	}
+}
+@media only screen and (max-width:801px ) {
+	.breadcrumb{
+		display: none;
+	}
+}
+@media only screen and (max-width:661px ) {
+	.map-btn{
+		width: 48%;
+		margin:0 0.5% 20px 
+	}
+	.mapBox .container{
+		top: 445px;
+	}
+	.baidu-img{
+		display: none;
+	}
+	
+	
+}
+@media only screen and (max-width:601px ) {
+	.mapBox .allMap{
+		display: none;
+	}
+	.mapBox .container{
+		position: relative;
+		top: 0;
+	}
+}
+@media only screen and (max-width:761px) {
+	.email-rightBox{
+		width: 100%;
+		padding-top: 0;
+		padding-left: 0;
+	}
+	.servece-tiltle-leftBox{
+		width: 100%;
+	}
+	.bottomBox{
+		background: #f6f5f3;
+	}
+}
+@media only screen and (max-width:461px ) {
+	.inputBox{
+		width: 100%;
+	}
+}
 
 
