@@ -95,6 +95,7 @@ a:hover{
 .ghg-ta-co ul{
 	max-width: 1200px;
 	margin: 0 auto;
+	position: relative;
 }
 .ghg-ta-co ul li:nth-child(1){
 	padding: 70px 0px 0;
@@ -108,23 +109,98 @@ a:hover{
 
 }
 .ghg-ta-co ul li:nth-child(3){
+	float: left;
+	padding: 40px 0 0 0;
+	font-family: "微软雅黑";
+	max-width: 340px;
+	font-size: 18px;
+	color: #898989;
+	
+
+}
+.ghg-ta-co ul li:nth-child(4){
 	text-align: end;
 	padding: 40px  137px 0 0;
 	color: #F09F8F;
 	font-family: "微软雅黑";
 	font-size: 30px;
-
 }
-.ghg-ta-co ul li:nth-child(4){
+
+.ghg-ta-co ul li:nth-child(5){
 	text-align: end;
 	padding: 0 137px 0 0;
 	color: #D8D8DA;
 	font-size: 60px;
+	/*float: right;*/
 
 }
-
-
-
+.ghg-ta-co ul li:nth-child(6){
+	float: left;
+	max-width: 154px;
+	max-height: 42px;
+	background: #7e7e7e;
+	text-align: center;
+	line-height: 42px;
+	position: absolute;
+	bottom: 0;
+	padding-right:5px ;
+}
+.ghg-ifont{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: #585858;
+	color: #B0B0B0;
+}
+.ghg-ifont .iconfont{
+	font-size: 30px;
+	font-weight: bold;
+}
+.ghg-ta-co ul li:nth-child(6) a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: 6px;
+	color: #ffffff;
+}
+.ghg-ta-co ul li:nth-child(7){
+	position: absolute;
+	max-width: 235px;
+	max-height: 311px;
+	top: 55%;
+	
+}
+.ghg-ta-co ul li:nth-child(7) img{
+	max-width: 235px;
+	max-height: 311px;
+	
+	
+}
+.ghg-ta-too{
+	border-bottom: 2px solid #CCCCCC;
+	height: 76px;
+	text-align: center;
+	line-height: 76px;
+}
+.ghg-ta-too ul{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+	color: #999999;
+	height: 74px;
+}
+.ghg-ta-too ul li{
+	padding: 0 25px;
+	height: 76px;
+	cursor: pointer;
+	
+}
+.ghg-ta-too ul li:hover{
+	border-bottom: 2px solid #ff2d52;
+	
+}
 
 .ghg-tab-cos{
 	height: 483px;
@@ -181,9 +257,52 @@ a:hover{
 	
 }
 
+.ghg-ta-cou{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.ghg-ta-cou > ul{
+	padding: 20px 20px;
+	background: #E3E5E6;
+	height: 78px;
+	margin:40px 0;
 
+}
+.ghg-titul {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	width: 254px;
+	padding: 0 20px;
+	color: #ACACAC;
+	box-sizing: border-box;
+	line-height: 40px;
+	background: #ffffff;
+	border: 1px solid #E3E5E6;
+	cursor: pointer;
+}
+.ghg-titul li a{
+	text-decoration: none;
+	color: #ACACAC;
+}
+.ghg-titul input{
+	border: 0;
+}
 
-
+.ghg-pullList{
+	height: 160px;
+	width: 254px;
+	background: #FFFFFF;
+	text-align: center;
+	overflow: hidden;
+	display: none;
+}
+.ghg-pullList ol li{
+	height: 40px;
+	line-height: 40px;
+	color: #ACACAC;
+	cursor: pointer;
+}
 
 .ghg-tab-cov{
 	height: 483px;
