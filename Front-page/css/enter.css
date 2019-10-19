@@ -108,13 +108,12 @@
 /*当前标签继承的文字颜色，这里让伪元素的背景色与父元素的文字颜色相同*/
             transform: scale(0);
             transition:all .35s;
+            transform-origin: left;
         }
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:hover::after{          
 			transform: scale(1);      
 }     
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a::after{  
-			transform-origin: left;
-        }
+
         
 .ghg-contentBox{
 	padding-top:70px;
@@ -524,6 +523,7 @@
 		    line-height: 24px;
 		    font-weight: bold;
 }
+
 @keyframes anim{
       0% {opacity: 0;}
     100% {opacity: 1;}
@@ -617,6 +617,14 @@
 	background: #F7F7F7;
 	padding-bottom: 38px;
 }
+.ghg-substance .ghg-bgBox{
+	    left: 851.5px;
+	    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 67px;
+    background: #f3f3f3 url(../img/subBg.png) 386px top no-repeat;
+}
 .ghg-substance .ghg-topContent{
 	padding: 70px 11px 0;
 	padding-bottom: 38px;
@@ -656,7 +664,7 @@
     box-sizing: border-box;
     outline: 0;
 }
-.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox .ghg-search{
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox .ghg-searchs{
 	    position: absolute;
 	    top: 13px;
 	    right: 12px;
@@ -696,33 +704,61 @@
 .ghg-selBox .ghg-navbars .ghg-container-fluids a:hover{
 	text-decoration: none;
 }
-.ghg-substance .ghg-imgList .ghg-newBox .ghg-imageBox{
+.ghg-substance .ghg-imgList .ghg-newsBox .ghg-imageBox{
 	    text-decoration: none;
 	    color: inherit;
 	    display: block;
 }
-.ghg-substance .ghg-imgList .ghg-newBox .ghg-textBox{
+.ghg-substance .ghg-imgList .ghg-newsBox .ghg-imageBox .ghg-textBox{
 	    border: 2px solid #ebebee;
 	    border-top: none;
 	    padding: 30px 20px;
 	    min-height: 120px;
 	    background: #ffffff;
 }
-.ghg-substance .ghg-imgList .ghg-newBox .ghg-textBox h1{
+.ghg-substance .ghg-imgList .ghg-newsBox .ghg-textBox h1{
 	font-size: 30px;
     color: #3f3e55;
     font-family: Montserrat-Regular;
 }
-.ghg-substance .ghg-imgList .ghg-newBox .ghg-textBox h2{
+.ghg-substance .ghg-imgList .ghg-newsBox .ghg-textBox h2{
 	    font-size: 18px;
 	    color: #3f3e55;
 	    opacity: .9;
 	    line-height: 24px;
 	    padding-bottom: 25px;
 }
-.ghg-substance .ghg-imgList .ghg-newBox .ghg-imageBox .ghg-image{
+.ghg-substance .ghg-imgList .ghg-newsBox .ghg-textBox p{
+	    font-size: 13px;
+	    color: #898989;
+	    line-height: 24px;
+}
+.ghg-substance .ghg-imgList .ghg-newsBox .ghg-imageBox .ghg-image{
 	
 	border: none;
+}
+.ghg-substance .ghg-imgList .ghg-loadingBoxs{
+						text-align: center; 
+						line-height: 30px;
+						 color: rgb(153, 153, 153); 
+						 margin-top: 20px; display: none;
+}
+.ghg-substance .ghg-imgList .ghg-loadingBox{
+	vertical-align: text-top;
+    margin-right: 5px;
+}
+.ghg-substance{
+	display: none;
+	
+}
+.ghg-substance .container{
+	padding: 0;
+}
+.ghg-substance.on{
+	display: block;
+}    
+.ghg-baseBoxWrap{
+	width: 800px;
 }
 @media only screen and (max-width:1200px ) {
 	
@@ -804,6 +840,18 @@
  		    width: 47.5%;
     		margin-right: 2%;
  	}
+ 	.ghg-containerBox .ghg-loading .ghg-baseBoxWrap{
+ 		width: 100%;
+ 		float: left;
+ 		
+ 	}
+ 	 .ghg-baseBoxWrap .ghg-contentWrap .ghg-borderBg{
+ 		display: none;
+ 	}
+ 	.ghg-substance .ghg-imgList{
+ 	top: 100px;
+ 	}
+ 	 
 }
       
  /*小屏幕*/
@@ -827,6 +875,10 @@
 		display: inline-block;
         float: initial;
 	}
+	.ghg-substance .ghg-imgList{
+		top: 100px;
+	}
+	
  	
  	
  }
