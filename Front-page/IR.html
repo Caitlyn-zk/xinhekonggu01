@@ -5,7 +5,7 @@
     -->
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,maxinum-scale=1,user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>星河控股</title>
 		
 	</head>
@@ -14,9 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/ghgpublic.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" href="css/IR.css"/>
-	
-	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/superSlide2.1/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
 	<body>
 		
 		
@@ -587,29 +584,38 @@
 						<h1>COMPANY ANNOUNCEMENT</h1>
 						<h2>公司公告</h2>
 						<div class="ghg-inputBox">
-							<ul>
+							<ul class="ghg-tilib">
 								<div class="ghg-selBox">
-									<a class="glyphicon glyphicon-time"></a>
-									<span>发布时间</span>
-			                        <a class="glyphicon glyphicon-triangle-bottom"></a>
-			                        <!--<a class="glyphicon glyphicon-triangle-top"></a>-->
-			                        <div class="pullList">
+									<ul id="发布时间" class="ghg-selBoxul">
+										<p class="glyphicon glyphicon-time"></p>
+										<span>发布时间</span>
+				                        <p class="glyphicon glyphicon-triangle-bottom"></p>
+									</ul>
+			                        <div class="ghg-pullLists">
 			                            <ul>
-			                                <li id="all">所有</li>
-			                                <li id="day">最近一天</li>
-			                                <li id="week">最近一周</li>
-			                                <li id="month">最近一月</li>
+			                                <li id="所有">所有</li>
+			                                <li id="最近一天">最近一天</li>
+			                                <li id="最近一周">最近一周</li>
+			                                <li id="最近一月">最近一月</li>
 			                            </ul>
 			                        </div>
 			                    </div>
 							</ul>
-							<ul>
-								<form class="navbar-form navbar-left" role="search">
-									<div class="form-group-sm">
-									    <input type="text" class="form-control" placeholder="Search">
-									    <a class="glyphicon glyphicon-search"></a> 
-									</div>
-								</form>
+							<ul class="ghg-tilib">
+								
+								<div class="form-group-sm">
+								    <ul class="ghg-inp">
+								    	<li>
+								    		<input type="text" placeholder="搜索">
+								    	</li>
+								    	<li>
+								    		<p class="glyphicon glyphicon-search"></p> 
+								    	</li>
+								    	
+								   		
+								    </ul>
+								</div>
+								
 							</ul>     
 		                </div>
 		
@@ -844,27 +850,28 @@
 		</div>
 	</body>
 </html>
-<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/superSlide2.1/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/superSlide2.1/jquery.SuperSlide.2.1.js"></script>
 <script src="js/index.js"></script>
 <script>
 	//下拉列表
 	$(function(){
-		$(".select a").click(function(e){
-			$(".select").toggleClass('open');
+		$(".ghg-selBoxul").click(function(e){
+			$(".ghg-pullLists").toggleClass('open');
 			e.stopPropagation();
 		});
 		
-		$(".content .select ul li").click(function(e){
+		$(".ghg-pullLists ul li").click(function(e){
 			var _this=$(this);
-			$(".select > p").text(_this.attr('data-value'));
-			_this.addClass("Selected").siblings().removeClass("Selected");
-			$(".select").removeClass("open");
+			$(".ghg-selBox >.ghg-selBoxul").text(_this.attr('id'));
+			_this.addClass("select").siblings().removeClass("select");
+			$(".ghg-selBox").removeClass("open");
 			e.stopPropagation();
 		});
 		
 		$(document).on('click',function(){
-			$(".select").removeClass("open");
+			$(".ghg-selBox").removeClass("open");
 		})
 		
 	});

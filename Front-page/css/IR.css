@@ -92,3 +92,79 @@
 .ghg-searchBox{
 	border: 1px solid salmon;
 }
+
+.ghg-tilib{
+	height: 50px;
+	width: 188px;
+	background: #ffffff;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #ADADAD;
+	margin: 0 10px;
+	color: #ADADAD;
+}
+.ghg-selBoxul{
+	color: #ADADAD;
+	height: 50px;
+	width: 188px;
+	cursor: pointer;
+}
+.ghg-selBoxul span{
+	display: inline-block;
+	padding: 0 20px;
+	
+	
+}
+.ghg-inp{
+	display: flex;
+	justify-content: space-between;
+	
+	height: 50px;
+	width: 188px;
+	
+}
+.ghg-inp{
+	color: #ADADAD;
+}
+.ghg-inp li:nth-child(2){
+	padding: 0 20px;
+	font-size: 20px;
+	color: #ADADAD;
+}
+	
+.ghg-inp input{
+	margin: 0;
+	padding: 0;
+	height: 48px;
+	top: 0;
+	width: 130px;
+	vertical-align: 5px;
+	border: 0;
+	padding-left:20px ;
+	
+}
+.ghg-pullLists{
+	display: none;
+}
+.ghg-pullLists.open{
+	display: block;
+}
+.ghg-pullLists>ul{
+	height: 188px;
+	width: 188px;
+	border: 1px solid #ADADAD;
+	box-sizing: border-box;
+	background: #ffffff;
+	cursor: pointer;
+	
+}
+.ghg-pullLists ul li{
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+	background: #ffffff;
+	border-left:1px solid  #ADADAD;
+}
+.ghg-pullLists ul li.select{
+	background: #ffffff;
+}

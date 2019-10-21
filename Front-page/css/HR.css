@@ -288,6 +288,26 @@ a:hover{
 .ghg-titul input{
 	border: 0;
 }
+.ghg-titulme {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	width: 254px;
+	padding: 0 20px;
+	color: #ACACAC;
+	box-sizing: border-box;
+	line-height: 40px;
+	background: #ffffff;
+	border: 1px solid #E3E5E6;
+	cursor: pointer;
+}
+.ghg-titulme li a{
+	text-decoration: none;
+	color: #ACACAC;
+}
+.ghg-titulme input{
+	border: 0;
+}
 
 .ghg-pullList{
 	height: 160px;
@@ -296,6 +316,14 @@ a:hover{
 	text-align: center;
 	overflow: hidden;
 	display: none;
+}
+.dropdown-menu{
+	padding: 0;
+	margin-left: 15px;
+	margin-top: 0;
+}
+.ghg-pullList.on{
+	display: block;
 }
 .ghg-pullList ol li{
 	height: 40px;
