@@ -47,7 +47,13 @@
 		}
 
 	})
-
+	
+	/*导航点击上划线*/
+	$(".nav > li").click(function(){
+		$(this).addClass("active")
+		$(this).siblings().removeClass("active")
+	})
+	
 	$(function() {
 		//侧边划出列表
 		$('.ghg-navlists span').click(function() {
