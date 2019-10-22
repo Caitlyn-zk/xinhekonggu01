@@ -55,6 +55,7 @@ $('.xh-nev-btn').click(function(){
 //	$(this).addClass('on').siblings().removeClass('on')
 //	})
 	$(this).addClass('on').siblings().removeClass('on')
+	let currnt=$('.current')
 	let h1 =parentEle.find('.textChange').children('h1')
 	 let h2=parentEle.find('.textChange').children('h2')
 	if(index ==0){
@@ -63,6 +64,7 @@ $('.xh-nev-btn').click(function(){
 		let h2Html ='<p>星河控股集团成立于1988年，现有地产、金融、产业、商置、物业五大业务集团<p/>'
 		h2.html(h2Html)	
 		h1.html(h1Html)
+		currnt.html("星河股控")
 		
 	}
 	if(index ==1){
@@ -71,30 +73,35 @@ $('.xh-nev-btn').click(function(){
 	let	h2Html ='<p>星河地产集团已开发面积超过5000万平方米，土地储备面积逾3300万平方米，<br>作为深圳创新投资集团、深圳福田银座村镇银行第二大股东，<br>阳光保险、天津津融资产管理有限公司重要股东，前海母基金、国家中小企业发展基金有限合伙人。<br>已逐步形成股权投资、债权投资、基金管理三大业务板块.</P>'			
 	h1.html(h1Html)
 	h2.html(h2Html)	
+	currnt.html("地产")
 	}
 	if(index ==2){
 		let h1Html ='<p>星河金融控股集团 </P>'
 		let h2Html ='<p>星河金融控股集团自有资金投资超人民币200亿元，<br>拥有产融联盟新城、双创社区、特色小镇三条重要产品线，创新“产城投融”运营模式，<br>致力于打造“留产业、留人才、留税收”的产业高地。<br>产融联盟新城代表作深圳星河WORLD，截至目前已签约企业超500家（含14家500强企业、30家上市企业）；<br>双创社区管理运营面积约60,000平方米，目前入孵创业团队逾200家。</p>'
 		h1.html(h1Html)
-		h2.html(h2Html)		
+		h2.html(h2Html)
+		currnt.html("金融")
 	}
 	if(index==3){
 		let h1Html ='<p>星河商置集团 </P>'
 		let h2Html ='<p>拥有产融联盟新城、双创社区、特色小镇三条重要产品线，创新“产城投融”运营模式，<br>致力于打造“留产业、留人才、留税收”的产业高地。<br>双创社区管理运营面积约60,000平方米，目前入孵创业团队逾200家。<br>产融联盟新城代表作深圳星河WORLD，截至目前已签约企业超500家（含14家500强企业、30家上市企业）；<br>双创社区管理运营面积约60,000平方米，目前入孵创业团队逾200家。</p>'
 		h1.html(h1Html)
 		h2.html(h2Html)	
+		currnt.html("产业")
 	}
 	if(index ==4){
 		let h1Html ='<p>星河物业集团 </P>'
 		let h2Html ='<p>作为“商业地产价值链整合资产运营商”。<br>旗下商业管理公司星河商置（新三板代码：839819）具备15年专业商业运营经验。<br>管理规模超200万平方米，积累逾1,000个商业品牌资源。</p>'
 		h1.html(h1Html)
 		h2.html(h2Html)
+		currnt.html("商置")
 	}
 	if(index ==5){
 		let h1Html ='<p>星河商置集团 </P>'
 		let h2Html ='<p>作为“商业地产价值链整合资产运营商”，<br>旗下商业管理公司星河商置（新三板代码：839819）具备15年专业商业运营经验，<br>管理规模超200万平方米，积累逾1,000个商业品牌资源。</p>'
 		h1.html(h1Html)
 		h2.html(h2Html)
+		currnt.html("物业")
 	}
 })
 //tab 表格切换
@@ -132,9 +139,9 @@ let api = 'http://192.168.97.251:3000/'
 		type:"post",
 		url:api + 'getalliance',
 		async:true,
-		data:'dasd',
 		datatype:'json',
 		success:function(res){
+			
 		let html =''
 			for (let item of res.data) {	
 				html+=`<div class="brandBox">
@@ -148,18 +155,20 @@ let api = 'http://192.168.97.251:3000/'
 			
 		}
 	});
+	
 
 $('.xh-nev-btn').click(function(){
-	let id =$(this).index()
-	
+	console.log(1)
+	let classify =$(this).index()
+	console.log(1)
 	let api = 'http://192.168.97.251:3000/'
 	let allianceImgURL = 'http://192.168.97.251:3000/alliance/'
-	console.log(id)
+	console.log(classify)
 	
 	$.ajax({
 		type:"post",
 		url:api + 'getallianceByClass',
-		data:{id},
+		data:{classify},
 		async:true,
 		datatype:'json',
 		success:function(res){
@@ -168,18 +177,19 @@ $('.xh-nev-btn').click(function(){
 			for (let item of res.data) {	
 				html+=`<div class="brandBox">
 							<div class="">
-							<img src="<img src='${allianceImgURL+item.img}'/>" />
+							<img src="<img src='http://192.168.97.251:3000/alliance/+${item.img}'/>" />
 							</div>
 						</div>`
 			}
 			//往li添加内容 
-			$('.tab-li').eq(id).html(html)
+			$('.tab-li').eq(classify).html(html)
 		}
 	});
-})
 
 	
-	
+})
+
+
 
 
 

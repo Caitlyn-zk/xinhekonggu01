@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale =1,maximum-scale=1,user-scalable=no " />
-		<title>联络星河</title>
+		<title></title>
 	</head>
 	<link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="css/commcn.css" />
@@ -490,7 +490,7 @@
 							<!--tab切换-->
 							<div class="tabBox clearfix pull-left">
 								<ul class="clearfix">
-									<li class="xh-nev-btn contact-btn">
+									<li class="xh-nev-btn on contact-btn">
 										<a class="" href="">
 											联系方式
 											<span class="nav-span"></span>
@@ -513,7 +513,7 @@
 							<div class="breadcrumb contact pull-right">
 								<img src="img/home.png" alt="" />
 								<a href="" class="">合作伙伴</a>
-								<a class="current">产业</a>
+								<a class="current">联系方式</a>
 							</div>
 						</div>
 					</div>
@@ -543,7 +543,7 @@
 								<h1>关注星河</h1>
 								<ul class="">
 									<li>
-										<img src="imgs/ghg-lyk-qrcode.jpg" />
+										<img src="img/ghg-lyk-qrcode.jpg" />
 									</li>
 								</ul>
 							</div>
@@ -554,7 +554,7 @@
 				<!--百度地图栏-->
 				<div class="mapBox">
 					<!--百度地图按钮-->
-					<div class="container">
+					<div class="container map contact">
 						<ul class="clearfix tablelist-map-btn">
 							<li class="map-btn active">
 								<a class="map-a active" >星河地产集团</a>
@@ -576,27 +576,14 @@
 					</div>
 					<!--地图匡-->
 					<div class="allMap active" id="allMap">
-						
+						<span class="ico-img">
+							<img src="imgs/addressIcon.png" />
+						</span>
 					</div>
-					<div class="allMap " id="allMap-two">
-						
-					</div>
-					<div class="allMap " id="allMap-three">
-						
-					</div>
-					<div class="allMap " id="allMap-four">
-						
-					</div>
-					<div class="allMap " id="allMap-five">
-						
-					</div>
-					
-					
-					
 				</div>
 				<div class="companyBox">
 					<div class="container">
-						<img src="imgs/ghg-lyk-contactMap.jpg" class="pull-left baidu-img ghg-padding-40-top"/>
+						<img src="img/ghg-lyk-contactMap.jpg" class="pull-left baidu-img ghg-padding-40-top"/>
 						<div class="pull-left detail ">
 							<div class="textBox active">
 								<h1>星河地产集团</h1>
@@ -758,7 +745,8 @@
 						<div class="email-rightBox pull-left">
 							<h1>在线留言反馈</h1>
 							<h2>请在此留下你的联系方式，我们期待与您取得联系，您的私人信息将受到严格保密。</h2>
-							<form method="post">
+							<form method="post" class="form-email">
+								
 								<div class="inputBox pull-left">
 									<input class="input-box people" name="name" placeholder="姓名"/>
 								</div>
@@ -772,9 +760,13 @@
 									<input class="input-box pho" name="pho" placeholder="联系方式"></input>
 								</div>
 								<div class="textareaBox">
-									<textarea class="textarea" name="" placeholder="请留言区.."></textarea>
+									<textarea class="textarea" name="textarea" placeholder="请留言区.."></textarea>
 								</div>
-								<input type="submit" value="提交" class="form-submit"/>
+								<div class="btn-box">
+									提交
+									<a  class="form-btn"/>
+								</div>
+								
 							</form>
 						</div>
 					</div>
@@ -1005,11 +997,8 @@
 </html>
 <script src="js/jquery-2.1.0.js"></script>
 <script src="js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/info.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
-
-<script src="js/map.js"></script>
 <script src="js/ghgContactG.js"></script>
-<script src="js/mapTwo.js"></script>
-<script src="js/mapThree.js"></script>
 <script src="js/mapFour.js"></script>
-<script src="js/mapFive.js"></script>
