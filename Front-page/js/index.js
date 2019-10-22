@@ -80,6 +80,12 @@
 			"display":"block"
 		})
 	})
+	/*循环点击*/
+	$(".nav > li").click(function(){
+		$(this).addClass("active")
+		$(this).siblings().removeClass("active")
+	})
+	
 	/*底部js*/
 	//法律声明,地图弹框
 	$('.ghg-statement').click(function(){
