@@ -249,24 +249,193 @@
 .ghg-entrance-more:hover {
 	color: #fff;
 }
-@media only screen and (max-width:678px ) {
-	.ghg-entrance-bar {
-		width: 80%;
-	}
-	.ghg-containerBox .ghg-group-rightTitle .ghg-real {
-		font-size: 35px;
-	}
-	.ghg-searchRes {
-		height: 50px;
-	}
-	.ghg-landstr-right {
-		height: 200px;
-		padding-left: 20px;
-	}
-	.selsect-lists {
-		height: 80px;
-	}
+
+/*商置*/
+.ghg-sideitBox {
+	padding: 0;
 }
+.ghg-rightTitlebx p {
+	margin-bottom: 0;
+}
+.ghg-rightTitlebx p:nth-child(1){
+	color: #5ab669;
+	font-size: 22px;
+}
+.ghg-rightTitlebx p:nth-child(2){
+	color: #eeeeef;
+	font-size: 124px;
+	font-family: "calisto mt";
+	text-indent: -6px;
+	letter-spacing: -9px;
+}
+.ghg-rightTitlebx p:nth-child(3){
+	color: #8D8D8D;
+	font-size: 30px;
+}
+.ghg-list-box p {
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #3B3A40;
+	opacity: 0.6;
+}
+.ghg-consult-list {
+	margin: 0;
+	background: #f2f0ec url(../img/industryBg.png) center center no-repeat;
+}
+.ghg-consult-list .ghg-lists {
+	padding: 0 0 35px;
+}
+.ghg-sideit-list-h3 {
+	color: #585858;
+	font-size: 20px;
+	opacity: 0.5;
+}
+.ghg-lists .ghg-bomBox {
+	margin: 0 37px;
+}
+.ghg-holiday {
+	width: 45%;
+}
+.ghg-holiday>img {
+	width: 100%;
+	
+}
+.ghg-holiday-kick {
+	width: 100%;
+	height: 165px;
+	padding: 30px 30px 0;
+	background: #fff;
+}
+.ghg-holiday-kick h4 {
+	color: #2D2D3B;
+	opacity: 0.6;
+}
+.ghg-holiday-kick p {
+	color: #919191;
+	opacity: 0.6;
+}
+.ghg-noliday {
+	background: linear-gradient(-45deg,transparent 20px,#4bb033 0);
+}
+.ghg-noliday h4, .ghg-noliday p {
+	color: #fff;
+}
+.ghg-holiday:nth-child(2) {
+	margin-left: 10%;
+}
+.ghg-linkList {
+	background: #474747;
+	width: 100%;
+	height: 163px;
+	padding: 0 37px;
+	display: none;
+}
+.ghg-linkList-list {
+	padding: 15px 0 35px;
+}
+.ghg-linkList-list .ghg-link-wabs {
+	font-size: 18px;
+	padding-left: 45px;
+	background: url(../img/web.png) left center no-repeat;
+	line-height: 48px;
+	color: #fff;
+	border-bottom: 2px solid #6c6c6c;
+	margin-bottom: 30px;
+}
+.ghg-linkList-list p a {
+	padding-right: 20px;
+	color: #eb3d00;
+}
+.ghg-linkList-list p a + a {
+	display: inline-block;
+	padding-left: 20px;
+	margin-bottom: 0 0px 15px 20px;
+	color: #eb3d00;
+	border-left: 1px solid #6c6c6c;
+}
+.ghg-linkList-list p a:hover {
+	color: #4bb033;
+}
+.ghg-commercialaa {
+	width: 100%;
+	margin: 0 auto;
+	background: #f8f8f8 url(../img/estateBottomBg.jpg) center top no-repeat;
+}
+.ghg-commercialaa .col-md-4 {
+	height: 476px;
+	padding: 20px 0 0 40px;
+	position: relative;
+}
+.ghg-commercialaa .col-md-4:nth-child(3) {
+	padding: 20px 20px 0 10px;
+}
+.ghg-commercialaa .ghg-index-bar {
+	position: absolute;
+	bottom: 120px;
+	left: 40px;
+}
+.ghg-index-commer {
+	background: url(../img/greenqiu.png) left center no-repeat;
+	padding-left: 35px;
+	margin: 0;
+	font-size: 16px;
+	color: #5ab669;
+	line-height: 40px;
+}
+.ghg-rightBoxss .ghg-rightBoxss-h1 {
+	padding-top: 65px;
+	font-size: 16px;
+	color: #3d3a4d;
+	opacity: .6;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.ghg-rightBoxss ul {
+	padding-bottom: 85px;
+}
+.ghg-rightBoxss li {
+	padding-left: 20px;
+	background: url(../img/fang.png) left 5px no-repeat;
+	font-size: 14px;
+	color: #3b3a40;
+	opacity: .6;
+}
+/*物业*/
+.ghg-cotentlist p:nth-child(1) {
+	font-size: 20px;
+    color: #bc8f4b;
+    margin-bottom: 0;
+}
+.ghg-cotentlist p:nth-child(2){
+	color: #eeeeef;
+	font-size: 100px;
+	text-indent: -6px;
+	letter-spacing: -9px;
+}
+.ghg-cotentlist p:nth-child(3){
+	color: #8D8D8D;
+	font-size: 30px;
+}
+.hg-zhishan {
+	display: inline-block;
+	width: 363px;
+	height: 81px;
+	line-height: 80px;
+	font-size: 16px;
+	color: #fff;
+	margin-left: 5px;
+	text-align: center;
+	background: #b89f86;
+}
+.hg-zhishan:hover {
+	color: #fff;
+}
+.ghg-ckg_wr {
+	background: url(../img/property_pic.jpg) no-repeat center;
+	background-size: auto 100%;
+	height: 565px;
+}
+
 /* 徐灿 金融 */
 .ghg-financial{
 	height: 342px;
@@ -415,7 +584,293 @@
 	background: url(../img/xc-right.png) no-repeat;
 	right: 0;
 }
+/*集团业务css*/
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background: #ccc;
+}
+.ghg-group-commonwrap {
+	background: #f4f4f4;
+}
+.ghg-contentBox {
+	background: #fff;
+}
 
+.ghg-containerBox .ghg-group-rightTitle .ghg-real{
+	font-size: 88px;
+}
+.ghg-group-rightTitle p {
+ margin: 0;	
+}
+.ghg-group-rightTitle .col-md-5 {
+	padding-top: 50px;
+}
+.ghg-group-rightTitle .col-md-5 span {
+	vertical-align: -6px;
+	color: #737373;
+}
+.ghg-watdown {
+	margin-top: 25px;
+	background: #eb3c00;
+	width:80px;
+	height: 81px;
+	transition:width .5s;
+	-moz-transition:width .5s; /* Firefox 4 */
+	-webkit-transition:width .5s; /* Safari and Chrome */
+	-o-transition:width .5s; /* Opera */
+}
+.ghg-watdown:hover {
+	width: 100%;
+}
+.col-md-5 .ghg-watdown .ghg-company {
+	color: #fff;
+	text-align: left;
+	line-height: 80px;
+	font-size: 16px;
+}
+.ghg-watdown-btns {
+	display: none;
+	text-align: center;
+}
+.ghg-watdown:hover .ghg-watdown-btns {
+	display: block;
+}
+.ghg-dropdown-btn:hover .dropdown-menu {
+	display: block;
+}
+
+
+/* 徐灿 金融 */
+.ghg-financial{
+	height: 342px;
+	padding-top: 70px;
+}
+.ghg-financial-left h1{
+	font-size: 20px;
+    color: #bc8f4b;
+}
+.ghg-containerBox{
+	background: #fff;
+}
+.ghg-financial-left h2{
+	font-size: 124px;
+    color: #eeeeef;
+    line-height: 95px;
+    font-family: CALIBRI;
+    text-indent: -8px;
+    letter-spacing: -9px;
+}
+.ghg-financial-left p{
+	font-size: 30px;
+    color: #8d8d8d;
+}
+.ghg-financial-right h1{
+	font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    opacity: 0.6;
+    color: #3b3a40;
+}
+.ghg-financial-right {
+	width: 447px;
+}
+
+.ghg-financial-right p{
+	font-size: 14px;
+    line-height: 24px;
+    opacity: 0.6;
+    color: #3b3a40;
+    padding-bottom: 30px;
+}
+
+.ghg-financial-right .text{
+	font-size: 48px;
+    vertical-align: middle;
+    opacity: 1;
+    color: #000;
+}
+.ghg-financial-bottom{
+	position: relative;
+    overflow: hidden;
+    font-size: 0;
+    padding-left: 84px;
+}
+
+.ghg-financial-bottom a{
+	display: block;
+    width: 100%;
+    line-height: 81px;
+    background: #eeb742;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.ghg-financial-bottom img{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.ghg-plate-cont{
+	background: #f2f0ec;
+	padding-bottom: 80px;
+}
+.ghg-plate-cont .container{
+	padding-top: 30px;
+}
+.ghg-plate{
+	position: relative;
+}
+.ghg-plate h1{
+	color: #898989;
+    font-size: 18px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.ghg-plate h2{
+	color: #585858;
+    font-size: 20px;
+    opacity: 0.5;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.ghg-plate-box{
+    position: relative;
+    width: 812px;
+    height: 361px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ghg-plate-box ul li{
+	width:386px;
+	float: left;
+	margin: 0 10px;
+}
+.ghg-plate-box ul li img{
+	width: 100%;
+}
+.ghg-textBox{
+	position: relative;
+    height: 129px;
+    padding: 30px 30px 0;
+    background: #fff;
+}
+.ghg-textBox h1{
+	color: #2d2d3b;
+    font-size: 18px;
+    opacity: 0.67;
+    text-align: left;
+    margin-top: 0;
+}
+.ghg-textBox p{
+	color: #919191;
+    font-size: 14px;
+    opacity: 0.67;
+}
+
+.ghg-textBox:hover h1,
+.ghg-textBox:hover p{
+	color: #fff;
+	opacity: 1;
+}
+.ghg-textBox:hover{
+	position: relative;
+    height: 129px;
+    padding: 30px 30px 0;
+    background: linear-gradient(-45deg,transparent 20px,#eeb742 0);
+}
+.ghg-plate-btn{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 50%;
+}
+.ghg-plate-prev{
+	background: url(../img/xuc-left.png) no-repeat;
+}
+.ghg-plate-next{
+	background: url(../img/xc-right.png) no-repeat;
+	right: 0;
+}
+.ghg-industry-Box .ghg-financial-left h1{
+	color: #0656a2;
+}
+.ghg-industry-Box .ghg-financial-right .ghg-financial-bottom a{
+	background: #0656a2;
+}
+/* 产业 */
+.ghg-industry-list{
+	width: 100%;
+	background: #f2f0ec;
+}
+.ghg-industry-list .container{
+	width: 1220px;
+    padding: 50px 0 35px;
+}
+.ghg-industry-list h1{
+	color: #898989;
+    font-size: 18px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.ghg-industry-list h2{
+	color: #585858;
+    font-size: 20px;
+    opacity: 0.5;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.ghg-industry-content{
+	overflow: hidden;
+}
+.ghg-industry-content ul li{
+	width: 33.33%;
+    padding: 0 10px;
+    float: left;
+}
+.ghg-industry-content ul li img{
+	width: 100%;
+}
+.ghg-industry-content .ghg-textBox h1{
+	text-align: left;
+}
+.ghg-industry-content .ghg-textBox:hover{
+	position: relative;
+    height: 129px;
+    padding: 30px 30px 0;
+    background: linear-gradient(-45deg,transparent 20px,#0656a2 0);
+}
+.ghg-industry-works {
+	background:  url(../img/xc-industryBg1.png);
+}
+.ghg-industry-works .container{
+	height: 584px;
+	position: relative;
+}
+.ghg-industry-works .ghg-workBox{
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 300px;
+    width: 380px;
+    height: 418px;
+    border-top: 5px solid #4b88c2;
+    padding: 40px 28px;
+    color: #3b3a40;
+    display: none;
+}
+.ghg-industry-works .ghg-workBox h1{
+	font-size: 16px;
+    padding-bottom: 20px;
+    opacity: 0.6;
+}
+.ghg-industry-works .ghg-workBox p{
+	font-size: 14px;
+    padding-bottom: 20px;
+    opacity: 0.6;
+    line-height: 24px;
+}
 
 /*1200*/
 @media only screen and (max-width: 1200px) {
@@ -428,8 +883,6 @@
 	.ghg-financial{
 		height: 100%;
 		padding-bottom: 30px;
-	}
-	.ghg-financial{
 		padding-top: 20px;
 	}
 	.ghg-financial-right{
@@ -444,18 +897,141 @@
 	.ghg-financial-left{
 		float: none;
 	}
+	.ghg-industry-list .container{
+		width: 100%;
+		padding: 50px 0 35px;
+	}
 	.ghg-financial-left h2,
 	.ghg-financial-left h1,
 	.ghg-financial-left p{
 		margin: 0;
 	}
-	
+	.ghg-industry-works .container{
+		margin: 0;
+	}
+	/*商置*/
+	.ghg-commercialaa {
+		
+		width: 100%;
+		margin: 0 auto;
+		background: #f8f8f8 url(../img/estateBottomBg.jpg) center top no-repeat;
+	}
+	.ghg-rightBoxss ul {
+		padding-bottom: 20px;
+	}
+	.ghg-commercialaa .col-md-4 {
+		width: 50%;
+		height: 277px;
+		padding: 20px 0 0 40px;
+	}
+	.ghg-commercialaa .col-md-4:nth-child(3) {
+		padding: 20px 20px 0 10px;
+		width: 100%;
+		height: 200px;
+	}
+	.ghg-commercialaa .ghg-index-bar {
+		position: absolute;
+		bottom: 60px;
+		left: 40px;
+	}
+	.ghg-index-commer {
+		background: url(../img/greenqiu.png) left center no-repeat;
+		padding-left: 35px;
+		margin: 0;
+		font-size: 16px;
+		color: #5ab669;
+		line-height: 40px;
+	}
+	.ghg-rightBoxss .ghg-rightBoxss-h1 {
+		padding-top: 15px;
+		margin: 0;
+		padding-bottom: 20px;
+	}
+	.ghg-rightBoxss li {
+		padding-left: 20px;
+	}
+	.ghg-listshang {
+		display: none;
+	}
+
 }
 @media only screen and (max-width: 959px) {
 	.ghg-plate-box{
 		width: 405px;
 	}
+	.ghg-commercialaa .col-md-4:nth-child(2) {
+		display: none;
+	}
+	.ghg-commercialaa .col-md-4:nth-child(1) {
+		padding: 20px 0 0 10px;
+	}
+	.ghg-holiday-kick {
+		padding: 15px 15px 0;
+	}
 }
+/*地产页屏*/
+@media only screen and (max-width: 900px) {
+	.ghg-industry-content .ghg-textBox{
+		height: 160px;
+	}
+	.ghg-industry-content .ghg-textBox:hover{
+		position: relative;
+	    height: 160px;
+	    padding: 30px 30px 0;
+	    background: linear-gradient(-45deg,transparent 20px,#0656a2 0);
+	}
+}
+@media only screen and (max-width: 700px) {
+	.ghg-industry-content ul li{
+		width: 100%;
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width:678px ) {
+	.ghg-entrance-bar {
+		width: 80%;
+	}
+	.ghg-containerBox .ghg-group-rightTitle .ghg-real {
+		font-size: 35px;
+	}
+	.ghg-searchRes {
+		height: 50px;
+	}
+	.ghg-landstr-right {
+		height: 200px;
+		padding-left: 20px;
+	}
+	.selsect-lists {
+		height: 80px;
+	}
+	.ghg-holiday {
+		width: 100%;
+	}
+	.ghg-holiday:nth-child(2) {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.ghg-commercialaa .ghg-index-bar {
+		position: absolute;
+		bottom: 20px;
+		left: 40px;
+	}
+	.ghg-rightTitlebx p:nth-child(2) {
+		font-size: 70px;
+	}
+	.ghg-commercialaa .ghg-index-bar {
+		position: absolute;
+		bottom: 0px;
+		left: 40px;
+		padding: 0;
+	}
+	.ghg-commercialaa .ghg-index-bar li {
+		float: left;
+		width: 260px;
+	}
+}
+
 @media only screen and (max-width: 470px) {
 	.ghg-plate-box ul li{
 		width: 300px;
@@ -464,7 +1040,11 @@
 		width: 300px;
 	}
 	.ghg-financial-left h2{
-		font-size: 94px;
+		font-size: 89px;
+	}
+	.ghg-industry-works .ghg-workBox{
+		width: 90%;
+    	left: 5%;
 	}
 }
 @media only screen and (max-width: 320px) {
@@ -475,7 +1055,7 @@
 		width: 286px;
 	}
 	.ghg-financial-left h2{
-		font-size: 98px;
+		font-size: 88px;
 	}
 }
 
