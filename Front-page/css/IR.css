@@ -168,3 +168,40 @@
 .ghg-pullLists ul li.select{
 	background: #ffffff;
 }
+.ghg-youme{
+	background: #F8F6F1;
+}
+.ghg-youme-me{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+.ghg-youme-me ul{
+	display: flex;
+	justify-content: space-between;
+	height: 76px;
+	border-left: 2px solid #cccccc;
+	border-right: 2px solid #cccccc;
+	border-bottom: 2px solid #cccccc;
+	background: #ffffff;
+	margin: 0 auto;
+	
+}
+.ghg-youme-me ul:nth-child(1){
+		border-top: 2px solid #cccccc;
+}
+.ghg-youme-me ul li{
+	height: 72px;
+	padding: 20px 0;
+	line-height: 20px;
+	background: #ffffff;
+	box-sizing: border-box;
+	
+	
+}
+.ghg-youme-me ul li:nth-child(2){
+	background: url(../img/zhi2.png) center center no-repeat;
+}
+.ghg-youme-me ul li:nth-child(2):hover{
+	background: url(../img/zhi1.png) center center no-repeat;
+}

@@ -30,7 +30,6 @@
 //			width: '100%'
 //		})
 //	})
-	
 //})
 
 //tab 切换 
@@ -146,7 +145,7 @@ let api = 'http://192.168.97.251:3000/'
 			for (let item of res.data) {	
 				html+=`<div class="brandBox">
 							<div class="">
-							<img src="<img src='${allianceImgURL+item.img}'/>" />
+							<img src="${allianceImgURL+item.img}" />
 							</div>
 						</div>`
 			}
@@ -177,7 +176,7 @@ $('.xh-nev-btn').click(function(){
 			for (let item of res.data) {	
 				html+=`<div class="brandBox">
 							<div class="">
-							<img src="<img src='http://192.168.97.251:3000/alliance/+${item.img}'/>" />
+							<img src="${allianceImgURL+item.img}" />
 							</div>
 						</div>`
 			}
@@ -185,8 +184,6 @@ $('.xh-nev-btn').click(function(){
 			$('.tab-li').eq(classify).html(html)
 		}
 	});
-
-	
 })
 
 

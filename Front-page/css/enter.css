@@ -1,33 +1,39 @@
 /*走进星河css*/
-.ghg-bannerBox .ghg-imgBox{
+
+.ghg-bannerBox .ghg-imgBox {
 	background: url(../img/top.png) center center no-repeat;
 	height: 169px;
 }
-.ghg-commonWrap{
+
+.ghg-commonWrap {
 	background: #fff;
 }
-.ghg-containerBox{
+
+.ghg-containerBox {
 	display: none;
 }
-.ghg-containerBox.on{
+
+.ghg-containerBox.on {
 	display: block;
-	
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current {
 	color: #ea3800;
 	display: none;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current.on{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb .ghg-current.on {
 	display: block;
 	color: #eb3c00;
 }
-.ghg-commonWrap .ghg-container{
+
+.ghg-commonWrap .ghg-container {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
-	
 }
-.ghg-sideitBox .ghg-hd ul li:after{
+
+.ghg-sideitBox .ghg-hd ul li:after {
 	position: absolute;
 	left: -1px;
 	top: 50%;
@@ -38,915 +44,1048 @@
 	height: 14px;
 	background: #666666;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav{
+
+.ghg-commonWrap .ghg-container .ghg-subNav {
 	overflow: hidden;
 	line-height: 65px;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox {
 	float: left;
-	
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul {
 	overflow: hidden;
 	margin-bottom: 0;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a {
 	color: black;
-	
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a:hover{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox a:hover {
 	text-decoration: none;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:active{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:active {
 	background: #CCCCCC;
 }
+
 .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li {
 	float: left;
-	margin-right:35px;
+	margin-right: 35px;
 	color: #3b3a40;
 	font-size: 14px;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb{
-    font-size: 13px;
-    color: #5b5b5b;
-	float: right; 
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb {
+	font-size: 13px;
+	color: #5b5b5b;
+	float: right;
 	line-height: 65px;
 	padding: 0;
 	margin: 0;
 }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb a{
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb a {
 	display: inline-block;
-    padding-left: 14px;
-    padding-right: 8px;
-    background: url(../img/littleRight.png) left center no-repeat;
-    text-decoration: none;
-    color: black;
+	padding-left: 14px;
+	padding-right: 8px;
+	background: url(../img/littleRight.png) left center no-repeat;
+	text-decoration: none;
+	color: black;
 }
 
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a{          
-  	position: relative;
-  	text-decoration: none;
-   	color: #000;   
-   	padding: 23px 0;  
-  }
-        /*伪元素是两个冒号*/      
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a::after{          
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a {
+	position: relative;
+	text-decoration: none;
+	color: #000;
+	padding: 25px 0;
+}
+
+
+/*伪元素是两个冒号*/
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a::after {
 	content: '';
-    width: 100%;
-    height: 4px;
-/*设置伪元素的高度，这里是下划线的粗细*/           
-	position: absolute;           
-	top: 100%;          
-	left: 0;           
-	background-color: #FF2D52;
-/*当前标签继承的文字颜色，这里让伪元素的背景色与父元素的文字颜色相同*/
-    transform: scale(0);
-    transition:all .35s;
-    transform-origin: left;
-        }
-.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:hover::after{          
-	transform: scale(1);      
-}     
+	width: 100%;
+	height: 2px;
+	/*设置伪元素的高度，这里是下划线的粗细*/
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #EB3C00;
+	/*当前标签继承的文字颜色，这里让伪元素的背景色与父元素的文字颜色相同*/
+	transform: scale(0);
+	transition: all .35s;
+	transform-origin: left;
+}
+
+.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li a:hover::after {
+	transform: scale(1);
+}
+
 .ghg-tablelist.on {
 	border-bottom: 2px solid #EB3C00;
-}      
-.ghg-contentBox{
-	padding-top:70px;
-	background: #F7F7F7 url(../img/speechBg.jpg) center top no-repeat;;
 }
-.ghg-contentBox .ghg-container{
+
+.ghg-contentBox {
+	padding-top: 70px;
+	background: #F7F7F7 url(../img/speechBg.jpg) center top no-repeat;
+	;
+}
+
+.ghg-contentBox .ghg-container {
 	padding: 0;
 }
-.ghg-contentBox .ghg-container .ghg-enTitle{
+
+.ghg-contentBox .ghg-container .ghg-enTitle {
 	font-size: 30px;
-    color: #eb3c00;
-    font-family: Montserrat-Regular;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-    margin: 0;
+	color: #eb3c00;
+	font-family: Montserrat-Regular;
+	letter-spacing: -3px;
+	text-transform: uppercase;
+	margin: 0;
 }
-.ghg-contentBox .ghg-container .ghg-title{
+
+.ghg-contentBox .ghg-container .ghg-title {
 	font-size: 20px;
-    color: #bc8f4b;
-    padding-bottom: 75px;
-    margin-bottom: 0;
+	color: #bc8f4b;
+	padding-bottom: 75px;
+	margin-bottom: 0;
 }
-.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox{
-	    float: left;
-	    width: 560px;
-	    padding-bottom: 145px
+
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox {
+	float: left;
+	width: 560px;
+	padding-bottom: 145px
 }
-.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h1{
+
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h1 {
 	font-size: 32px;
-    color: #eb3a00;
-    padding-bottom: 10px;
-    margin: 0;
+	color: #eb3a00;
+	padding-bottom: 10px;
+	margin: 0;
 }
-.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h2{
+
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h2 {
 	color: #b9b9b9;
-    font-size: 26px;
-    padding-bottom: 25px;
-    font-family: Montserrat-Regular;
-    /*转换文本格式这个为全部转换为大写*/
-    text-transform: uppercase;
-    letter-spacing: -3px;
-    line-height: 26px;
-    margin: 0;
-    
+	font-size: 26px;
+	padding-bottom: 25px;
+	font-family: Montserrat-Regular;
+	/*转换文本格式这个为全部转换为大写*/
+	text-transform: uppercase;
+	letter-spacing: -3px;
+	line-height: 26px;
+	margin: 0;
 }
-.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h3{
-	    padding-top: 20px;
-	    font-size: 24px;
-	    color: #898989;
+
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h3 {
+	padding-top: 20px;
+	font-size: 24px;
+	color: #898989;
 }
-.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h4{
-	    font-size: 16px;
-   		color: #898989;
+
+.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h4 {
+	font-size: 16px;
+	color: #898989;
 }
-.ghg-contentBox .ghg-container .ghg-content p{
-	    font-size: 14px;
-	    color: #898989;
-	    padding-bottom: 15px;
-	    line-height: 24px;
-	    text-align: justify;
-	    margin: 0;
-    /*两端对齐效果*/
+
+.ghg-contentBox .ghg-container .ghg-content p {
+	font-size: 14px;
+	color: #898989;
+	padding-bottom: 15px;
+	line-height: 24px;
+	text-align: justify;
+	margin: 0;
+	/*两端对齐效果*/
 }
-.ghg-contentBox .ghg-container .ghg-content .ghg-Imgright{
+
+.ghg-contentBox .ghg-container .ghg-content .ghg-Imgright {
 	position: absolute;
-	right: -50px;
+	right: 0px;
 	max-width: 100%;
 	bottom: 0;
 }
-.ghg-bottomBOX{
+
+.ghg-bottomBOX {
 	padding-top: 50px;
 	background: #fff;
 }
-.ghg-bottomBOX .ghg-container .ghg-leftImg{
+
+.ghg-bottomBOX .ghg-container .ghg-leftImg {
 	position: absolute;
 	bottom: 0;
 	max-width: 100%;
 	left: -244px;
 }
-.ghg-bottomBOX .ghg-container .ghg-rightBox{
-	    float: right;
-	    width: 656px;
-	    padding-bottom: 75px;
+
+.ghg-bottomBOX .ghg-container .ghg-rightBox {
+	float: right;
+	width: 656px;
+	padding-bottom: 75px;
 }
 
-.ghg-bottomBOX .ghg-container .ghg-rightBox h1{
+.ghg-bottomBOX .ghg-container .ghg-rightBox h1 {
 	font-size: 32px;
-    color: #eb3a00;
-    padding-bottom: 10px;
-    margin: 0;
+	color: #eb3a00;
+	padding-bottom: 10px;
+	margin: 0;
 }
-.ghg-bottomBOX .ghg-container .ghg-rightBox h2{
+
+.ghg-bottomBOX .ghg-container .ghg-rightBox h2 {
 	color: #b9b9b9;
-    font-size: 26px;
-    padding-bottom: 25px;
-    font-family: Montserrat-Regular;
-    /*转换文本格式这个为全部转换为大写*/
-    text-transform: uppercase;
-    letter-spacing: -3px;
-    line-height: 26px;
-    margin: 0;
-    
-}
-.ghg-bottomBOX .ghg-container .ghg-rightBox h3{
-	    padding-top: 20px;
-	    font-size: 24px;
-	    color: #898989;
-}
-.ghg-bottomBOX .ghg-container .ghg-rightBox h4{
-	    font-size: 16px;
-   		color: #898989;
-}
-.ghg-bottomBOX .ghg-container .ghg-rightBox p{
-	    font-size: 14px;
-	    color: #898989;
-	    padding-bottom: 15px;
-	    line-height: 24px;
-	    text-align: justify;
-	    margin: 0;
-    /*两端对齐效果*/
+	font-size: 26px;
+	padding-bottom: 25px;
+	font-family: Montserrat-Regular;
+	/*转换文本格式这个为全部转换为大写*/
+	text-transform: uppercase;
+	letter-spacing: -3px;
+	line-height: 26px;
+	margin: 0;
 }
 
-.ghg-containerBox{
-	   background: #f7f7f7 url(../img/zhiBg.jpg) center 10px no-repeat
+.ghg-bottomBOX .ghg-container .ghg-rightBox h3 {
+	padding-top: 20px;
+	font-size: 24px;
+	color: #898989;
 }
 
-.ghg-containerBox .ghg-topBox .ghg-enTitle{
-	    font-size: 30px;
-    color: #eb3c00;
-    font-family: Montserrat-Regular;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-	
+.ghg-bottomBOX .ghg-container .ghg-rightBox h4 {
+	font-size: 16px;
+	color: #898989;
 }
-.ghg-containerBox .ghg-topBox{
+
+.ghg-bottomBOX .ghg-container .ghg-rightBox p {
+	font-size: 14px;
+	color: #898989;
+	padding-bottom: 15px;
+	line-height: 24px;
+	text-align: justify;
+	margin: 0;
+	/*两端对齐效果*/
+}
+
+.ghg-containerBox {
+	background: #f7f7f7 url(../img/zhiBg.jpg) center 10px no-repeat
+}
+
+.ghg-containerBox .ghg-topBox .ghg-enTitle {
+	font-size: 30px;
+	color: #eb3c00;
+	font-family: Montserrat-Regular;
+	letter-spacing: -3px;
+	text-transform: uppercase;
+}
+
+.ghg-containerBox .ghg-topBox {
 	overflow: hidden;
 	padding-bottom: 30px;
 }
-.ghg-title{
+
+.ghg-title {
 	font-size: 20px;
-    color: #bc8f4b;
-}
-.ghg-enTitle{
-	    font-size: 30px;
-	    color: #eb3c00;
-	    font-family: Montserrat-Regular;
-	    letter-spacing: -3px;
-	    text-transform: uppercase;
-}
-.ghg-containerBox .ghg-cook{
-	    padding-top: 65px;
-    padding-bottom: 140px;
-    
-    position: relative;
-}
-.ghg-containerBox .ghg-titleBox{
-	position: absolute;
-    right: 0;
-    top: 105px;
-    text-align: right;
+	color: #bc8f4b;
 }
 
-.ghg-containerBox .organ{
-	  	padding-top: 50px;
-  		background: url(../img/organBg1.jpg) center bottom no-repeat;
+.ghg-enTitle {
+	font-size: 30px;
+	color: #eb3c00;
+	font-family: Montserrat-Regular;
+	letter-spacing: -3px;
+	text-transform: uppercase;
 }
-.ghg-containerBox .organ .container img{
+
+.ghg-containerBox .ghg-cook {
+	padding-top: 65px;
+	padding-bottom: 140px;
+	position: relative;
+}
+
+.ghg-containerBox .ghg-titleBox {
+	position: absolute;
+	right: 0;
+	top: 105px;
+	text-align: right;
+}
+
+.ghg-containerBox .organ {
+	padding-top: 50px;
+	background: url(../img/organBg1.jpg) center bottom no-repeat;
+}
+
+.ghg-containerBox .organ .container img {
 	width: 100%;
 }
-.ghg-containerBox .ghg-titleBox h1{
+
+.ghg-containerBox .ghg-titleBox h1 {
 	font-size: 29px;
-    color: #f09888;
+	color: #f09888;
 }
-.ghg-containerBox .ghg-titleBox h2{
+
+.ghg-containerBox .ghg-titleBox h2 {
 	font-size: 90px;
-    color: #d8d8da;
-    line-height: 78px;
-    font-family: CALIBRI;
-    letter-spacing: -5px;
+	color: #d8d8da;
+	line-height: 78px;
+	font-family: CALIBRI;
+	letter-spacing: -5px;
 }
-.ghg-containerBox .ghg-loading{
-	padding-top:50px;
+
+.ghg-containerBox .ghg-loading {
+	padding-top: 50px;
 	background: url(../img/bg1.png) center 147px #f7f7f7 no-repeat;
-	}
-.ghg-containerBox .ghg-loading .container p{
+}
+
+.ghg-containerBox .ghg-loading .container p {
 	margin: 0;
 }
-.ghg-containerBox .ghg-loading .container{
+
+.ghg-containerBox .ghg-loading .container {
 	padding: 0;
 }
-.ghg-containerBox  .ghg-loading .ghg-content{
+
+.ghg-containerBox .ghg-loading .ghg-content {
 	padding-top: 65px;
-    padding-bottom: 70px;
-}
-.ghg-containerBox  .ghg-loading .ghg-content h1{
-	font-size: 32px;
-    color: #eb3a00;
-    margin: 0;
-    
-}
-.ghg-containerBox  .ghg-loading .ghg-content h2{
-	font-size: 14px;
-    color: #666666;
-    margin: 0;
-}
-.ghg-baseBox .ghg-yearBox .ghg-year{
-	    font-size: 30px;
-	    color: #72717a;
-	    font-family: Montserrat-Regular;
-       margin: 0;
-}
-.ghg-baseBox .ghg-yearBox .ghg-text{
-	font-size: 20px;
-    color: #d2ba9b;
-    margin: 0;
-}
-.ghg-list .ghg-create h1{
-	    font-size: 24px;
-	    color: #eb3c00;
-	    line-height: 24px;
-	    font-weight: bold;
-	    margin-bottom: 10px;
-}
-.ghg-imgBoxMedia img{
-      	display: none;
-      }
-.ghg-contentWrap{
-	float: right;
-    position: relative;
-    width: 800px;
-    max-width: 100%;
-    padding-top:0 ;
-}
-.ghg-baseBox .ghg-contentWrap .ghg-borderBg{
-	    position: absolute;
-	    top: 0;
-	    left: 8px;
-	    border-left: 1px solid #dfdfdf;
-	    height: 100%;
-}
-.ghg-baseBoxWrap .ghg-contentWrap .ghg-borderBg{
-	 	position: absolute;
-	    top: 0;
-	    left: 8px;
-	    border-left: 1px solid #dfdfdf;
-	    height: 100%;
-}
-.ghg-baseBoxWrap .ghg-yearBox .ghg-year{
-	    font-size: 30px;
-	    color: #72717a;
-	    font-family: Montserrat-Regular;
-}
-.ghg-baseBoxWrap .ghg-yearBox .ghg-text{
-	font-size: 20px;
-    color: #d2ba9b;
+	padding-bottom: 70px;
 }
 
-.ghg-baseBox .ghg-contentWrap .ghg-textBox p{
-	    font-size: 14px;
-	    color: #898989;
-	    line-height: 24px;
-	    padding-left: 65px;
+.ghg-containerBox .ghg-loading .ghg-content h1 {
+	font-size: 32px;
+	color: #eb3a00;
+	margin: 0;
 }
-.ghg-baseBoxWrap .ghg-contentWrap .ghg-textBox p{
-	    font-size: 14px;
-	    color: #898989;
-	    line-height: 24px;
-	    padding-left: 65px;
+
+.ghg-containerBox .ghg-loading .ghg-content h2 {
+	font-size: 14px;
+	color: #666666;
+	margin: 0;
 }
-.ghg-baseBoxWrap .ghg-contentWrap .ghg-textBox h1{
-	    background: url(../img/greyC.png) 0 0 no-repeat;
-	    font-size: 20px;
-	    color: #72717a;	
-	    padding-left: 65px;
-	    padding-bottom: 15px;
-	    z-index: 2;
-	    position: relative;
-	    line-height: 17px;
-	    margin: 0;
+
+.ghg-baseBox .ghg-yearBox .ghg-year {
+	font-size: 30px;
+	color: #72717a;
+	font-family: Montserrat-Regular;
+	margin: 0;
 }
-.ghg-baseBox .ghg-contentWrap .ghg-textBox h1{
-	    background: url(../img/greyC.png) 0 0 no-repeat;
-	    font-size: 20px;
-	    color: #72717a;	
-	    padding-left: 65px;
-	    padding-bottom: 15px;
-	    z-index: 2;
-	    position: relative;
-	    line-height: 17px;
-	    margin: 0;
-}
-.ghg-yearBox{
-	padding-bottom:20px ;
-}
-/*品牌理念*/
-.ghg-BrandBox{
-	background: url(../img/mindbg1.jpg) center center no-repeat;
-}
-.ghg-BrandBox .container{
-	position: relative;
-}
-.ghg-BrandBox .container h3{
-	    padding-top: 70px;
-	    font-size: 30px;
-	    color: #eb3c00;
-	    font-family: Montserrat-Regular;
-	    letter-spacing: -3px;
-	    text-transform: uppercase;
-	    margin: 0;
-}
-.ghg-BrandBox .container h2{
+
+.ghg-baseBox .ghg-yearBox .ghg-text {
 	font-size: 20px;
-    color: #bc8f4b;
-    margin: 0;
-    padding-bottom: 192px;
+	color: #d2ba9b;
+	margin: 0;
 }
-.ghg-BrandBox .container .ghg-titleBox{
-	position: absolute;
-    right: 270px;
-    top: 146px;
-    text-align: right;
-}
-.ghg-BrandBox .container .ghg-titleBox h1{
-	font-size: 29px;
-    color: #f09888;
-}
-.ghg-BrandBox .container .ghg-titleBox h2{
-	    font-size: 90px;
-	    color: #d8d8da;
-	    line-height: 78px;
-	    font-family: CALIBRI;
-	    letter-spacing: -5px;
-}
-.ghg-sideitBox{
-	padding-bottom: 80px;
-}
-.ghg-sideitBox .ghg-hd:after{
-	    content: " ";
-	    display: block;
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 2px;
-	    background: #ccc;
-}
-.ghg-sideitBox .ghg-hd{
-	position: relative;
-	background: white;
-	
-}
-.ghg-sideitBox .ghg-hd .container{
-	position: relative;
-    z-index: 5;
-    overflow: hidden;
-}
-.ghg-sideitBox .ghg-hd ul{
-	    font-size: 0;
-	    margin: 0;
-	    line-height: 64px;
-	    padding-top: 16px;
-	    letter-spacing: -4px;
-	    text-align: center;
-	     white-space: nowrap;
-}
-.ghg-sideitBox .ghg-hd ul li:active{
-	background: #CCCCCC;
-}
-.ghg-sideitBox .ghg-hd ul li{
-	position: relative;
-    display: inline-block;
-    vertical-align: top;
-    height: 66px;
-    border-bottom: 2px solid transparent;
-    padding: 0 24px;
-    font-size: 16px;
-    color: #666;
-    letter-spacing: normal;
-    cursor: pointer;
-}
-.ghg-sideitBox .ghg-hd ul li.on{
-	    border-color: #eb3c00;
-	    color: #eb3c00;
-}
-.ghg-sideitBox .ghg-bd .ghg-list .ghg-textBox h1{
+
+.ghg-list .ghg-create h1 {
 	font-size: 24px;
-    color: #eb3c00;
-    line-height: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+	color: #eb3c00;
+	line-height: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
-.ghg-sideitBox .ghg-bd .ghg-textBox .ghg-titletwo{
-	    font-size: 14px;
-	    line-height: 24px;
-	    color: #666;
-}
-.ghg-bd .ghg-list{
+
+.ghg-imgBoxMedia img {
 	display: none;
 }
-.ghg-bd .ghg-list.on{
-	display: block;animation: anim 3s;
-	
-}
-.ghg-txtBox .container h1{
-			font-size: 24px;
-		    color: #eb3c00;
-		    line-height: 24px;
-		    font-weight: bold;
+
+.ghg-contentWrap {
+	float: right;
+	position: relative;
+	width: 800px;
+	max-width: 100%;
+	padding-top: 0;
 }
 
-@keyframes anim{
-      0% {opacity: 0;}
-    100% {opacity: 1;}
+.ghg-baseBox .ghg-contentWrap .ghg-borderBg {
+	position: absolute;
+	top: 0;
+	left: 8px;
+	border-left: 1px solid #dfdfdf;
+	height: 100%;
 }
-.ghg-sideitBox .ghg-list .ghg-bomBox .container img{
+
+.ghg-baseBoxWrap .ghg-contentWrap .ghg-borderBg {
+	position: absolute;
+	top: 0;
+	left: 8px;
+	border-left: 1px solid #dfdfdf;
+	height: 100%;
+}
+
+.ghg-baseBoxWrap .ghg-yearBox .ghg-year {
+	font-size: 30px;
+	color: #72717a;
+	font-family: Montserrat-Regular;
+}
+
+.ghg-baseBoxWrap .ghg-yearBox .ghg-text {
+	font-size: 20px;
+	color: #d2ba9b;
+}
+
+.ghg-baseBox .ghg-contentWrap .ghg-textBox p {
+	font-size: 14px;
+	color: #898989;
+	line-height: 24px;
+	padding-left: 65px;
+}
+
+.ghg-baseBoxWrap .ghg-contentWrap .ghg-textBox p {
+	font-size: 14px;
+	color: #898989;
+	line-height: 24px;
+	padding-left: 65px;
+}
+
+.ghg-baseBoxWrap .ghg-contentWrap .ghg-textBox h1 {
+	background: url(../img/greyC.png) 0 0 no-repeat;
+	font-size: 20px;
+	color: #72717a;
+	padding-left: 65px;
+	padding-bottom: 15px;
+	z-index: 2;
+	position: relative;
+	line-height: 17px;
+	margin: 0;
+}
+
+.ghg-baseBox .ghg-contentWrap .ghg-textBox h1 {
+	background: url(../img/greyC.png) 0 0 no-repeat;
+	font-size: 20px;
+	color: #72717a;
+	padding-left: 65px;
+	padding-bottom: 15px;
+	z-index: 2;
+	position: relative;
+	line-height: 17px;
+	margin: 0;
+}
+
+.ghg-yearBox {
+	padding-bottom: 20px;
+}
+
+
+/*品牌理念*/
+
+.ghg-BrandBox {
+	background: url(../img/mindbg1.jpg) center center no-repeat;
+}
+
+.ghg-BrandBox .container {
+	position: relative;
+}
+
+.ghg-BrandBox .container h3 {
+	padding-top: 70px;
+	font-size: 30px;
+	color: #eb3c00;
+	font-family: Montserrat-Regular;
+	letter-spacing: -3px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.ghg-BrandBox .container h2 {
+	font-size: 20px;
+	color: #bc8f4b;
+	margin: 0;
+	padding-bottom: 192px;
+}
+
+.ghg-BrandBox .container .ghg-titleBox {
+	position: absolute;
+	right: 270px;
+	top: 146px;
+	text-align: right;
+}
+
+.ghg-BrandBox .container .ghg-titleBox h1 {
+	font-size: 29px;
+	color: #f09888;
+}
+
+.ghg-BrandBox .container .ghg-titleBox h2 {
+	font-size: 90px;
+	color: #d8d8da;
+	line-height: 78px;
+	font-family: CALIBRI;
+	letter-spacing: -5px;
+}
+
+.ghg-sideitBox {
+	padding-bottom: 80px;
+}
+
+.ghg-sideitBox .ghg-hd:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #ccc;
+}
+
+.ghg-sideitBox .ghg-hd {
+	position: relative;
+	background: white;
+}
+
+.ghg-sideitBox .ghg-hd .container {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.ghg-sideitBox .ghg-hd ul {
+	font-size: 0;
+	margin: 0;
+	line-height: 64px;
+	padding-top: 16px;
+	letter-spacing: -4px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.ghg-sideitBox .ghg-hd ul li:active {
+	background: #CCCCCC;
+}
+
+.ghg-sideitBox .ghg-hd ul li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 66px;
+	border-bottom: 2px solid transparent;
+	padding: 0 24px;
+	font-size: 16px;
+	color: #666;
+	letter-spacing: normal;
+	cursor: pointer;
+}
+
+.ghg-sideitBox .ghg-hd ul li.on {
+	border-color: #eb3c00;
+	color: #eb3c00;
+}
+
+.ghg-sideitBox .ghg-bd .ghg-list .ghg-textBox h1 {
+	font-size: 24px;
+	color: #eb3c00;
+	line-height: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.ghg-sideitBox .ghg-bd .ghg-textBox .ghg-titletwo {
+	font-size: 14px;
+	line-height: 24px;
+	color: #666;
+}
+
+.ghg-bd .ghg-list {
+	display: none;
+}
+
+.ghg-bd .ghg-list.on {
+	display: block;
+	animation: anim 3s;
+}
+
+.ghg-txtBox .container h1 {
+	font-size: 24px;
+	color: #eb3c00;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+@keyframes anim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.ghg-sideitBox .ghg-list .ghg-bomBox .container img {
 	width: 100%;
 }
-.ghg-textBoxone .container{
+
+.ghg-textBoxone .container {
 	overflow: hidden;
-	 background: url(../img/about4_l5_bg.png) no-repeat bottom left;;
+	background: url(../img/about4_l5_bg.png) no-repeat bottom left;
+	;
 }
-.ghg-textBox .ghg-titleText{
-	    float: left;
-	    width: 50%;
-	    padding-top: 29px;
+
+.ghg-textBox .ghg-titleText {
+	float: left;
+	width: 50%;
+	padding-top: 29px;
 }
-.ghg-textBox .ghg-titleText .ghg-titleone{
+
+.ghg-textBox .ghg-titleText .ghg-titleone {
 	font-size: 24px;
 	color: #eb3c00;
 	font-weight: bold;
 }
-.ghg-textBoxone .ghg-titleText .ghg-titlethree{
-	    font-size: 24px;
-	    color: #eb3c00;
-	    line-height: 36px;
-	    font-weight: bold;
+
+.ghg-textBoxone .ghg-titleText .ghg-titlethree {
+	font-size: 24px;
+	color: #eb3c00;
+	line-height: 36px;
+	font-weight: bold;
 }
 
-.ghg-textBoxone .ghg-imgText{
+.ghg-textBoxone .ghg-imgText {
 	float: right;
-    max-width: 50%;
+	max-width: 50%;
 }
-.ghg-textBox .ghg-imgText img{
+
+.ghg-textBox .ghg-imgText img {
 	float: none;
 	display: block;
 	max-width: 100%;
 	border: none;
 }
-.ghg-textBoxone .ghg-imgText img{
+
+.ghg-textBoxone .ghg-imgText img {
 	float: none;
 	display: block;
 	max-width: 100%;
 	border: none;
 }
-.ghg-txtBox .ghg-ulTxt{
+
+.ghg-txtBox .ghg-ulTxt {
 	width: 1220px;
 	overflow: hidden;
 }
-.ghg-txtBox .ghg-ulTxt .ghg-Item{
-	    float: left;
-	    margin: 0 20px 20px 0;
-	    width: 590px;
-	    height: 188px;
-	    padding: 27px 28px 0;
-	    border: 2px solid #dfdfdf;
+
+.ghg-txtBox .ghg-ulTxt .ghg-Item {
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 590px;
+	height: 188px;
+	padding: 27px 28px 0;
+	border: 2px solid #dfdfdf;
 }
-.ghg-txtBox .ghg-ulTxt .ghg-Item p{
-     margin: 0;
+
+.ghg-txtBox .ghg-ulTxt .ghg-Item p {
+	margin: 0;
 }
-.ghg-list .ghg-bomBox{
+
+.ghg-list .ghg-bomBox {
 	background: url(../img/about4_l6_bg.jpg) no-repeat center;
 }
-.ghg-list .ghg-bomBox img{
+
+.ghg-list .ghg-bomBox img {
 	float: none;
 	display: block;
 	max-width: 100%;
 	border: none;
 }
-.ghg-list .ghg-boomBox{
+
+.ghg-list .ghg-boomBox {
 	overflow: hidden;
 	background: url(../img/about4_l7_bg.jpg) no-repeat center;
 }
-.ghg-list .ghg-boomBox .ghg-version{
+
+.ghg-list .ghg-boomBox .ghg-version {
 	float: left;
-    width: 50%;
-    padding-top: 29px;
+	width: 50%;
+	padding-top: 29px;
 }
-.ghg-list .ghg-boomBox .ghg-picture{
+
+.ghg-list .ghg-boomBox .ghg-picture {
 	float: right;
-    max-width: 50%;
-    width: auto;
+	max-width: 50%;
+	width: auto;
 }
-.ghg-list .ghg-boomBox .ghg-picture img{
+
+.ghg-list .ghg-boomBox .ghg-picture img {
 	float: none;
 	display: block;
 	max-width: 100%;
 	border: none;
 }
+
+
 /*文化生活*/
-.ghg-substance{
+
+.ghg-substance {
 	background: #F7F7F7;
 	padding-bottom: 38px;
 }
-.ghg-substance .ghg-bgBox{
-	    left: 851.5px;
-	    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 67px;
-    background: #f3f3f3 url(../img/subBg.png) 386px top no-repeat;
+
+.ghg-substance .ghg-bgBox {
+	left: 851.5px;
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 67px;
+	background: #f3f3f3 url(../img/subBg.png) 386px top no-repeat;
 }
-.ghg-substance .ghg-topContent{
+
+.ghg-substance .ghg-topContent {
 	padding: 70px 11px 0;
 	padding-bottom: 38px;
 }
-.ghg-substance .ghg-topContent .ghg-subImg{
+
+.ghg-substance .ghg-topContent .ghg-subImg {
 	padding-bottom: 38px;
 }
-.ghg-substance .ghg-topContent .ghg-inputBox .ghg-selBox{
+
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-selBox {
 	position: relative;
-    float: left;
-    margin-right: 5px;
-    line-height: 46px;
-    width: 188px;
-    cursor: pointer;
-}
-.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox{
 	float: left;
-    border: 2px solid #ebebee;
-    line-height: 46px;
-    position: relative;
-    width: 188px;
-    background: #fff;
+	margin-right: 5px;
+	line-height: 46px;
+	width: 188px;
+	cursor: pointer;
 }
-.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox input{
+
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox {
+	float: left;
+	border: 2px solid #ebebee;
+	line-height: 46px;
+	position: relative;
+	width: 188px;
+	background: #fff;
+}
+
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox input {
 	width: 148px;
-    text-indent: 18px;
-    padding-left: 18px;
-    border: none;
-    line-height: 46px;
-    height: 46px;
-    display: block;
-    background: transparent;
-    padding-right: 25px;
-    font-size: 14px;
-    opacity: .8;
-    color: #3f3e55;
-    box-sizing: border-box;
-    outline: 0;
-}
-.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox .ghg-searchs{
-	    position: absolute;
-	    top: 13px;
-	    right: 12px;
-	    cursor: pointer;
-}
-.ghg-selBox .ghg-dropdown-menu  > li{
-	height: 25%
-}
-.ghg-selBox .ghg-dropdown-menu  > li > a{
+	text-indent: 18px;
+	padding-left: 18px;
+	border: none;
+	line-height: 46px;
+	height: 46px;
+	display: block;
+	background: transparent;
+	padding-right: 25px;
 	font-size: 14px;
-    opacity: .8;
-    color: #3f3e55;
+	opacity: .8;
+	color: #3f3e55;
+	box-sizing: border-box;
+	outline: 0;
 }
-.ghg-selBox .ghg-dropdown-menu {
+
+.ghg-substance .ghg-topContent .ghg-inputBox .ghg-searchBox .ghg-searchs {
+	position: absolute;
+	top: 13px;
+	right: 12px;
+	cursor: pointer;
+}
+
+select.ghg-container-fluids {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.ghg-selBox .ghg-dropdown-select option {
+	height: 46px;
+	line-height: 44px;
+	font-size: 14px;
+	opacity: .8;
+	color: #3f3e55;
+	text-align: center;
+}
+
+.ghg-selBox .ghg-dropdown-select {
 	left: -50px;
 	border: 1px solid #E7E7E7;
 	min-width: 188px;
-	height: 188px
 }
-.ghg-selBox .ghg-dropdown-menu li{
-	text-align: center;
-}
-.ghg-selBox .ghg-navbars{
+
+.ghg-selBox .ghg-navbars {
 	margin: 0;
-	border-radius:0;
+	border-radius: 0;
 }
-.ghg-selBox .ghg-navbars .ghg-container-fluids{
-	padding-left: 50px;
+
+.ghg-selBox .ghg-navbars .ghg-container-fluids,
+.ghg-selBox .ghg-navbars .ghg-container-fluids .ghg-container-select {
+	line-height: 44px;
+	text-align: center;
 	height: 46px;
 	border: 0;
 }
-.ghg-selBox .ghg-navbarss .ghg-container-fluids a{
+
+.ghg-selBox .ghg-navbarss .ghg-container-fluids a {
 	font-size: 14px;
-    opacity: .8;
-    color: #3f3e55;
+	opacity: .8;
+	color: #3f3e55;
 }
-.ghg-selBox .ghg-navbars .ghg-container-fluids a:hover{
+
+.ghg-selBox .ghg-navbars .ghg-container-fluids a:hover {
 	text-decoration: none;
 }
-.ghg-substance .ghg-imgList .ghg-newsBox .ghg-imageBox{
-	    text-decoration: none;
-	    color: inherit;
-	    display: block;
-}
-.ghg-substance .ghg-imgList .ghg-newsBox .ghg-imageBox .ghg-textBox{
-	    border: 2px solid #ebebee;
-	    border-top: none;
-	    padding: 30px 20px;
-	    min-height: 120px;
-	    background: #ffffff;
-}
-.ghg-substance .ghg-imgList .ghg-newsBox .ghg-textBox h1{
-	font-size: 30px;
-    color: #3f3e55;
-    font-family: Montserrat-Regular;
-}
-.ghg-substance .ghg-imgList .ghg-newsBox .ghg-textBox h2{
-	    font-size: 18px;
-	    color: #3f3e55;
-	    opacity: .9;
-	    line-height: 24px;
-	    padding-bottom: 25px;
-}
-.ghg-substance .ghg-imgList .ghg-newsBox .ghg-textBox p{
-	    font-size: 13px;
-	    color: #898989;
-	    line-height: 24px;
-}
-.ghg-substance .ghg-imgList .ghg-newsBox .ghg-imageBox .ghg-image{
-	
-	border: none;
-}
-.ghg-substance .ghg-imgList .ghg-loadingBoxs{
-						text-align: center; 
-						line-height: 30px;
-						 color: rgb(153, 153, 153); 
-						 margin-top: 20px; display: none;
-}
-.ghg-substance .ghg-imgList .ghg-loadingBox{
-	vertical-align: text-top;
-    margin-right: 5px;
-}
-.ghg-substance{
+
+.ghg-substance .ghg-imgList .ghg-loadingBoxs {
+	text-align: center;
+	line-height: 30px;
+	color: rgb(153, 153, 153);
+	margin-top: 20px;
 	display: none;
-	
 }
-.ghg-substance .container{
+
+.ghg-substance .ghg-imgList .ghg-loadingBox {
+	vertical-align: text-top;
+	margin-right: 5px;
+}
+
+.ghg-substance {
+	display: none;
+}
+
+.ghg-substance .container {
 	padding: 0;
 }
-.ghg-substance.on{
+
+.ghg-substance.on {
 	display: block;
-}    
-.ghg-baseBoxWrap{
+}
+
+.ghg-baseBoxWrap {
 	width: 800px;
 }
-@media only screen and (max-width:1200px ) {
-	
-	.ghg-commonWrap{
-		padding: 0 20px;	
+
+.ghg-imgList {
+	width: 100%;
+	margin: 20px auto;
+	column-count: 3;
+}
+
+.ghg-imgList .ghg-newsBox {
+	width: 100%;
+	padding: 10px;
+	background: #fff;
+	break-inside: avoid;
+	border: 2px solid #ebebee;
+}
+
+.ghg-imgList .ghg-newsBox .ghg-image {
+	width: 100%;
+}
+
+.ghg-imgList .ghg-newsBox p {
+	font-size: 13px;
+	color: #898989;
+}
+
+.ghg-newsdetial {
+	width: 100%;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.ghg-imgList .ghg-newsBox h1 {
+	font-size: 30px;
+	color: #3f3e55;
+	font-family: Montserrat-Regular;
+}
+
+.ghg-imgList .ghg-newsBox h2 {
+	margin: 10px 0 0;
+	font-size: 18px;
+	color: #3f3e55;
+	opacity: .9;
+	line-height: 24px;
+	padding-bottom: 25px;
+}
+
+@media only screen and (max-width:1200px) {
+	.ghg-commonWrap {
+		padding: 0 20px;
 	}
-	.ghg-commonWrap .ghg-container{
+	.ghg-commonWrap .ghg-container {
 		width: 100% !important;
 	}
-	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li{
-		margin-right:10px;
+	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul li {
+		margin-right: 10px;
 	}
-	.ghg-contentBox{
-	padding-left: 20px;
-	padding-right: 20px;	
-    } 
-    .ghg-bottomBOX{
-	padding-left: 20px;
-	padding-right: 20px;	
-    }
-    .ghg-contentBox .ghg-container .ghg-content .ghg-leftBox{
-    	 width: 100%;
-    	 
-    }
-    .ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h2{
-    	padding-left:20px ;
-    	padding-right: 20px;
-
-    }
-      .ghg-contentBox .ghg-container .ghg-content .ghg-Imgright{
-      	right: 0;
-      	position: relative;
-      	
-      }
-      .ghg-bottomBOX .ghg-container .ghg-rightBox{
-      	width: 100%;
-      	padding: 10px 20px;
-      }
-      .ghg-bottomBOX .ghg-container .ghg-leftImg{
-      	position: relative;
-      	left: 0;
-      }
-      .ghg-containerBox .ghg-titleBox{
-      	display: none;
-      	
-      }
-      .ghg-containerBox .ghg-loading{
-	padding-left: 20px;
-	padding-right: 20px;
+	.ghg-contentBox {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
-	.ghg-containerBox .ghg-loading .container .ghg-baseBox{
+	.ghg-bottomBOX {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox {
 		width: 100%;
 	}
-	.ghg-containerBox .ghg-loading .ghg-content h1{
+	.ghg-contentBox .ghg-container .ghg-content .ghg-leftBox h2 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.ghg-contentBox .ghg-container .ghg-content .ghg-Imgright {
+		right: 0;
+		position: relative;
+	}
+	.ghg-bottomBOX .ghg-container .ghg-rightBox {
+		width: 100%;
+		padding: 10px 20px;
+	}
+	.ghg-bottomBOX .ghg-container .ghg-leftImg {
+		position: relative;
+		left: 0;
+	}
+	.ghg-containerBox .ghg-titleBox {
+		display: none;
+	}
+	.ghg-containerBox .ghg-loading {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.ghg-containerBox .ghg-loading .container .ghg-baseBox {
+		width: 100%;
+	}
+	.ghg-containerBox .ghg-loading .ghg-content h1 {
 		font-size: 21px;
 	}
-	.ghg-sideitBox .ghg-hd ul{
+	.ghg-sideitBox .ghg-hd ul {
 		width: 100%;
 		padding: 16px 10px 0;
 	}
-	
-	.ghg-sideitBox .ghg-hd .container{
- 		width: 100%;
- 		padding: 0 10px;
- 	}
- 		.ghg-sideitBox .ghg-hd ul{
- 		white-space: nowrap;
- 		overflow: hidden;
- 		overflow-x:auto ;
- 	}
- 	.ghg-BrandBox{
- 		padding: 0 20px;
- 		
- 	}
- 	.ghg-txtBox .ghg-ulTxt{
- 		width: 103%;
- 	}
- 	.ghg-txtBox .ghg-ulTxt .ghg-Item{
- 		    width: 47.5%;
-    		margin-right: 2%;
- 	}
- 	.ghg-containerBox .ghg-loading .ghg-baseBoxWrap{
- 		width: 100%;
- 		float: left;
- 		
- 	}
- 	 .ghg-baseBoxWrap .ghg-contentWrap .ghg-borderBg{
- 		display: none;
- 	}
- 	.ghg-substance .ghg-imgList{
- 	top: 100px;
- 	}
- 	 
-}
-      
- /*小屏幕*/
- @media only screen and (max-width:480px ) {
- 	.ghg-bannerBox .ghg-imgBox{
- 		display: none;
- 	}
- 	.ghg-imgBoxMedia img{
- 		display: block;
- 	}
- 	.ghg-commonWrap .ghg-container .ghg-subNav{
- 		overflow-x:auto;
- 	}
- 	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul{
- 		white-space: nowrap;
- 		overflow: hidden;
- 		list-style: none;
- 	}
-   .ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul .ghg-tablelist{
-		display: inline-block;
-        float: initial;
+	.ghg-sideitBox .ghg-hd .container {
+		width: 100%;
+		padding: 0 10px;
 	}
-	.ghg-substance .ghg-imgList{
+	.ghg-sideitBox .ghg-hd ul {
+		white-space: nowrap;
+		overflow: hidden;
+		overflow-x: auto;
+	}
+	.ghg-BrandBox {
+		padding: 0 20px;
+	}
+	.ghg-txtBox .ghg-ulTxt {
+		width: 103%;
+	}
+	.ghg-txtBox .ghg-ulTxt .ghg-Item {
+		width: 47.5%;
+		margin-right: 2%;
+	}
+	.ghg-containerBox .ghg-loading .ghg-baseBoxWrap {
+		width: 100%;
+		float: left;
+	}
+	.ghg-baseBoxWrap .ghg-contentWrap .ghg-borderBg {
+		display: none;
+	}
+	.ghg-substance .ghg-imgList {
 		top: 100px;
 	}
-	
- 	
- 	
- }
- @media only screen and (max-width:860px ) {
- 	.ghg-textBoxone .ghg-titleText{
- 		float: none;
- 		width: 100%;
- 		text-align: center;
- 	}
- 	.ghg-textBoxone .ghg-imgText{
- 		    float: none;
-   			max-width: none;
- 	}
- 	.ghg-textBox .ghg-titleText{
- 			float: none;
-	 		width: 100%;
-	 		text-align: center;
- 	}
- 	.ghg-textBox .ghg-imgText{
- 		 	float: none;
-   			max-width: none;
- 	}
- 	.ghg-textBox .ghg-imgText img{
- 		margin: 0 auto;
- 		
- 	}
- 
- 	
- 	.ghg-textBoxone .ghg-imgText img{
- 		margin: 0 auto;
- 		
- 	}
- 	.ghg-BrandBox{
- 		background: #F7F7F7;
- 	}
- 	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb{
- 		display: none;
- 	}
- 	.ghg-list .ghg-boomBox .ghg-version{
- 		float: none;
-    	width: 100%;
-    	text-align: center;
- 	}
- 	.ghg-list .ghg-boomBox{
- 		background: cover;
- 	}
- 	.ghg-list .ghg-boomBox .ghg-picture{
- 		    float: none;
-    		max-width: none;
- 	}
- 	.ghg-list .ghg-boomBox .ghg-picture img{
- 		margin: 0 auto;
- 	}
- }
- @media only screen and (min-width:900px ) {
- 	.ghg-containerBox .ghg-cook{
- 		    background: #f7f7f7;
-    		padding-bottom: 50px;
- 	}
- 	
- }
- @media only screen and (max-width:760px ) {
- 	.ghg-txtBox .ghg-ulTxt .ghg-Item{
- 		height: 230px;
- 	}
- 	.ghg-BrandBox .container h2{
- 		padding-bottom: 40px;
- 	}
- }
- @media only screen and (max-width:600px ){
- 	.ghg-txtBox .ghg-ulTxt .ghg-Item{
- 		height: auto;
-	    padding: 15px;
-	    width: 100%;
- 	}
- 	
- }
+	.ghg-imgList {
+		column-count: 2;
+		width: calc(100%-40px);
+		box-sizing: border-box;
+		padding: 20px 20px 20px 0;
+	}
+	.ghg-containerBox .container {
+		width: 100%;
+	}
+}
+
+
+/*小屏幕*/
+
+@media only screen and (max-width:480px) {
+	.ghg-bannerBox .ghg-imgBox {
+		display: none;
+	}
+	.ghg-imgBoxMedia img {
+		display: block;
+	}
+	.ghg-commonWrap .ghg-container .ghg-subNav {
+		overflow-x: auto;
+	}
+	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul {
+		white-space: nowrap;
+		overflow: hidden;
+		list-style: none;
+	}
+	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-tabBox ul .ghg-tablelist {
+		display: inline-block;
+		float: initial;
+	}
+	.ghg-substance .ghg-imgList {
+		column-count: 1;
+	}
+}
+
+@media only screen and (max-width:860px) {
+	.ghg-textBoxone .ghg-titleText {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.ghg-textBoxone .ghg-imgText {
+		float: none;
+		max-width: none;
+	}
+	.ghg-textBox .ghg-titleText {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.ghg-textBox .ghg-imgText {
+		float: none;
+		max-width: none;
+	}
+	.ghg-textBox .ghg-imgText img {
+		margin: 0 auto;
+	}
+	.ghg-textBoxone .ghg-imgText img {
+		margin: 0 auto;
+	}
+	.ghg-BrandBox {
+		background: #F7F7F7;
+	}
+	.ghg-commonWrap .ghg-container .ghg-subNav .ghg-breadcrumb {
+		display: none;
+	}
+	.ghg-list .ghg-boomBox .ghg-version {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.ghg-list .ghg-boomBox {
+		background: cover;
+	}
+	.ghg-list .ghg-boomBox .ghg-picture {
+		float: none;
+		max-width: none;
+	}
+	.ghg-list .ghg-boomBox .ghg-picture img {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width:900px) {
+	.ghg-containerBox .ghg-cook {
+		background: #f7f7f7;
+		padding-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.ghg-txtBox .ghg-ulTxt .ghg-Item {
+		height: 230px;
+	}
+	.ghg-BrandBox .container h2 {
+		padding-bottom: 40px;
+	}
+	.ghg-imgList {
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	.ghg-txtBox .ghg-ulTxt .ghg-Item {
+		height: auto;
+		padding: 15px;
+		width: 100%;
+	}
+}

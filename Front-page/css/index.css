@@ -104,16 +104,18 @@ li > a {
 	color: #737373;
 }
 .nav > li:hover {
-	border-top: 3px solid #eb3a00;	
+	border-top: 3px solid #eb3a00;
+	box-sizing: border-box;	
 }
 .nav > li.active{
-	border-top: 3px solid #eb3a00;	
+	border-top: 3px solid #eb3a00;
+	box-sizing: border-box;	
 }
 .nav > .ghg-search:hover, .ghg-search .nav > li {
 	border-top: 0;
 }
 .nav > li > a {
-	height: 80px;
+	height: 78px;
 	line-height: 50px;
 	font-size: 14px;
 }

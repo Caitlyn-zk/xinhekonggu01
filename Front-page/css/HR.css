@@ -386,3 +386,24 @@ a:hover{
 	right: -100px;
 	
 }
+.ghg-flyme{
+	background: #ffffff;
+}
+.ghg-flyme-me{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.ghg-flyme-me ul{
+	margin-top: 100px;
+	margin: 0 auto;
+}
+.ghg-flyme-me ul li{
+	cursor: pointer;
+	padding: 20px 10px;
+}
+.ghg-flyme-me ul li ol{
+	border: 2px solid #cccccc;
+	padding: 10px;
+	
+	
+}
