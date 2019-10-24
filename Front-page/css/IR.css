@@ -192,8 +192,9 @@
 }
 .ghg-youme-me ul li{
 	height: 72px;
-	padding: 20px 0;
-	line-height: 20px;
+	line-height: 70px;
+	padding-left:20px;
+	font-size: 18px;
 	background: #ffffff;
 	box-sizing: border-box;
 	

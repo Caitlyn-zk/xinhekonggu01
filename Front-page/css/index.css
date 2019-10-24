@@ -195,9 +195,11 @@ a:hover {
 .ghg-modal .modal-dialog .modal-content {
 	border-radius: 0;
 	background: #f9f9f9;
+	height:100%;
+	
 }
 .modal-content .modal-body {
-	padding: 60px 0 10px 0;
+	padding: 60px 0 180px 0;
 	
 }
 .ghg-modal .modal-header {
